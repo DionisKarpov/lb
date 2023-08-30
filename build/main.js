@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelectorAll(".items-nav li").forEach((function(e){e.addEventListener("click",(function(){var t=e.querySelector(".popap");t&&(t.classList.contains("active")?t.classList.remove("active"):t.classList.add("active"))}))}))})();
