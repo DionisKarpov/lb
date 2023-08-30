@@ -1,0 +1,229 @@
+@use "vars.scss" as vars;
+@use "global.scss";
+
+@mixin h2-style {
+    font-size: 36px;
+    font-family: vars.$font;
+    line-height: 48px;
+    text-align: center;
+}
+
+@mixin medium-body-font {
+    font-size: 16px;
+    font-family: vars.$font;
+    line-height: 24px;
+}
+
+@mixin medium-caps-lock {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: vars.$font;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+@mixin small-caps-lock {
+    @include medium-caps-lock;
+
+    font-size: 10px;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .nav-first-wrapper {
+        background-color: vars.$grey-blue;
+
+        .nav-first {
+            display: flex;
+            width: 100%;
+            height: 40px;
+
+            .items-nav {
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            .items-nav:nth-child(odd) {
+                display: flex;
+                flex-grow: 0;
+                flex-basis: 500px;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                div {
+                    width: 100%;
+                    height: 2px;
+                    background-color: vars.$light-blue;
+                }
+            }
+
+            .items-nav:nth-child(2) {
+                min-width: 318px;
+            }
+
+            .nav-first-list {
+                padding: 0 8px;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        margin: 0 16px;
+
+                        a {
+                            @include small-caps-lock;
+
+                            color: white;
+                            line-height: 40px;
+                        }
+
+                        a:hover,
+                        a.active {
+                            color: vars.$light-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-second-wrapper {
+        background-color: vars.$dark-blue;
+
+        .nav-second {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 80px;
+
+            .items-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+
+                    img {
+                        width: 176px;
+                        height: 27px;
+                    }
+                }
+
+                button {
+                    @include small-caps-lock;
+
+                    width: 176px;
+                    height: 32px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: vars.$light-blue;
+                    color: white;
+                    outline: none;
+                    line-height: 32px;
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        position: relative;
+                        display: flex;
+
+                        a {
+                            @include medium-caps-lock;
+
+                            color: white;
+                        }
+
+                        a.active {
+                            color: vars.$light-blue;
+                        }
+
+                        .icon-button {
+                            width: 10px;
+                            margin-left: 10px;
+
+                            svg {
+                                width: 100%;
+                            }
+                        }
+
+                        .popap {
+                            position: absolute;
+                            top: 20px;
+                            left: -15px;
+                            display: inline-block;
+                            padding: 15px;
+                            border-radius: 4px;
+                            background-color: white;
+                            box-shadow: 0 4px 10px 0 rgb(0 0 0 / 15%);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all ease 800ms;
+                            transform: scale(0, 0);
+
+                            ul {
+                                flex-direction: column;
+
+                                li {
+                                    margin-left: 0;
+
+                                    a {
+                                        color: vars.$black;
+                                        line-height: 25px;
+                                        white-space: nowrap;
+                                    }
+                                }
+
+                                li:hover a {
+                                    color: vars.$light-blue;
+                                }
+                            }
+                        }
+
+                        .popap.active {
+                            opacity: 1;
+                            visibility: visible;
+                            transition: all ease 800ms;
+                            transform: scale(1, 1);
+                        }
+                    }
+
+                    li:not(:first-child) {
+                        margin-left: 66px;
+                    }
+
+                    li:hover a {
+                        color: vars.$light-blue;
+                    }
+
+                    li:hover svg path {
+                        fill: vars.$light-blue;
+                    }
+
+                    li:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.token-progres {
+    width: 100%;
+    height: 900px;
+    background-image: url("./../images/hero-image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
