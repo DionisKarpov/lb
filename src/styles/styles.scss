@@ -221,8 +221,402 @@
 
 .token-progres {
     width: 100%;
-    height: 900px;
+    padding: 32px 0 56px;
     background-image: url("./../images/hero-image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        .title-token {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            .bbrt-logo-wrapper {
+                display: flex;
+                width: 50%;
+
+                .bbrt-logo-image-box {
+                    margin-right: 32px;
+                }
+
+                .title-box {
+                    font-size: 45px;
+                    line-height: 64px;
+                }
+            }
+
+            .social-icons-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 20px;
+
+                .join-text-box {
+                    @include medium-body-font;
+
+                    margin-right: 32px;
+                }
+
+                .icon-box {
+                    margin-left: 18px;
+                }
+
+                .icon-box:hover svg path {
+                    fill: vars.$light-blue;
+                }
+            }
+        }
+
+        .dashboard-wrapper {
+            width: 100%;
+
+            .row-dashboard {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .item-dashboard {
+                    margin-bottom: 32px;
+
+                    .box-title-item {
+                        margin-bottom: 8px;
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+
+                    .box-info-item {
+                        position: relative;
+                        width: 592px;
+                        height: 200px;
+                        padding: 32px 40px;
+                        border-radius: 4px;
+                        background-color: vars.$dark-blue;
+
+                        .title-form {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .item-title-form {
+                                @include medium-body-font;
+
+                                color: vars.$light-grey;
+                            }
+                        }
+
+                        .value-token {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            .ietm-value-token {
+                                @include medium-body-font;
+                            }
+
+                            .ietm-value-token:nth-child(2) {
+                                transform: translateX(18px);
+                            }
+                        }
+
+                        .protect-click {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .description {
+                            @include medium-body-font;
+
+                            position: relative;
+                            margin-bottom: 16px;
+                            padding-left: 34px;
+                        }
+
+                        .description::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                            width: 16px;
+                            height: 16px;
+                            background-color: vars.$blue;
+                        }
+
+                        .description.table-token::after {
+                            @include small-caps-lock;
+
+                            content: "Sales is Live";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            z-index: 2;
+                            width: 104px;
+                            height: 16px;
+                            border-radius: 4px;
+                            background-color: #19a560;
+                            text-align: center;
+                        }
+
+                        .table-token {
+                            margin-bottom: 40px;
+                        }
+
+                        .countdown-time {
+                            display: flex;
+
+                            .item-time {
+                                position: relative;
+                                font-size: 56px;
+                                line-height: 56px;
+                            }
+
+                            .colon-item {
+                                margin: 0 13px;
+                                color: vars.$light-blue;
+                            }
+
+                            .item-time::after {
+                                position: absolute;
+                                bottom: -17px;
+                                left: 50%;
+                                z-index: 2;
+                                color: vars.$grey;
+                                font-size: 12px;
+                                line-height: 17px;
+                                text-transform: uppercase;
+                                transform: translateX(-50%);
+                            }
+
+                            .days-item::after {
+                                content: "days";
+                            }
+
+                            .hours-item::after {
+                                content: "hours";
+                            }
+
+                            .minutes-item::after {
+                                content: "minutes";
+                            }
+
+                            .seconds-item::after {
+                                content: "seconds";
+                            }
+                        }
+
+                        form {
+                            position: relative;
+
+                            .slider::-moz-range-thumb {
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                background: vars.$mint;
+                                background-image: url("./../images/logo-mini.svg");
+                                background-position: center;
+                                background-size: (18px, 18px);
+                                background-repeat: no-repeat;
+                                cursor: pointer;
+                                transition: 0.8s ease-in-out;
+                            }
+
+                            .slider {
+                                position: relative;
+                                width: 100%;
+                                height: 4px;
+                                margin-bottom: 17px;
+                                border-radius: 4px;
+                                background: white;
+                                outline: none;
+                                appearance: none;
+                                accent-color: vars.$mint;
+                            }
+
+                            .slider::-webkit-slider-thumb {
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                background: vars.$mint;
+                                background-image: url("./../images/logo-mini.svg");
+                                background-position: center;
+                                background-size: (18px, 18px);
+                                background-repeat: no-repeat;
+                                cursor: pointer;
+                                transition: 0.8s ease-in-out;
+                                appearance: none;
+                            }
+
+                            .box-info-value {
+                                @include medium-body-font;
+
+                                position: absolute;
+                                bottom: -23px;
+                                left: calc(22.9% - 55px);
+                                z-index: 2;
+                                width: 85px;
+                                height: 23px;
+                                border-radius: 25px;
+                                background-color: vars.$light-grey;
+                                color: vars.$mint;
+                                box-shadow: 0 4px 10px rgb(255 255 255 / 15%);
+                                text-align: center;
+                            }
+
+                            .slider::before {
+                                content: "";
+                                position: absolute;
+                                bottom: -18px;
+                                left: calc(50% - 1px);
+                                width: 2px;
+                                height: 18px;
+                                background-color: #f1f1f1;
+                            }
+                        }
+                    }
+                }
+
+                .item-dashboard.full-item {
+                    width: 100%;
+                    margin-bottom: 16px;
+
+                    .box-info-item {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 96px;
+
+                        .title-form-subscribtion {
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+
+                        form {
+                            position: relative;
+                            display: flex;
+
+                            input {
+                                width: 512px;
+                                height: 40px;
+                                padding: 0 36px;
+                                outline-style: none;
+                            }
+
+                            input::placeholder {
+                                color: black;
+                            }
+
+                            button {
+                                width: 40px;
+                                height: 39px;
+                                margin-left: -1px;
+                                padding: 0;
+                                border: 0;
+                                background-color: vars.$light-blue;
+                                background-image: url("./../images/send.svg");
+                                background-position: center;
+                                background-size: (18px, 18px);
+                                background-repeat: no-repeat;
+                                outline-style: none;
+                                transform: translate(-1px, 1px);
+                            }
+                        }
+
+                        form::before {
+                            content: "";
+                            position: absolute;
+                            top: 12px;
+                            left: 11px;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url("./../images/email.svg");
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+
+            .documents-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 73px;
+
+                .item-document {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 384px;
+                    height: 40px;
+                    padding: 10px 20px;
+                    border-radius: 4px;
+                    background-color: vars.$grey-blue;
+
+                    .title-document {
+                        @include medium-body-font;
+
+                        position: relative;
+                        padding-left: 31px;
+                    }
+
+                    .link-document {
+                        .doc-download {
+                            @include small-caps-lock;
+
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            padding-right: 28px;
+                            color: vars.$light-grey;
+                            line-height: 20px;
+                            text-decoration: none;
+                        }
+
+                        .doc-download::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url("./../images/download.svg");
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                    }
+
+                    .title-document::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 16px;
+                        height: 20px;
+                        background-image: url("./../images/doc.svg");
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+            .partners-row {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.token-sales {
+    width: 100%;
+    height: 900px;
+    padding: 56px 0;
+    background: linear-gradient(#4281ea, #2528b7);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
