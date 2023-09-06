@@ -81,3 +81,49 @@ function countGeneration() {
 
 }
 let differ = setInterval(countGeneration, 3000);
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+function onYouTubePlayerAPIReady(id) {
+	player = new YT.Player(id, {
+		height: '360',
+		width: '640',
+		videoId: id,
+		playerVars: { 'autoplay': 1 }
+	});
+}
+function removeElement(el) {
+	el.remove();
+}
+document.querySelectorAll('.button-video').forEach(button => {
+	button.addEventListener('click', (event) => {
+		console.log('work');
+		let body = document.querySelector('body');
+		let popapBackground = document.createElement('div');
+		popapBackground.classList.add('popap-background-style');
+		body.appendChild(popapBackground);
+		popapBackground.addEventListener('click', () => {
+			removeElement(popapBackground);
+		});
+		let videoWrapper = document.createElement('div');
+		videoWrapper.classList.add('video-wrapper');
+		popapBackground.appendChild(videoWrapper);
+		let closeButton = document.createElement('div');
+		closeButton.classList.add('close-popap-but');
+		videoWrapper.appendChild(closeButton);
+		let videoContainer = document.createElement('div');
+		videoContainer.classList.add('video-container');
+		videoWrapper.appendChild(videoContainer);
+
+		switch (event.target.getAttribute('id')) {
+			case 'info-video':
+				videoContainer.setAttribute('id', 'LvQossUx7ss');
+				onYouTubePlayerAPIReady('LvQossUx7ss');
+
+				break;
+		}
+
+	});
+})
