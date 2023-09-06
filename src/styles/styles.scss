@@ -2,7 +2,7 @@
 @use "global.scss";
 
 @mixin h2-style {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     font-family: vars.$font;
     line-height: 48px;
@@ -15,6 +15,12 @@
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
+}
+
+@mixin h4-style {
+    @include h3-style;
+
+    font-size: 20px;
 }
 
 @mixin medium-body-font {
@@ -864,6 +870,77 @@
 }
 
 .token-sales-info {
+    margin-bottom: 56px;
     padding: 48px 0 56px;
     background: linear-gradient(180deg, #4281ea 0%, #2528b7 100%);
+
+    h2 {
+        @include h2-style;
+
+        margin-bottom: 16px;
+    }
+
+    .row-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item-info {
+            width: 384px;
+            height: 384px;
+            margin-bottom: 32px;
+            padding: 32px 24px;
+            background-color: white;
+            background-image: url("./../images/background_item.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: vars.$grey-blue;
+
+            .icon-box {
+                width: 80px;
+                height: 64px;
+                margin: 0 auto 16px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .title-item {
+                @include h4-style;
+
+                margin-bottom: 16px;
+            }
+
+            .description-item {
+                @include medium-body-font;
+
+                text-align: center;
+            }
+        }
+
+        .item-info:nth-child(1) .icon-box {
+            background-image: url("./../images/clock.svg");
+        }
+
+        .item-info:nth-child(2) .icon-box {
+            background-image: url("./../images/lock.svg");
+        }
+
+        .item-info:nth-child(3) .icon-box {
+            background-image: url("./../images/pc.svg");
+        }
+
+        .item-info:nth-child(4) .icon-box {
+            background-image: url("./../images/server.svg");
+        }
+
+        .item-info:nth-child(5) .icon-box {
+            background-image: url("./../images/cloud.svg");
+        }
+
+        .item-info:nth-child(6) .icon-box {
+            background-image: url("./../images/money.svg");
+        }
+    }
 }
