@@ -511,50 +511,6 @@
                             font-size: 32px;
                             line-height: 40px;
                         }
-
-                        form {
-                            position: relative;
-                            display: flex;
-
-                            input {
-                                width: 512px;
-                                height: 40px;
-                                padding: 0 36px;
-                                outline-style: none;
-                            }
-
-                            input::placeholder {
-                                color: black;
-                            }
-
-                            button {
-                                width: 40px;
-                                height: 39px;
-                                margin-left: -1px;
-                                padding: 0;
-                                border: 0;
-                                background-color: vars.$light-blue;
-                                background-image: url("./../images/send.svg");
-                                background-position: center;
-                                background-size: (18px, 18px);
-                                background-repeat: no-repeat;
-                                outline-style: none;
-                                transform: translate(-1px, 1px);
-                            }
-                        }
-
-                        form::before {
-                            content: "";
-                            position: absolute;
-                            top: 12px;
-                            left: 11px;
-                            width: 18px;
-                            height: 18px;
-                            background-image: url("./../images/email.svg");
-                            background-position: center;
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                        }
                     }
                 }
             }
@@ -1114,5 +1070,27 @@
         background-image: url("./../images/book-1.png");
         background-size: contain;
         background-repeat: no-repeat;
+
+        .row-subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+
+            form#middle-position-subscribe {
+                width: 488px;
+
+                label {
+                    width: calc(100% - 40px);
+
+                    .input-subscribe {
+                        width: 100%;
+                        height: 40px;
+                    }
+                }
+            }
+        }
     }
 }
