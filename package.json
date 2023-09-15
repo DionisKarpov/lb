@@ -36,5 +36,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "resolutions": {
+    "supports-color": "^8"
+  }
 }

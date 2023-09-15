@@ -375,7 +375,7 @@
                             width: 104px;
                             height: 16px;
                             border-radius: 4px;
-                            background-color: #19a560;
+                            background-color: vars.$success;
                             text-align: center;
                         }
 
@@ -942,5 +942,177 @@
         .item-info:nth-child(6) .icon-box {
             background-image: url("./../images/money.svg");
         }
+    }
+}
+
+.road-map {
+    height: 1060px;
+    background: linear-gradient(
+        180deg,
+        rgb(51 105 214 / 0%) 0%,
+        rgb(51 105 214 / 20%) 154.97%
+    );
+
+    .title-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 94px;
+
+        .icon-box {
+            width: 41px;
+            height: 41px;
+            margin-bottom: 18px;
+            border-radius: 100%;
+            background-image: url("./../images/bb_coin.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 2px 6px 0 #a5cade;
+        }
+
+        .title-box {
+            @include h2-style;
+
+            color: vars.$dark-blue;
+        }
+    }
+
+    .road-map-box {
+        height: 566px;
+        padding-top: 16px;
+        background-image: url("./../images/road-map.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .row-info-road-map {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 864px;
+            margin: auto;
+
+            .item-info-road {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 280px;
+                height: 175px;
+                margin-bottom: 106px;
+                padding: 24px 22px;
+                border-radius: 4px;
+                background-color: white;
+
+                .date-box {
+                    @include small-caps-lock;
+
+                    margin-bottom: 5px;
+                    color: vars.$blue;
+                }
+
+                .title-box {
+                    margin-bottom: 3px;
+                    color: black;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                .description-box {
+                    @include small-body-font;
+
+                    margin-bottom: 8px;
+                    color: vars.$light-black;
+                }
+
+                .progress-box {
+                    .progress-title {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 5px;
+
+                        .name {
+                            @include small-caps-lock;
+
+                            color: vars.$dark-blue;
+                        }
+
+                        .persent {
+                            @include small-body-font;
+
+                            color: vars.$dark-blue;
+                        }
+                    }
+
+                    .progress-line {
+                        width: 236px;
+                        height: 4px;
+                        margin-bottom: 6px;
+                        background-color: vars.$light-grey;
+
+                        .current-progress {
+                            height: 100%;
+                            background-color: vars.$success;
+                        }
+                    }
+
+                    .post-title-progress {
+                        @include medium-caps-lock;
+
+                        color: vars.$success;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .item-info-road.inactive {
+                .post-title-progress {
+                    color: vars.$grey;
+                }
+            }
+
+            .item-info-road::before {
+                content: "";
+                position: absolute;
+                top: -22px;
+                left: 18px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: vars.$blue;
+                box-shadow: 0 2px 6px 0 #a5cade;
+            }
+
+            .item-info-road.inactive::before {
+                content: "";
+                position: absolute;
+                top: -22px;
+                left: 18px;
+                box-sizing: border-box;
+                width: 16px;
+                height: 16px;
+                border: 2px solid vars.$blue;
+                border-radius: 100%;
+                background-color: vars.$grey;
+                box-shadow: 0 2px 6px 0 #a5cade;
+            }
+        }
+    }
+}
+
+.subscribe {
+    height: 200px;
+    background-color: vars.$dark-blue;
+
+    .wrapper-row {
+        width: 100%;
+        height: 200px;
+        background-image: url("./../images/book-1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

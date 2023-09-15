@@ -127,3 +127,28 @@ document.querySelectorAll('.button-video').forEach(button => {
 
 	});
 })
+
+async function getProgressInfo() {
+	let result = await fetch("https://katerynakoruma.com/api/progress/");
+	let items = await result.json();
+	items.forEach(item => {
+		document.querySelector(".row-info-road-map").innerHTML += `
+			<div class="item-info-road ${Number(item.progress) < 100 ? "inactive" : ""}">
+				<div class="wrapper-info">
+				  <div class="date-box">${item.date}</div>
+				  <div class="title-box">${item.title}</div>
+				<div class="description-box">${item.description}</div>
+				</div>
+				<div class="progress-box">
+					<div class="progress-title">
+						<div class="name">PROGRESS</div>
+						<div class="persent">${item.progress}%</div>
+					</div>
+					<div class="progress-line">
+					<div class="current-progress" style="width: ${item.progress}%"></div>
+					<div class="post-title-progress"> ${Number(item.progress) < 100 ? "in progress" : "complited"}</div>
+				</div>
+			</div>`
+	})
+}
+getProgressInfo();
