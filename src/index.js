@@ -200,3 +200,27 @@ async function getEmployeeDevelopers() {
 }
 
 getEmployeeDevelopers();
+
+async function getAllEmployees() {
+	let result = await fetch("https://katerynakoruma.com/api/employees/department/general");
+	let items = await result.json();
+	items.forEach(item => {
+		document.querySelector(".row-employees").innerHTML += `
+		<div class="item-team">
+						<div class="info-box">
+							<div class="box-photo">
+								<img src="${item.picture}" alt="">
+								<a href="mailto:test@gmail.com" class="mail-link"></a>
+							</div>
+							<div class="name">${item.name} ${item.lastname}</div>
+							<div class="name-position">${item.job_title}</div>
+							<div class="description">${item.job_title_description}</div>
+						</div>
+						<a href="" class="linkedin"></a>
+
+					</div>
+		`
+	})
+}
+
+getAllEmployees();
