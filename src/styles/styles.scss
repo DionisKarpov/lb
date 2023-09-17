@@ -1347,3 +1347,147 @@
         }
     }
 }
+
+.developers {
+    padding: 56px 0;
+
+    .title-box {
+        margin-bottom: 16px;
+
+        h2 {
+            @include h2-style;
+
+            color: vars.$black;
+        }
+    }
+
+    .developers-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .item-team {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 384px;
+            height: 384px;
+            margin: 0 10px 32px;
+            padding: 24px 24px 16px;
+            border: 1px solid vars.$light-grey;
+            border-radius: 4px;
+            background-color: white;
+
+            .info-box {
+                .box-photo {
+                    position: relative;
+                    width: 176px;
+                    height: 176px;
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .mail-link {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        background-color: #40d0f2;
+                        background-image: url("./../images/email-white.svg");
+                        background-position: center;
+                        background-size: (18px, 18px);
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .name {
+                    @include h4-style;
+
+                    margin-bottom: 4px;
+                    color: vars.$black;
+                }
+
+                .name-position {
+                    @include medium-body-font;
+
+                    margin-bottom: 2px;
+                    color: vars.$dark-blue;
+                    text-align: center;
+                }
+
+                .description {
+                    @include small-body-font;
+
+                    color: vars.$dark-blue;
+                    text-align: center;
+                }
+            }
+
+            a.linkedin {
+                display: block;
+                width: 36px;
+                height: 36px;
+                margin: 0 auto;
+                background-image: url("./../images/linkedin-icon.svg");
+                background-position: center;
+                background-size: (18px, 18px);
+                background-repeat: no-repeat;
+            }
+        }
+
+        .item-team::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 120px;
+            height: 4px;
+            background-color: #0077b5;
+            transform: translateX(-50%);
+        }
+    }
+
+    .interview-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 864px;
+        height: 369px;
+        margin: auto;
+
+        .letter-icon {
+            width: 188px;
+            height: 202px;
+            background-image: url("./../images/letter.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .letter-icon:nth-child(1) {
+            transform: translateY(32px);
+        }
+
+        .letter-icon:nth-child(2) {
+            transform: translateY(137px) scaleX(-1);
+        }
+
+        .button-video {
+            position: absolute;
+            left: 104px;
+            z-index: 2;
+            width: 656px;
+            height: 369px;
+            background-image: url("./../images/video-background.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
