@@ -1,0 +1,133 @@
+.news-card {
+  width: 224px;
+  height: 312px;
+  cursor: pointer;
+
+  &__image-container {
+    height: 140px;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-top: 12px;
+    color: $black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  &__description {
+    margin-top: 8px;
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+  }
+}
+
+.simple-news {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__time {
+    margin-bottom: 4px;
+    color: $black-60;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__tag {
+    margin-bottom: 8px;
+    color: $darkRed;    
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 8px 0;
+    color: $black;
+    font-family: "Source Serif 4";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  &__description {
+    color: $black;
+    font-size: 12px;
+    font-weight: 400;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__image-container {
+    height: 140px;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-news {
+  width: 520px;
+  text-align: center;
+
+  &__image-container {
+    height: 320px;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__tag {
+    margin: 8px 0;
+    color: $darkRed;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 8px 24px;
+    color: #000;
+    text-align: center;
+    font-family: "Source Serif 4";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.048px;
+  }
+
+  &__description {
+    margin: 0 24px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+  }
+}

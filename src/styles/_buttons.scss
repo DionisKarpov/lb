@@ -1,0 +1,39 @@
+.button {
+  position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+  height: 32px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border-radius: 0;
+  border: none;
+	transition: .1s ease-in-out;
+	user-select: none;
+	outline: none;
+	cursor: pointer;
+
+  &--outlined-black {
+    color: $black;
+    border: 1px solid $black;
+  }
+
+  &--contained-red {
+    color: $white;
+    border: 1px solid $red;
+    background: $red;
+  }
+
+  &--height-40 {
+    height: 40px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

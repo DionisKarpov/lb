@@ -1,0 +1,23 @@
+.input {
+  height: 40px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &--outlined-black {
+    color: $black;
+    border: 1px solid $black-60;
+    border-radius: 0;
+
+    &:focus,
+    &:active {
+      border: 1px solid $black;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $black-40;
+    }
+  }
+}

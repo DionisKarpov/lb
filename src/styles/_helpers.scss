@@ -1,0 +1,36 @@
+.pointer {
+  cursor: pointer;
+}
+
+hr {
+  height: 1px;
+  margin: 16px 0;
+  background: $black-30;
+  border: none;
+
+  &.vertical {
+    width: 1px;
+    height: auto;
+    margin: 0 16px;
+    background: $black-30;
+  }
+}
+
+.status {
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  
+  &--red {
+    color: $white;
+    background: $red;
+  }
+}
+
+.gray-container {
+  width: 200px;
+  height: 280px;
+  background: $black-60;
+}

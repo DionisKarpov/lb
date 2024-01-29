@@ -1,0 +1,32 @@
+.icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--search {
+
+    &:before {
+      background-image: url('../images/icons/search.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &--burger {
+
+    &:before {
+      background-image: url('../images/icons/burger.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
