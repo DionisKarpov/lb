@@ -32,6 +32,16 @@ body {
 		min-width: 208px;
 	}
 
+	&--w-436 {
+		width: 436px;
+		min-width: 436px;
+	}
+
+	&--w-224 {
+		width: 224px;
+		min-width: 224px;
+	}
+
 	&__title {
 		display: flex;
 		align-items: center;
