@@ -22,6 +22,10 @@ body {
 		flex-direction: column;
 	}
 
+	&--between {
+		justify-content: space-between;
+	}
+
 	&--gray-bg {
 		padding: 12px;
 		background: $whiteGray-1;
