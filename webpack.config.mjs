@@ -51,6 +51,10 @@ export default {
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/article.html',
+			filename: 'article.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
