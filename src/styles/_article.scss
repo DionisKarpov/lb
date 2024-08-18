@@ -370,6 +370,8 @@
 }
 
 .article-footer {
+    padding-bottom: 25px;
+    
     &__logo {
         display: flex;
         justify-content: space-between;
@@ -409,7 +411,7 @@
     }
 
     &__links-col {
-
+        margin-bottom: 20px;
     }
 
     &__links-title {

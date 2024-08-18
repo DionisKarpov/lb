@@ -59,6 +59,18 @@ export default {
 			template: './src/opinion.html',
 			filename: 'opinion.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/topics.html',
+			filename: 'topics.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/tag.html',
+			filename: 'tag.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/author.html',
+			filename: 'author.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
