@@ -1,0 +1,212 @@
+.team-header {
+    &__title {
+        text-align: center;
+        color: $black;
+        font-family: "Source Serif 4";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 3.2px;
+    }
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $black-30;
+    }
+    
+    &__navbar-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navbar-icon-container {
+        padding: 12px;
+        border-right: 1px solid $black-30;
+    }
+
+    &__navbar-themes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    &__navbar-theme {
+        padding: 12px 20px;
+    }
+
+    &__navbar-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding-left: 16px;
+    }
+}
+
+.team-section {
+    display: flex;
+    margin-bottom: 18px;
+    &__col {
+        display: flex;
+        flex-direction: column;
+
+        &--w-948 {
+            width: 948px;
+        }
+        &--w-346 {
+            margin-top: 18px;
+            width: 346px;
+            border: 1px solid $black-30;
+        }
+    }
+    &__main-article {
+        margin-top: 18px;
+        font-family: Proxima Nova;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+
+        border-right: 1px solid $black-30;
+        padding-right: 12px;
+        margin-right: 12px;
+    }
+    &__header {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 10px;
+
+        border-right: 1px solid $black-30;
+        padding-right: 12px;
+        margin-right: 12px;
+
+    }
+    &__title {
+        padding-top: 12px;
+
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+    }
+    &__title-underline {
+        border-bottom: 2px solid black; 
+        width: 610px;
+        margin-left: 12px;
+    }
+    &__main {
+        width: 730px;
+        margin-left: auto;
+
+        margin-right: 12px;
+    }
+    &__news-tabs {
+        display: flex;
+        padding: 24px 0;
+
+        border-right: 1px solid $black-30;
+    }
+
+    &__news-tab {
+        font-family: Proxima Nova;
+        color: #787878;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+        padding: 6px 23px;
+        border-left: 1px solid $black-30;
+
+        &--without-border-left {
+            border-left: none;
+            color: black;
+        }
+    }
+    &__employee-cards {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 32px;
+        border-right: 1px solid $black-30;
+    }
+    &__employee-cards-col {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__employee-card {
+        display: flex;
+        gap: 12px;
+        width: 328px;
+    }
+    &__employee-card-img {
+
+    }
+    &__employee-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__employee-card-name {
+        font-family: Source Serif 4;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: left;
+    }
+    &__employee-card-position {
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+    &__employee-card-social-icons {
+        display: flex;
+        gap: 10px;
+    }
+    &__article {
+        border-right: 1px solid $black-30;
+        padding: 0 12px;
+    }
+    &__article-title {
+        padding-bottom: 12px;
+        font-family: Source Serif 4;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: left;
+    }
+    &__article-description {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid $black-30;
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: left;
+
+        p {
+            padding-top: 12px;
+        }
+
+        p:first-child {
+            padding-top: 0;
+        }
+
+        &--margin-bottom-0 {
+            margin-bottom: 0;
+        }
+    }
+}

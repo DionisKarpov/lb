@@ -71,6 +71,14 @@ export default {
 			template: './src/author.html',
 			filename: 'author.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/person.html',
+			filename: 'person.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/team.html',
+			filename: 'team.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
