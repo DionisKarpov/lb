@@ -79,6 +79,10 @@ export default {
 			template: './src/team.html',
 			filename: 'team.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/main.html',
+			filename: 'main.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
