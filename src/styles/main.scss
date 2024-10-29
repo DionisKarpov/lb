@@ -16,6 +16,7 @@
         justify-content: space-between;
         align-items: center;
         border: 1px solid $black-30;
+        border-right: none;
     }
     
     &__navbar-icons {
@@ -52,6 +53,7 @@
 }
 
 .main-news-section {
+
     &__row {
         display: flex;
 
@@ -106,9 +108,11 @@
     }
     &__header {
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
         padding-bottom: 10px;
     }
+
     &__title {
         padding-top: 12px;
 
@@ -118,11 +122,13 @@
         line-height: 34px;
         text-align: left;
     }
+
     &__title-underline {
-        border-bottom: 2px solid black; 
-        width: 83%;
+        flex: 1;
         margin-left: 12px;
+        border-bottom: 1px solid black; 
     }
+
     &__news-unit {
         font-family: Source Serif Pro;
         font-size: 18px;
@@ -130,9 +136,9 @@
         line-height: 24px;
         letter-spacing: -0.02em;
         text-align: left;
-
         padding-bottom: 24px;
     }
+
     &__rates-container {
         border: 1px solid $black-30;
         margin-top: 24px;
@@ -141,6 +147,7 @@
             margin-top: 0;
         }
     }
+
     &__rates-row {
         display: flex;
         justify-content: space-between;
@@ -156,6 +163,7 @@
             max-width: 100%;
         }
     }
+
     &__rates-title {
         font-family: Proxima Nova;
         font-size: 12px;
@@ -163,18 +171,20 @@
         line-height: 12px;
         text-align: left;
     }
+    
     &__rates-nums {
         display: flex;
     }
+
     &__rates-amount {
         font-family: Proxima Nova;
         font-size: 12px;
         font-weight: 400;
         line-height: 12px;
         text-align: right;
-
         padding-right: 12px;
     }
+
     &__rates-percent {
         font-family: Proxima Nova;
         font-size: 12px;
@@ -196,6 +206,7 @@
                 vertical-align: middle;
             }
         }
+        
         &--red {
             color: #DE0B0B;
 
@@ -371,12 +382,14 @@
     margin: 0 12px;
     background: #DBDBDB;
 }
+
 .main-horizontal {
     height: 1px;
     width: auto;
-    margin: 16px 0;
+    margin: 18px 0;
     background: #DBDBDB;
 }
+
 #circle-img {
     border-radius: 50%;
 }
@@ -385,4 +398,25 @@
 }
 .w-186-img {
     width: 186px;
+}
+
+@media screen and (max-width: 1272px) {
+    
+    .main-header {
+
+        &__navbar-theme {
+            padding: 12px;
+        }
+    }
+
+    .main-news-section {
+
+        &__col {
+            
+        }
+
+        &__rates-row {
+            padding: 10px 6px;
+        }
+    }
 }

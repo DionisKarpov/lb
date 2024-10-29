@@ -141,14 +141,15 @@
   }
 
   &__links-title {
-      font-family: Proxima Nova;
-      font-size: 10px;
-      font-weight: 600;
-      line-height: 12px;
-      letter-spacing: 0.04em;
-      text-align: left;
-      color: #787878;
-      text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: Proxima Nova;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #787878;
+    text-transform: uppercase;
   }
 
   &__links-text {
