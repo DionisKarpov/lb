@@ -36,4 +36,9 @@
   &--uppercase {
     text-transform: uppercase;
   }
+
+  &--background-red {
+    background-color: red;
+    color: white;
+  }
 }

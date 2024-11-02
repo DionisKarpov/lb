@@ -51,6 +51,42 @@ export default {
 		new HtmlWebpackPlugin({
 			template: './src/index.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/article.html',
+			filename: 'article.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/opinion.html',
+			filename: 'opinion.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/topics.html',
+			filename: 'topics.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/tag.html',
+			filename: 'tag.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/author.html',
+			filename: 'author.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/person.html',
+			filename: 'person.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/team.html',
+			filename: 'team.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/main.html',
+			filename: 'main.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/main-mobile.html',
+			filename: 'main-mobile.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }

@@ -1,72 +1,53 @@
 .header {
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid $black;
-  
-  &__top,
-  &__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding-bottom: 18px;
+
+  &__title {
+      text-align: center;
+      color: $black;
+      font-family: "Source Serif 4";
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 3.2px;
   }
 
-  &__top {
-    height: 60px;
-  }
-
-  &__main-title {
-    color: $black;
-    font-family: "Source Serif 4";
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: 3.2px;
-  }
-
-  &__icons {
-    display: flex;
-    align-items: center;
+  &__navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $black-30;
+      border-right: none;
   }
   
-  &__divider {
-    height: 1px;
-    width: 100%;
-    margin: 12px 0;
-    background: $black-30;
-    border: none;
-
-    &--vertical {
-      height: 16px;
-      width: 1px;
-      min-width: 1px;
-      margin: 0 16px;
-    }
+  &__navbar-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
 
-  &__main-themes,
-  &__nav-sections {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
+  &__navbar-icon-container {
+      padding: 12px;
+      border-right: 1px solid $black-30;
   }
 
-  &__main-theme,
-  &__nav-section {
-    margin-right: 32px;
-    color: $black;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 21px;
-    white-space: nowrap;
-    cursor: pointer;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  &__navbar-themes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
   }
 
-  &__nav-section {
-    font-weight: 400; 
+  &__navbar-theme {
+      padding: 12px 20px;
+  }
+
+  &__navbar-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-left: 16px;
   }
 }

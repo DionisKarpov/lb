@@ -1,0 +1,184 @@
+.topics-news-section {
+    &__header {
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 10px;
+    }
+    &__main {
+        display: flex;
+    }
+    &__title {
+        padding-top: 12px;
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+    }
+    &__title-underline {
+        border-bottom: 1px solid black; 
+        width: 1000px;
+        margin-left: 12px;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+
+        &--w-191 {
+            width: 191px;
+        }
+        &--w-730 {
+            width: 730px;
+            padding: 0 12px;
+            margin: 0 12px;
+            border-left: 1px solid $black-30;
+            border-right: 1px solid $black-30;    
+        }
+        &--w-333 {
+            width: 333px;
+            border: 1px solid $black-30;
+            height: 500px;
+        }
+    }
+    &__col-title {
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 11px;
+    }
+    &__col-tag {
+        padding: 12px 18px;
+        border-radius: 17px;
+        background-color: #EFEFEF;
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        margin-top: 7px;
+    }
+    &__main-news {
+        padding-bottom: 24px;
+
+        display: flex;
+        gap: 24px;
+    }
+    &__main-news-img {
+        width: 300px;
+        height: 184px;
+    }
+    &__main-news-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__main-news-topic-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__main-news-topic {
+        text-transform: uppercase;
+        font-family: Proxima Nova;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: #DE0B0B;
+        padding: 2px 6px;
+
+        &--background-red {
+            background-color: #DE0B0B;
+            color: white;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 6px;  
+                height: 6px; 
+                background-color: white; 
+                border-radius: 50%; 
+                margin-left: 4px; 
+                vertical-align: middle;
+            }
+        }
+    }
+    &__main-news-title {
+        font-family: Source Serif 4;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.15000000596046448px;
+        text-align: left;
+    }
+    &__main-news_description {
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+    &__simple-news {
+        display: flex;
+        gap: 24px;
+        border-top: 1px solid $black-30;
+        padding: 18px 0;
+
+        &:first-child {
+            padding-top: 0;
+            border-top: none;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &__simple-news-img {
+        width: 192px;
+        height: 120px;
+    }
+    &__simple-news-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__simple-news-topic {
+        text-transform: uppercase;
+        font-family: Proxima Nova;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: #DE0B0B;
+    }
+    &__simple-news-title {
+        font-family: Source Serif 4;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-align: left;
+    }
+    &__simple-news-description {
+        font-family: Proxima Nova;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+}
+
+.hr-divider {
+    width: 100%; 
+    height: 250px;
+    margin: 12px 0;
+    background-color: gray;
+
+    &--margin-16 {
+        margin: 16px 0;
+    }
+}
