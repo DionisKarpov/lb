@@ -83,6 +83,10 @@ export default {
 			template: './src/main.html',
 			filename: 'main.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/main-mobile.html',
+			filename: 'main-mobile.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
