@@ -15,6 +15,7 @@
 	user-select: none;
 	outline: none;
 	cursor: pointer;
+  text-transform: uppercase;
 
   &--outlined-black {
     color: $black;

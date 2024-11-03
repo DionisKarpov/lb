@@ -1,3 +1,6 @@
+body{
+    padding: 0;
+}
 .main-mobile-header {
     border: 1px solid $black-30;
     margin-bottom: 16px;
@@ -183,6 +186,19 @@
     &--bg-gray {
         background-color: #efefef;
         padding: 6px 8px;
+
+        &--p-0 {
+            padding: 0;
+        }
+    }
+    &--bg-black {
+        background-color: #1e1e1e;
+        padding: 6px 8px;
+        color: white;
+
+        &--p-0 {
+            padding: 0;
+        }
     }
     &__row {
         display: flex;
@@ -203,12 +219,20 @@
         text-align: left;
         text-transform: uppercase;
         color: #DE0B0B;
-        ;
+        
+
+        &--background-orange {
+            padding: 1px 6px;
+            color: white;
+            background-color: #F66464;
+            width: fit-content;
+        }
 
         &--background-red {
             padding: 1px 6px;
             color: white;
-            background-color: #F66464;
+            background-color: #DE0B0B;
+            width: fit-content;
         }
 
         &--background-red-circle {
@@ -276,7 +300,13 @@
         line-height: 20px;
         letter-spacing: -0.01em;
         text-align: left;
-        color: #787878;   
+        color: #787878;  
+        &--text-black {
+            color: #1E1E1E;
+        } 
+        &--text-white {
+            color: #fff;
+        } 
     }
 
     &--w-246 {
@@ -288,6 +318,24 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+    }
+    &__img-container {
+        width: 100%; 
+    }
+    
+    &__image {
+        width: 100%; 
+        height: auto;
+        display: block; 
+
+        &--circle {
+            border-radius: 50%;
+        }
+
+        &--size-68 {
+            max-width: 68px;
+            margin-left: auto;
+        }
     }
 }
 
@@ -304,7 +352,7 @@
 }
 
 .vertical-divider {
-    width: 1px; /* Толщина разделителя */
-    height: 100%; /* Высота равна высоте родительского элемента */
-    background-color: #ccc; /* Цвет разделителя (замените на ваш цвет) */
+    width: 1px; 
+    height: 100%; 
+    background-color: #ccc;
 }
