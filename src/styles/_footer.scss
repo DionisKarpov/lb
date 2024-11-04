@@ -113,7 +113,7 @@
 
   &__logo-underline {
       border-bottom: 1px solid $black-30; 
-      width: 95%;
+      flex-grow: 1;
   }
 
   &__logo-icons {
@@ -160,4 +160,110 @@
       letter-spacing: -0.01em;
       text-align: left;
   }
+}
+
+.new-footer-mobile {
+  padding: 24px;
+  &__logo {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 50px;
+  }
+
+  &__logo-text {
+      font-family: "Source Serif 4";
+      font-size: 28px;
+      font-weight: 400;
+  }
+
+  &__logo-underline {
+      border-bottom: 1px solid $black-30; 
+      flex-grow: 1;
+  }
+
+  &__logo-icons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    &__section {
+
+    }
+  
+    &__section-title {
+      font-family: Proxima Nova;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 12px;
+      letter-spacing: 0.04em;
+      text-align: left;
+      color: #787878;
+
+      margin-bottom: 8px;
+    }
+  
+    &__section-par {
+      font-family: Proxima Nova;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      color: #1e1e1e;
+    }
+
+    &__subscribe-topic {
+      font-family: Proxima Nova;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #DE0B0B;
+    }
+
+    &__subscribe-title {
+      font-family: Source Serif 4;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+    }
+  
+    &__subscribe-input-container {
+      display: flex;
+      width: 100%;
+    }
+  
+    &__subscribe-input {
+      width: 100%;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 40px;
+  
+      &--subscribe {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
 }
