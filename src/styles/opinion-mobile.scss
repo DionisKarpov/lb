@@ -2,7 +2,7 @@ body {
     padding: 0;
 }
 
-.article-mobile-news-section {
+.opinion-mobile-news-section {
     &__row {
         display: flex;
         flex-direction: row;
@@ -184,7 +184,7 @@ body {
     
 }
 
-.article-mobile-simple-news {
+.opinion-mobile-simple-news {
     &--bg-gray {
         background-color: #efefef;
         padding: 6px 8px;
@@ -345,7 +345,7 @@ body {
     }
 }
 
-.article-mobile-news-section-footer {
+.opinion-mobile-news-section-footer {
     display: flex;
     flex-direction: column;
     gap: 18px;
