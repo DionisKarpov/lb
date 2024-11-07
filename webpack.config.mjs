@@ -99,6 +99,10 @@ export default {
 			template: './src/topics-mobile.html',
 			filename: 'topics-mobile.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/tag-mobile.html',
+			filename: 'tag-mobile.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
