@@ -7,6 +7,7 @@
             justify-content: space-between; 
         }
     }
+
     &__col {
         display: flex;
         flex-direction: column;
@@ -47,6 +48,7 @@
             text-align: center;
         }
     }
+
     &__main-img img {
         width: 732px;
         height: 320px;
@@ -56,12 +58,10 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
-        padding-bottom: 10px;
+        padding: 18px 0;
     }
 
     &__title {
-        padding-top: 12px;
-
         font-family: Proxima Nova;
         font-size: 28px;
         font-weight: 700;
@@ -76,7 +76,7 @@
     }
 
     &__news-unit {
-        font-family: Source Serif Pro;
+        font-family: "Source Serif Pro";
         font-size: 18px;
         font-weight: 600;
         line-height: 24px;
@@ -216,7 +216,7 @@
     }
     
     &__topic {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         font-family: Proxima Nova;
         font-size: 10px;
         font-weight: 600;
@@ -250,6 +250,7 @@
             letter-spacing: 0.020999999716877937px;
             text-align: left;
         }
+
         &--size-20 {
             padding-bottom: 8px;
             font-size: 19.53px;
@@ -258,33 +259,42 @@
             letter-spacing: 0.1px;
             text-align: center;            
         }
+
         &--size-26 {
             padding-bottom: 8px;
-            font-family: Source Serif 4;
+            font-family: "Source Serif 4";
             font-size: 26px;
             font-weight: 500;
             line-height: 32.5px;
             text-align: left;
         }
+
         &--size-18 {
-            font-family: Source Serif Pro;
+            font-family: "Source Serif Pro";
             font-size: 18px;
             font-weight: 600;
             line-height: 24px;
             letter-spacing: -0.02em;
             text-align: left;
         }
+
         &--italic {
-            font-family: Source Serif 4;
+            font-family: "Source Serif 4";
             font-size: 16px;
             font-style: italic;
             font-weight: 400;
             line-height: 24px;
             text-align: left;
-
             padding-bottom: 8px;
         }
+
+        &--red {
+            font-family: "Source Serif 4";
+            color: #DE0B0B;
+        }
     }
+
+
     &__time {
         padding-bottom: 8px;
         color: #F66464;
@@ -292,7 +302,7 @@
         font-size: 10px;
         font-weight: 500;
         line-height: 12px;
-        letter-spacing: 0.05000000074505806px;
+        letter-spacing: 0.05px;
         text-align: left;
     }
     &__description {
@@ -327,6 +337,10 @@
     height: auto;
     margin: 0 12px;
     background: #DBDBDB;
+
+    &--mx-26 {
+        margin: 0 26px;
+    }
 }
 
 .main-horizontal {
@@ -334,6 +348,10 @@
     width: auto;
     margin: 18px 0;
     background: #DBDBDB;
+
+    &--my-12 {
+        margin: 12px 0;
+    }
 }
 
 #circle-img {
