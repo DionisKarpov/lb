@@ -12,7 +12,7 @@ body {
         padding: 24px;
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 16px;
     }
 
     &__img-container {
@@ -107,7 +107,7 @@ body {
     }
 
     &__header {
-        margin-top: 22px;
+        margin-top: 24px;
         font-family: Proxima Nova;
         font-size: 20px;
         font-weight: 700;
@@ -146,8 +146,8 @@ body {
     }
 
     &__tag-btn {
-        padding: 12px 18px;
-        border-radius: 20px;
+        padding: 8px 18px;
+        border-radius: 17px;
         background-color: #EFEFEF;
         font-family: Proxima Nova;
         font-size: 14px;
@@ -185,6 +185,8 @@ body {
 }
 
 .article-mobile-simple-news {
+    margin-top: 2px;
+
     &--bg-gray {
         background-color: #efefef;
         padding: 6px 8px;

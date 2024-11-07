@@ -163,13 +163,13 @@
 }
 
 .new-footer-mobile {
-  margin-top: 16px;
-  padding: 24px;
+  // margin-top: 40px;
+  // padding: 18px 32px 33px;
   &__logo {
       display: flex;
       justify-content: space-between;
-
-      margin-bottom: 50px;
+      position: relative;  
+      padding: 42px 32px 18px;
   }
 
   &__logo-text {
@@ -181,18 +181,22 @@
   &__logo-underline {
       border-bottom: 1px solid $black-30; 
       flex-grow: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
   }
 
   &__logo-icons {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
   }
 
   &__row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 32px 40px;
   }
 
     &__col {
@@ -259,12 +263,12 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-top: 40px;
   
       &--subscribe {
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
+        padding: 21px 21px 33px;
       }
     }
 }
