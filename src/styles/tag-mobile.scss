@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+}
+
+.tag-mobile-news-section {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__col {
+        padding: 0 24px;
+    }
+
+    &__header {
+        display: flex; 
+        align-items: flex-end; 
+        position: relative;  
+    }
+
+    &__title {
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+        color: #1E1E1E;
+    }
+
+    &__title-underline {
+        flex-grow: 1; 
+        border-bottom: 2px solid black;
+        margin-left: 12px;
+        margin-bottom: 7px;
+    }
+
+    &__img-container {
+        width: 100%; 
+
+        &--my-18 {
+            margin: 18px 0;
+        }
+
+        &--mb-18 {
+            margin-bottom: 18px;
+        }
+    }
+    
+    &__image {
+        width: 100%; 
+        height: auto;
+        display: block; 
+    }
+}
+
+.tag-mobile-simple-news {
+    &--mb-18 {
+        margin-bottom: 18px;
+    }
+
+    &--mb-16 {
+        margin-bottom: 16px;
+    }
+
+    &--my-18 {
+        margin: 18px 0;
+    }
+
+    &--my-18-16 {
+        margin: 18px 0 16px;
+    }
+
+    &--my-16 {
+        margin: 16px 0;
+    }
+
+    &--mt-0 {
+        margin-top: 0;
+    }
+
+    &--mt-40 {
+        margin-top: 40px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col  {
+        margin-left: 16px;
+    }
+
+    &__topic {
+        color: #DE0B0B;
+        font-family: "Proxima Nova";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 12px; 
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+
+        &--mb-4 {
+            margin-bottom: 4px;
+        }
+
+        &--background-orange {
+            background:#F66464;
+            padding: 0 6px;
+            color:  #FFF;
+            text-align: center;
+            font-family: "Proxima Nova";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 12px; 
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+    }
+
+    &__title {
+        color:  #1E1E1E;
+
+        &--size-16 {
+            font-family: "Source Serif Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px; 
+            letter-spacing: -0.32px;
+            margin-top: 8px;
+        }
+
+        &--size-26 {
+            font-family: "Source Serif 4";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125%; 
+            margin-top: 4px;
+        }
+
+        &--size-18 {
+            font-family: "Source Serif Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            letter-spacing: -0.36px;
+            margin-top: 4px;
+        }
+
+        &--mb-8 {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__description {
+        color:  #787878;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.14px;
+    }
+
+    &__img-container {
+        width: 100%; 
+
+        &--size-108 {
+            max-width: 108px;
+        }
+    }
+    
+    &__image {
+        width: 100%; 
+        height: auto;
+        display: block; 
+    }
+}

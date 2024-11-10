@@ -95,6 +95,14 @@ export default {
 			template: './src/opinion-mobile.html',
 			filename: 'opinion-mobile.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/topics-mobile.html',
+			filename: 'topics-mobile.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/tag-mobile.html',
+			filename: 'tag-mobile.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
