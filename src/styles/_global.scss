@@ -1,7 +1,13 @@
+html {
+	background: #EFEFEF;
+}
+
 body {
 	width: auto;
-	max-width: 1272px;
+	max-width: 1304px;
+	padding: 0 32px !important;
 	margin: 0 auto;
+	background: white;
 
 	* {
     box-sizing: border-box;
