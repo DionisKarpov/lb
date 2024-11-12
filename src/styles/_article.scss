@@ -2,7 +2,6 @@
 
 .article-news-section {
     display: flex;
-    padding-top: 18px;
 
     &--col {
         display: flex;
@@ -25,7 +24,7 @@
 
     &__title {
         padding-bottom: 24px;
-        font-family: Source Serif Pro;
+        font-family: "Source Serif 4";
         font-size: 40px;
         font-weight: 600;
         line-height: 44px;
@@ -68,8 +67,7 @@
 
         &--vertical {
             border-left: 1px solid $black-30;
-            height: 4500px;
-            margin: 18px 12px;
+            margin: 0 12px;
         }
     }
 
@@ -86,7 +84,7 @@
     }
 
     &__tag-btn {
-        padding: 12px 18px;
+        padding: 8px 18px;
         border-radius: 20px;
         background-color: #EFEFEF;
         font-family: Proxima Nova;
@@ -165,7 +163,7 @@
 
     &__description {
         padding-top: 12px;
-        font-family: Source Serif Pro;
+        font-family: "Source Serif 4";
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
@@ -193,7 +191,7 @@
 
     &__quote-text {
         padding-bottom: 12px;
-        font-family: Source Serif 4;
+        font-family: "Source Serif 4";
         font-size: 22px;
         font-weight: 500;
         line-height: 28px;
@@ -272,7 +270,7 @@
 
     &__title {
         padding-bottom: 4px;
-        font-family: Source Serif 4;
+        font-family: "Source Serif 4";
         font-size: 18px;
         font-weight: 500;
         line-height: 24px;
