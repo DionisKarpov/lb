@@ -140,6 +140,7 @@
         text-align: left;
         text-transform: uppercase;
         color: #DE0B0B;
+        margin-bottom: 4px;
     }
 
     &__subscribe-title {
@@ -148,11 +149,13 @@
       font-weight: 500;
       line-height: 28px;
       text-align: left;
+      margin-bottom: 12px;
     }
   
     &__subscribe-input-container {
       display: flex;
       width: 100%;
+      margin-bottom: 12px;
     }
   
     &__subscribe-input {
@@ -162,7 +165,6 @@
     &__block {
       display: flex;
       align-items: center;
-      gap: 12px;
   
       &--subscribe {
         align-items: flex-start;
