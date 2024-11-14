@@ -84,14 +84,6 @@ export default {
 			filename: 'main.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/main-mobile.html',
-			filename: 'main-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/article-mobile.html',
-			filename: 'article-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
 			template: './src/opinion-mobile.html',
 			filename: 'opinion-mobile.html'
 		}),
