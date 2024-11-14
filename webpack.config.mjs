@@ -103,6 +103,18 @@ export default {
 			template: './src/tag-mobile.html',
 			filename: 'tag-mobile.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/author-mobile.html',
+			filename: 'author-mobile.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/person-mobile.html',
+			filename: 'person-mobile.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/team-mobile.html',
+			filename: 'team-mobile.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }

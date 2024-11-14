@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+}
+
+.team-mobile-news-section {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__col {
+        padding: 0 24px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        &--mb-12 {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__description {
+        color:  #1E1E1E;
+        font-family: "Source Serif Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px; 
+        letter-spacing: -0.32px;
+
+        &--mb-36 {
+            margin-bottom: 36px;
+        }
+
+        &--size-14 {
+            color:  #1E1E1E;
+            font-family: "Proxima Nova";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; 
+            letter-spacing: -0.14px;
+
+            margin: 12px 0;
+        }
+    }
+
+    &__header {
+        display: flex; 
+        align-items: flex-end; 
+        position: relative;  
+
+        &--mb-36 {
+            margin-bottom: 36px;
+        }
+
+        &--py-18-24 {
+            padding: 18px 0 24px;
+        }
+    }
+
+    &__title {
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+        color: #1E1E1E;
+    }
+
+    &__title-underline {
+        flex-grow: 1; 
+        border-bottom: 2px solid black;
+        margin-left: 12px;
+        margin-bottom: 7px;
+    }
+
+    &__tabs-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tab {
+        color:  #787878;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px; 
+        &--bold {
+            color: #1E1E1E;
+            font-family: "Proxima Nova";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 18px; 
+        }
+    }
+
+    &__unit {
+        color:  #1E1E1E;
+        font-family: "Source Serif 4";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: 0.1px;
+
+        margin-right: 24px;
+
+        &--mt-12 {
+            margin-top: 12px;
+        }
+    }
+
+    &__arrow-icon {
+        border: 1px solid #787878;
+        padding: 8px 5px;
+
+        &--rotate-180 {
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+.team-mobile-people-card {
+    display: flex;
+    margin: 24px 0;
+
+
+    &--mb-36 {
+        margin-bottom: 36px;
+    }
+
+    &--pb-18 {
+        margin-bottom: 18px;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__img-container {
+        max-width: 84px; 
+        margin-right: 12px;
+    }
+    
+    &__image {
+        width: 100%; 
+        height: auto;
+        display: block; 
+    }
+
+    &__name {
+        color: #1E1E1E;
+        font-family: "Source Serif 4";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: 0.1px;
+
+        margin-bottom: 4px;
+    }
+
+    &__position {
+        color: #1E1E1E;
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        letter-spacing: -0.14px;
+
+        margin-bottom: 12px;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 8px;
+    }
+}
