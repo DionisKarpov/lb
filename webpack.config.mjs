@@ -115,6 +115,10 @@ export default {
 			template: './src/team-mobile.html',
 			filename: 'team-mobile.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/media-kit.html',
+			filename: 'media-kit.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }
