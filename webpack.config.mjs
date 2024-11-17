@@ -84,38 +84,6 @@ export default {
 			filename: 'main.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/main-mobile.html',
-			filename: 'main-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/article-mobile.html',
-			filename: 'article-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/opinion-mobile.html',
-			filename: 'opinion-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/topics-mobile.html',
-			filename: 'topics-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/tag-mobile.html',
-			filename: 'tag-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/author-mobile.html',
-			filename: 'author-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/person-mobile.html',
-			filename: 'person-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/team-mobile.html',
-			filename: 'team-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
 			template: './src/media-kit.html',
 			filename: 'media-kit.html'
 		}),
