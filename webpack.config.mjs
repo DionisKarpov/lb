@@ -83,30 +83,6 @@ export default {
 			template: './src/main.html',
 			filename: 'main.html'
 		}),
-		new HtmlWebpackPlugin({
-			template: './src/opinion-mobile.html',
-			filename: 'opinion-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/topics-mobile.html',
-			filename: 'topics-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/tag-mobile.html',
-			filename: 'tag-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/author-mobile.html',
-			filename: 'author-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/person-mobile.html',
-			filename: 'person-mobile.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: './src/team-mobile.html',
-			filename: 'team-mobile.html'
-		}),
 		new MiniCssExtractPlugin()
 	]
 }
