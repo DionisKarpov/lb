@@ -18,8 +18,8 @@
 
     &__audience-row {
         display: flex;
-        justify-content: space-between;
-        margin: 0 125px;
+        justify-content: space-around;
+        margin: 0 auto;
     }
 
     &__audience-col {
@@ -80,6 +80,7 @@
     &__group-card-container {
         display: flex;
         justify-content: space-between;
+        gap: 16px;
     }
 
     &__group-card-title {
@@ -109,6 +110,7 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%),
         url('../images/media-kit/group-card.png');    
         background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -667,3 +669,24 @@
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .media-kit-main {
+
+        &__audience-row {
+            flex-direction: column;
+            gap: 60px;
+        }
+    }    
+    
+    .header {
+
+        &__support-button {
+            display: none;
+        }
+
+        &__auth-button {
+            display: none;
+        }
+    }
+}
