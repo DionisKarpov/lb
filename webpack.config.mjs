@@ -83,6 +83,10 @@ export default {
 			template: './src/main.html',
 			filename: 'main.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: './src/media-kit.html',
+			filename: 'media-kit.html'
+		}),
 		new MiniCssExtractPlugin()
 	]
 }

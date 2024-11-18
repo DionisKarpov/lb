@@ -79,6 +79,11 @@
       gap: 16px;
       padding-left: 16px;
   }
+
+  &__navbar-social {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .mobile-header {

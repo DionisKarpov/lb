@@ -1,0 +1,11 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow-right.svg" clip-path="url(#clip0_154_2230)">
+<path id="Vector" d="M25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0Z" fill="white"/>
+<path id="Vector 4 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M33.6187 18.8813C33.9604 19.223 33.9604 19.777 33.6187 20.1187L22.6187 31.1187C22.2897 31.4478 21.7606 31.4617 21.4147 31.1504L16.4147 26.6504C16.0555 26.3271 16.0263 25.7739 16.3496 25.4147C16.6729 25.0555 17.2262 25.0263 17.5854 25.3496L21.9683 29.2943L32.3813 18.8813C32.723 18.5396 33.277 18.5396 33.6187 18.8813Z" fill="#1E1E1E"/>
+</g>
+<defs>
+<clipPath id="clip0_154_2230">
+<rect width="50" height="50" fill="white" transform="matrix(-1 0 0 -1 50 50)"/>
+</clipPath>
+</defs>
+</svg>
