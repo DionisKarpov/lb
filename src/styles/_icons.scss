@@ -21,6 +21,14 @@
     }
   }
 
+  &--arrow-right-gray {
+
+    &:before {
+      background: url('../images/icons/arrow-right.svg') center no-repeat;
+      background-size: contain;
+    }
+  }
+
   &--burger {
 
     &:before {
