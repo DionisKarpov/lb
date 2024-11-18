@@ -30,14 +30,32 @@
     }
   }
 
+  &--18px {
+    width: 18px;
+    height: 18px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
   &--20px {
-      
+    width: 20px;
+    height: 20px;
+
+    &::before {
       width: 20px;
       height: 20px;
-  
-      &::before {
-        width: 20px;
-        height: 20px;
+    }
+  }
+
+  &--close-white {
+      
+      &:before {
+        background-image: url('../images/icons/close-white.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
       }
   }
 }

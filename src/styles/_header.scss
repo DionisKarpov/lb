@@ -19,6 +19,17 @@
     background: $white;
   }
 
+  &__menu {
+    position: relative;
+
+    &--opened {
+
+        .context-menu {
+            display: block;
+        }
+    }
+  }
+
   &__title {
       text-align: center;
       color: $black;
@@ -101,5 +112,35 @@
         font-family: "Source Serif 4";
         font-size: 20px;
         font-weight: 700;
+    }
+}
+
+.context-menu {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    display: none;
+    width: 288px;
+    padding: 32px 0;
+    background: $black-100;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+
+    &__title {
+        color: $white;
+        font-family: "Source Serif 4";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__search {
+        margin: 16px 0;
+        padding: 0 28px;
     }
 }
