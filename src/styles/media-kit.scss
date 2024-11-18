@@ -673,10 +673,88 @@
 @media screen and (max-width: 768px) {
     .media-kit-main {
 
+        &__audience {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__group {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: #EFEFEF;
+        }
+
+        &__persons {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__themes {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__mission {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__format {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__projects {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__clients {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__values {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
         &__audience-row {
             flex-direction: column;
             gap: 60px;
         }
+
+        &__group-card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__persons-container {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+        }
+        
     }    
     
     .header {
@@ -688,5 +766,24 @@
         &__auth-button {
             display: none;
         }
+
+        &__navbar-social {
+            display: none;
+        }
+
+        &__navbar-search-icon {
+            display: none;
+        }
+
+        &__navbar-icon-container {
+            border-right: none;
+        }
+
+    }
+
+    .media-kit-vertical-divider {
+        width: 1px; 
+        align-self: stretch; 
+        background-color: $black-30;        
     }
 }
