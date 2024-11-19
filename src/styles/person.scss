@@ -15,7 +15,7 @@
     }
     &__title-underline {
         border-bottom: 1px solid black; 
-        width: 1020px;
+        width: 100%;
         margin-left: 12px;
     }
     &__col {
@@ -434,4 +434,12 @@
         visibility: visible;
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width: 1304px) {
+    .person-news-section__person-name {
+        font-size: 24px;
+        line-height: 32px;
+    }    
 }

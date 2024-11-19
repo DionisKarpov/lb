@@ -1,5 +1,9 @@
 html {
 	background: #EFEFEF;
+
+	@media screen and (max-width: 1304px) {
+		background: $white;	
+	}
 }
 
 body {
@@ -15,6 +19,8 @@ body {
     padding: 0;
     font-family: 'Proxima Nova', sans-serif;
 	}
+
+	
 
 	@media screen and (max-width: 768px) {
 		padding: 0 !important;
@@ -126,5 +132,41 @@ body {
 	body {
 		padding: 0 24px;
 		width: auto;	
+	}
+}
+
+.rectangle-vertical {
+	width: 331px;
+	background-color: #EFEFEF;
+
+	&--h-930 {
+			height: 930px;
+	}
+
+	&--h-701 {
+			height: 701px;
+	}
+
+	&--margin-bottom {
+			margin-bottom: 36px;
+	}
+
+	@media screen and (max-width: 1304px) {
+		max-width: 240px;
+	}
+
+	@media screen and (max-width: 1000px) {
+		max-width: 180px;
+	}
+}
+
+.rectangle-hr {
+	margin: 24px auto;
+	width: 564px;
+	height: 144px;
+	background-color: #EFEFEF;
+
+	@media screen and (max-width: 1000px) {
+		width: 400px;
 	}
 }

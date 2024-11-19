@@ -5,6 +5,17 @@
   font-weight: 400;
   line-height: 21px;
 
+  input {
+    background: var(--white);
+    color: var(--black);
+    letter-spacing: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    outline: none;
+  }
+
   &--outlined-black {
     color: $black;
     border: 1px solid $gray-2;
