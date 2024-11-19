@@ -216,7 +216,7 @@
     }
 
     &__mission-content {
-        width: 572px;
+        max-width: 572px;
         margin-top: 92px;
     }
 
@@ -256,7 +256,9 @@
     }
 
     &__mission-img {
-
+        width: 100%; 
+        height: auto;
+        display: block; 
     }
 
     &__format {
@@ -283,7 +285,7 @@
     
     &__format-card {
         display: flex;
-        width: 620px;
+        max-width: 620px;
         padding-bottom: 16px;
         flex-direction: column;
         align-items: flex-start;
@@ -399,7 +401,9 @@
     }
 
     &__projects-card-img {
-        width: -webkit-fill-available;
+        width: 100%; 
+        height: auto;
+        display: block; 
     }
 
     &__projects-card-title {
@@ -501,6 +505,11 @@
         row-gap: 40px;
         column-gap: 55px;
         padding: 0 51px;
+    }
+
+    &__clients-icon {
+        max-width: 100%;
+        height: auto;
     }
 
     &__values {
@@ -673,9 +682,170 @@
 @media screen and (max-width: 768px) {
     .media-kit-main {
 
+        &__audience {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__group {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: #EFEFEF;
+        }
+
+        &__persons {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__themes {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+            background-color: #EFEFEF;
+        }
+
+        &__mission {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+
+            flex-direction: column;
+        }
+
+        &__format {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+            background-color: #EFEFEF;
+        }
+
+        &__projects {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__clients {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        &__values {
+            padding: 60px 24px;
+            margin-bottom: 0;
+            margin-top: 0;
+            background-color: #EFEFEF;
+        }
+
         &__audience-row {
             flex-direction: column;
             gap: 60px;
         }
-    }    
-}
+
+        &__group-card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__persons-container {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+        }
+        
+        &__themes-container {
+            flex-direction: column;
+        }
+
+        &__mission-content {
+            margin-top: 0;
+        }
+
+        &__mission-description:last-child {
+            margin-bottom: 35px;
+        }
+
+        &__format-card {
+            background-color: #FFF;
+        }
+
+        &__format-cards-container {
+            row-gap: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__projects-title {
+            display: none;
+        }
+
+        &__projects-nav {
+            flex-direction: column;
+            row-gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__projects-nav-arrows {
+            justify-content: flex-end;
+        }
+
+        &__projects-card {
+            &--bio {
+                display: none;
+            }
+        }
+
+        &__clients-icons-container {
+            row-gap: 30px;
+            column-gap: 35px;
+            padding: 0;
+        }
+
+        &__clients-icon img {
+            width: 85px;
+        }
+
+        &__values-container {
+            flex-direction: column;
+            row-gap: 24px;
+        }
+    }  
+    
+    .header {
+
+        &__support-button {
+            display: none;
+        }
+
+        &__auth-button {
+            display: none;
+        }
+
+        &__navbar-social {
+            display: none;
+        }
+
+        &__navbar-search-icon {
+            display: none;
+        }
+
+        &__navbar-icon-container {
+            border-right: none;
+        }
+
+    }
+
+    .media-kit-vertical-divider {
+        width: 1px; 
+        align-self: stretch; 
+        background-color: $black-30;        
+    }
+}    
