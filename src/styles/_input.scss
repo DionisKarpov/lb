@@ -52,4 +52,26 @@
   &--radius-24 {
     border-radius: 24px;
   }
+
+  &--media-kit {
+    background-color: #efefef;
+    border: none;
+    padding: 21px 20px;
+    height: 66px;
+
+    font-family: "Source Serif Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: -0.36px;
+
+    &::placeholder {
+      color: #787878;
+    }
+
+    &--textarea {
+      height: 200px;
+    }
+  }
 }
