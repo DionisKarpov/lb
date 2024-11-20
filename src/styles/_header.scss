@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   background: $white;
   padding-bottom: 12px;
   margin-bottom: 18px;
@@ -125,6 +125,7 @@
     position: absolute;
     top: 48px;
     left: 0;
+    z-index: 100;
     display: none;
     width: 288px;
     padding: 32px 0;

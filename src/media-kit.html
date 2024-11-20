@@ -17,8 +17,48 @@
 		</div>
 		<div class="header__navbar">
 			<div class="header__navbar-icons">
-				<div class="header__navbar-icon-container">
+				<div class="header__navbar-icon-container header__menu">
 					<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
+
+                    <div class="context-menu">
+                        <div class="context-menu__buttons">
+                            <button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
+                            <button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+                        </div>
+                        <div class="context-menu__top">
+                            <div class="context-menu__title">ЛБ.</div>
+                            <div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+                        </div>
+                        <div class="context-menu__search">
+                            <div class="context-menu__search-icon icon icon--search"></div>
+                            <div class="input input--outlined-white input--height-24 input--radius-24">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="context-menu__items">
+                            <div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                        </div>
+                    </div>
 				</div>
                 <div class="media-kit-vertical-divider"></div>
 				<div class="header__divider"></div>
@@ -27,7 +67,7 @@
 				</div>
 				<div class="header__divider"></div>
 			</div>
-			<div class="header__navbar-btns">
+			<div class="header__navbar-btns pl--0">
                 <button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
 				<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
 			</div>
@@ -38,26 +78,11 @@
             </div>
 		</div>
 	</header>
-    <!-- <div class="media-kit-hero">
-        <div class="media-kit-hero__block media-kit-hero__block--red">
-            <div class="media-kit-hero__block-text">
-                LB media: новини України
-            </div>
-            <div class="media-kit-hero__block-text">
-                Дорослий погляд на світ
-            </div>
-            <div class="media-kit-hero__button">
-                <button>Замовити проєкт</button>
-            </div>
-        </div>
-        <div class="media-kit-hero__block">
-            <img class="media-kit-hero__block-img" src="images/media-kit/tower-kyiv.png" alt="tower">
-        </div>
-    </div> -->
 	<main>
         <div class="media-kit-main">
+
             <div class="media-kit-main__hero">
-                <div class="media-kit-main__hero-block media-kit-main__hero-block--red">
+                <div class="media-kit-main__hero-block media-kit-main__hero-block--info">
                     <div class="media-kit-main__hero-block-content">
                         <div class="media-kit-main__hero-block-title">
                             LB media: новини України
@@ -70,10 +95,11 @@
                         </button>
                     </div>
                 </div>
-                <div class="media-kit-main__hero-block">
+                <div class="media-kit-main__hero-block media-kit-main__hero-block--image">
                     <img class="media-kit-main__hero-block-img" src="images/media-kit/tower-kyiv.png" alt="tower">
                 </div>
             </div>
+
             <div class="media-kit-main__audience">
                 <div class="media-kit-main__audience-title">
                     Наша аудиторія
