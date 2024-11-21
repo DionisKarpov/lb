@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+        </style>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-    <style>
-		@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-	</style>
-</head>
-
-<body>
-    <div class="team-desktop">
+    <body>
         <header class="header">
             <div class="header__title">
                 ЛБ.
             </div>
             <div class="header__navbar">
                 <div class="header__navbar-icons">
-                    <div class="header__navbar-icon-container">
+                    <div class="header__navbar-icon-container header__menu">
                         <div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
+    
+                        <div class="context-menu">
+                            <div class="context-menu__buttons">
+                                <button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
+                                <button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+                            </div>
+                            <div class="context-menu__top">
+                                <div class="context-menu__title">ЛБ.</div>
+                                <div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+                            </div>
+                            <div class="context-menu__search">
+                                <div class="context-menu__search-icon icon icon--search"></div>
+                                <div class="input input--outlined-white input--height-24 input--radius-24">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="context-menu__items">
+                                <div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__divider"></div>
-                    <div class="header__navbar-icon-container">
+                    <div class="header__navbar-icon-container header__search">
                         <div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
                     </div>
                     <div class="header__divider"></div>
@@ -43,261 +81,530 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="team-section">
-                <div class="team-section__col team-section__col--w-948">
-                    <div class="team-section__main-article">
+
+        <div class="team-desktop">
+            <main>
+                <div class="team-section">
+                    <div class="team-section__col team-section__col--w-948">
+                        <div class="team-section__main-article">
+                            LB було засновано в липні 2003 року. Відтоді журнал є лідером у хроніці розвитку промисловості в Америці та в усьому світі. У жодному іншому періоді історії людства планета не зазнавала настільки драматичних чи швидких змін. Журнал висвітлював народження та смерть десятків тисяч компаній; створення нових галузей, таких як автомобільна, аерокосмічна, нафтова та розважальна; дві світові війни та численні інші конфлікти; глибокий прогрес науки і техніки; революційні громадські рухи; зростання споживчої економіки вУкраїні та за кордоном; і поривчастий хід глобалізації.
+                        </div>
+                        <div class="team-section__header">
+                            <div class="team-section__title">
+                                Наша команда
+                            </div>
+                            <div class="team-section__title-underline"></div>
+                        </div>
+                        <div class="team-section__main">
+                            <div class="team-section__news-tabs">
+                                <div class="team-section__news-tab team-section__news-tab--without-border-left">Редакція новин</div>
+                                <div class="team-section__news-tab">Думка</div>
+                                <div class="team-section__news-tab">Виконавці</div>
+                            </div>
+                            <div class="team-section__employee-cards">
+                                <div class="team-section__employee-cards-col">
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-section__employee-cards-col">
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-section__news-tabs">
+                                <div class="team-section__news-tab team-section__news-tab--without-border-left">Інші лідери новин</div>
+                            </div>
+                            <div class="team-section__employee-cards">
+                                <div class="team-section__employee-cards-col">
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-section__employee-cards-col">
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-section__employee-card">
+                                        <div class="team-section__employee-card-img">
+                                            <img src="images/images/yavtikovich.png" alt="card-img">
+                                        </div>
+                                        <div class="team-section__employee-card-container">
+                                            <div class="team-section__employee-card-name">Віктор Явтікович</div>
+                                            <div class="team-section__employee-card-position">Заступник головного редактора</div>
+                                            <div class="team-section__employee-card-social-icons">
+                                                <img src="images/images/mail.svg" alt="social-icon">
+                                                <img src="images/images/twitter.svg" alt="social-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-section__article">
+                                <div class="team-section__article-title">
+                                    Місія новин
+                                </div>
+                                <div class="team-section__article-description">
+                                    <p>Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.</p>
+                                    <p>Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.</p>
+                                    <p>Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.</p>
+                                    <p>Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.</p>
+                                </div>
+                                <div class="team-section__article-title">
+                                    Стандарти та етика відділу новин
+                                </div>
+                                <div class="team-section__article-description">
+                                    <p>Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.</p>
+                                    <p>Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.</p>
+                                    <p>Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.</p>
+                                    <p>Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.</p>
+                                </div>
+                                <div class="team-section__article-title">
+                                    Журналістика без сюрпризів
+                                </div>
+                                <div class="team-section__article-description">
+                                    Ми дотримуємося давньої спадщини журналістики «без сюрпризів». Це означає виконання найвищого рівня належної обачності для оцінки достовірності наших джерел і надання можливості для повного та чесного коментаря всім сторонам, залученим до статті, до її публікації. Ми ніколи не переслідуємо нічого іншого, окрім непохитної відданості правді, тому ми прагнемо якомога точніше приписувати всі спірні факти відповідним сторонам і писати в нейтральному декларативному тоні.                        </div>
+                            </div>
+                        </div>
+                        <div class="team-section__header">
+                            <div class="team-section__title">
+                                Поширені запитання
+                            </div>
+                            <div class="team-section__title-underline"></div>
+                        </div>
+                        <div class="team-section__main">
+                            <div class="team-section__article">
+                                <div class="team-section__article-title">
+                                    1. Яка структура власності журналу?
+                                </div>
+                                <div class="team-section__article-description">
+                                    <p>Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.</p>
+                                    <p>Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.</p>
+                                    <p>Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.</p>
+                                    <p>Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.</p>
+                                </div>
+                                <div class="team-section__article-title">
+                                    2. Як Журнал уникає конфлікту інтересів з рекламодавцями чи спонсорами?
+                                </div>
+                                <div class="team-section__article-description">
+                                    <p>Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.</p>
+                                    <p>Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.</p>
+                                    <p>Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.</p>
+                                    <p>Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.</p>
+                                </div>
+                                <div class="team-section__article-title">
+                                    3. Наскільки великий штат новин Журналу і де вони розміщені?
+                                </div>
+                                <div class="team-section__article-description"></div>
+                                <div class="team-section__article-title">
+                                    4. Як я можу зв'язатися з редакцією?
+                                </div>
+                                <div class="team-section__article-description team-section__article-description--margin-bottom-0"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="team-section__col team-section__col--w-346"></div>
+            </main>
+        </div>
+        
+        <div class="team-mobile">
+            <main class="team-mobile-news-section">
+                <div class="team-mobile-news-section__col">
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--mb-36">
                         LB було засновано в липні 2003 року. Відтоді журнал є лідером у хроніці розвитку промисловості в Америці та в усьому світі. У жодному іншому періоді історії людства планета не зазнавала настільки драматичних чи швидких змін. Журнал висвітлював народження та смерть десятків тисяч компаній; створення нових галузей, таких як автомобільна, аерокосмічна, нафтова та розважальна; дві світові війни та численні інші конфлікти; глибокий прогрес науки і техніки; революційні громадські рухи; зростання споживчої економіки вУкраїні та за кордоном; і поривчастий хід глобалізації.
                     </div>
-                    <div class="team-section__header">
-                        <div class="team-section__title">
-                            Наша команда
-                        </div>
-                        <div class="team-section__title-underline"></div>
+                    <div class="team-mobile-news-section__header team-mobile-news-section__header--mb-36">
+                        <span class="team-mobile-news-section__title">Наша команда</span>
+                        <span class="team-mobile-news-section__title-underline"></span>
                     </div>
-                    <div class="team-section__main">
-                        <div class="team-section__news-tabs">
-                            <div class="team-section__news-tab team-section__news-tab--without-border-left">Редакція новин</div>
-                            <div class="team-section__news-tab">Думка</div>
-                            <div class="team-section__news-tab">Виконавці</div>
+                    <div class="team-mobile-news-section__tabs-container">
+                        <div class="team-mobile-news-section__tab team-mobile-news-section__tab--bold">Редакція новин</div>
+                        <div class="vertical-divider"></div>
+                        <div class="team-mobile-news-section__tab">Думка</div>
+                        <div class="vertical-divider"></div>
+                        <div class="team-mobile-news-section__tab">Виконавці</div>
+                    </div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
                         </div>
-                        <div class="team-section__employee-cards">
-                            <div class="team-section__employee-cards-col">
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
                             </div>
-                            <div class="team-section__employee-cards-col">
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-section__news-tabs">
-                            <div class="team-section__news-tab team-section__news-tab--without-border-left">Інші лідери новин</div>
-                        </div>
-                        <div class="team-section__employee-cards">
-                            <div class="team-section__employee-cards-col">
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-section__employee-cards-col">
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-section__employee-card">
-                                    <div class="team-section__employee-card-img">
-                                        <img src="images/images/yavtikovich.png" alt="card-img">
-                                    </div>
-                                    <div class="team-section__employee-card-container">
-                                        <div class="team-section__employee-card-name">Віктор Явтікович</div>
-                                        <div class="team-section__employee-card-position">Заступник головного редактора</div>
-                                        <div class="team-section__employee-card-social-icons">
-                                            <img src="images/images/mail.svg" alt="social-icon">
-                                            <img src="images/images/twitter.svg" alt="social-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-section__article">
-                            <div class="team-section__article-title">
-                                Місія новин
-                            </div>
-                            <div class="team-section__article-description">
-                                <p>Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.</p>
-                                <p>Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.</p>
-                                <p>Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.</p>
-                                <p>Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.</p>
-                            </div>
-                            <div class="team-section__article-title">
-                                Стандарти та етика відділу новин
-                            </div>
-                            <div class="team-section__article-description">
-                                <p>Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.</p>
-                                <p>Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.</p>
-                                <p>Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.</p>
-                                <p>Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.</p>
-                            </div>
-                            <div class="team-section__article-title">
-                                Журналістика без сюрпризів
-                            </div>
-                            <div class="team-section__article-description">
-                                Ми дотримуємося давньої спадщини журналістики «без сюрпризів». Це означає виконання найвищого рівня належної обачності для оцінки достовірності наших джерел і надання можливості для повного та чесного коментаря всім сторонам, залученим до статті, до її публікації. Ми ніколи не переслідуємо нічого іншого, окрім непохитної відданості правді, тому ми прагнемо якомога точніше приписувати всі спірні факти відповідним сторонам і писати в нейтральному декларативному тоні.                        </div>
                         </div>
                     </div>
-                    <div class="team-section__header">
-                        <div class="team-section__title">
-                            Поширені запитання
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
                         </div>
-                        <div class="team-section__title-underline"></div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team-section__main">
-                        <div class="team-section__article">
-                            <div class="team-section__article-title">
-                                1. Яка структура власності журналу?
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
                             </div>
-                            <div class="team-section__article-description">
-                                <p>Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.</p>
-                                <p>Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.</p>
-                                <p>Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.</p>
-                                <p>Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.</p>
-                            </div>
-                            <div class="team-section__article-title">
-                                2. Як Журнал уникає конфлікту інтересів з рекламодавцями чи спонсорами?
-                            </div>
-                            <div class="team-section__article-description">
-                                <p>Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.</p>
-                                <p>Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.</p>
-                                <p>Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.</p>
-                                <p>Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.</p>
-                            </div>
-                            <div class="team-section__article-title">
-                                3. Наскільки великий штат новин Журналу і де вони розміщені?
-                            </div>
-                            <div class="team-section__article-description"></div>
-                            <div class="team-section__article-title">
-                                4. Як я можу зв'язатися з редакцією?
-                            </div>
-                            <div class="team-section__article-description team-section__article-description--margin-bottom-0"></div>
+                        </div>
                     </div>
-                    
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card team-mobile-people-card--mb-36">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-news-section__tab team-mobile-news-section__tab--bold">Інші лідери новин</div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-mobile-people-card team-mobile-people-card--pb-18">
+                        <div class="team-mobile-people-card__img-container">
+                            <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
+                        </div>
+                        <div class="team-mobile-people-card__col">
+                            <div class="team-mobile-people-card__name">Наталя Вітренко</div>
+                            <div class="team-mobile-people-card__position">Головний редактор</div>
+                            <div class="team-mobile-people-card__icons">
+                                <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
+                                <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-section__col team-section__col--w-346"></div>
-        </main>
+                <div class="topics-gray-rectangle"></div>
+                <div class="team-mobile-news-section__col">
+                    <div class="team-mobile-news-section__unit">
+                        Місія новин
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії. 
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="team-mobile-news-section__unit team-mobile-news-section__unit--mt-12">
+                        Стандарти та етика відділу новин
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="team-mobile-news-section__unit team-mobile-news-section__unit--mt-12">
+                        Журналістика без сюрпризів
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми дотримуємося давньої спадщини журналістики «без сюрпризів». Це означає виконання найвищого рівня належної обачності для оцінки достовірності наших джерел і надання можливості для повного та чесного коментаря всім сторонам, залученим до статті, до її публікації. Ми ніколи не переслідуємо нічого іншого, окрім непохитної відданості правді, тому ми прагнемо якомога точніше приписувати всі спірні факти відповідним сторонам і писати в нейтральному декларативному тоні.
+                    </div>
+                    <div class="horizontal-divider horizontal-divider--mb-18"></div>
+                </div>
+                <div class="topics-gray-rectangle"></div>
+                <div class="team-mobile-news-section__col">
+                    <div class="team-mobile-news-section__header team-mobile-news-section__header--py-18-24">
+                        <span class="team-mobile-news-section__title">Поширені запитання</span>
+                        <span class="team-mobile-news-section__title-underline"></span>
+                    </div>
+                    <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
+                        <div class="team-mobile-news-section__unit">
+                            1. Яка структура власності журналу?
+                        </div>
+                        <div class="team-mobile-news-section__img-container">
+                            <img class="team-mobile-news-section__arrow-icon" src="images/icons/arrow-up-gray.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.
+                    </div>
+                    <div class="horizontal-divider horizontal-divider--my-24"></div>
+                    <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
+                        <div class="team-mobile-news-section__unit">
+                            2. Як Журнал уникає конфлікту інтересів з рекламодавцями чи спонсорами?
+                        </div>
+                        <div class="team-mobile-news-section__img-container">
+                            <img class="team-mobile-news-section__arrow-icon" src="images/icons/arrow-up-gray.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
+                        Відділ новин працює незалежно від корпоративних команд, які займаються маркетингом, продажем реклами та загальними бізнес-операціями. Ця незалежність гарантує, що висвітлення журналу залишається вільним від зовнішнього впливу чи комерційних міркувань. Це зобов’язання так само давнє, як і сам Журнал, який зазначено у першому випуску: «Фундаментальні принципи ведення нашого новинного бізнесу такі: отримувати новини, публікувати їх миттєво, будь то оповіщення чи ведмідь. Жоден оператор не контролює і не може контролювати наші новини. Ми пишаємося довірою, виявленою в нашій роботі. Ми хочемо зробити його кращим. І ми хочемо, щоб новини завжди були чесними, розумними та неупередженими».
+                    </div>
+                    <div class="horizontal-divider horizontal-divider--my-24"></div>
+                    <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
+                        <div class="team-mobile-news-section__unit">
+                            3. Наскільки великий штат новин Журналу і де вони розміщені?
+                        </div>
+                        <div class="team-mobile-news-section__img-container">
+                            <img class="team-mobile-news-section__arrow-icon team-mobile-news-section__arrow-icon--rotate-180" src="images/icons/arrow-up-gray.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="horizontal-divider horizontal-divider--my-24"></div>
+                    <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
+                        <div class="team-mobile-news-section__unit">
+                            4. Як я можу зв'язатися з редакцією?
+                        </div>
+                        <div class="team-mobile-news-section__img-container">
+                            <img class="team-mobile-news-section__arrow-icon team-mobile-news-section__arrow-icon--rotate-180" src="images/icons/arrow-up-gray.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="horizontal-divider horizontal-divider--my-24-18"></div>
+                </div>
+                <div class="topics-gray-rectangle"></div>
+            </main>
+        </div>
         <footer class="footer">
             <div class="footer__logo">
                 <div class="footer__logo-text">ЛБ.</div>
@@ -336,8 +643,6 @@
                             <div class="footer__links-text">Nexto.pl</div>
                             <div class="footer__links-text">Kancelarierp.pl</div>
                         </div>
-                    </div>
-                    <div class="footer__links">
                         <div class="footer__links-col">
                             <div class="footer__links-title">карта сайту</div>
                         </div>
@@ -348,345 +653,14 @@
                 </div>
                 <div class="footer__advertising-section"></div>
             </div>
-        </footer>
-    </div>
-	
-    <div class="team-mobile">
-        <header class="mobile-header">
-            <div class="mobile-header__navbar">
-                <div class="mobile-header__navbar-icon-container">
-                    <div class="mobile-header__navbar-menu-icon icon icon--burger pointer"></div>
-                </div>
-                <div class="mobile-header__divider"></div>
-        
-                <div class="mobile-header__title">
-                    ЛБ.
-                </div>
-            </div>
-        </header>
-    
-        <main class="team-mobile-news-section">
-            <div class="team-mobile-news-section__col">
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--mb-36">
-                    LB було засновано в липні 2003 року. Відтоді журнал є лідером у хроніці розвитку промисловості в Америці та в усьому світі. У жодному іншому періоді історії людства планета не зазнавала настільки драматичних чи швидких змін. Журнал висвітлював народження та смерть десятків тисяч компаній; створення нових галузей, таких як автомобільна, аерокосмічна, нафтова та розважальна; дві світові війни та численні інші конфлікти; глибокий прогрес науки і техніки; революційні громадські рухи; зростання споживчої економіки вУкраїні та за кордоном; і поривчастий хід глобалізації.
-                </div>
-                <div class="team-mobile-news-section__header team-mobile-news-section__header--mb-36">
-                    <span class="team-mobile-news-section__title">Наша команда</span>
-                    <span class="team-mobile-news-section__title-underline"></span>
-                </div>
-                <div class="team-mobile-news-section__tabs-container">
-                    <div class="team-mobile-news-section__tab team-mobile-news-section__tab--bold">Редакція новин</div>
-                    <div class="vertical-divider"></div>
-                    <div class="team-mobile-news-section__tab">Думка</div>
-                    <div class="vertical-divider"></div>
-                    <div class="team-mobile-news-section__tab">Виконавці</div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card team-mobile-people-card--mb-36">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-news-section__tab team-mobile-news-section__tab--bold">Інші лідери новин</div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-mobile-people-card team-mobile-people-card--pb-18">
-                    <div class="team-mobile-people-card__img-container">
-                        <img class="team-mobile-people-card__image" src="images/images/yavtikovich.png" alt="yanik">
-                    </div>
-                    <div class="team-mobile-people-card__col">
-                        <div class="team-mobile-people-card__name">Наталя Вітренко</div>
-                        <div class="team-mobile-people-card__position">Головний редактор</div>
-                        <div class="team-mobile-people-card__icons">
-                            <img class="team-mobile-people-card__icon" src="images/icons/mail.svg"></img>
-                            <img class="team-mobile-people-card__icon" src="images/icons/x.svg"></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="topics-gray-rectangle"></div>
-            <div class="team-mobile-news-section__col">
-                <div class="team-mobile-news-section__unit">
-                    Місія новин
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії. 
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.
-                </div>
-                <div class="horizontal-divider"></div>
-                <div class="team-mobile-news-section__unit team-mobile-news-section__unit--mt-12">
-                    Стандарти та етика відділу новин
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Наше дотримання найвищих і найсуворіших стандартів чесності та чесності дозволило The Wall Street Journal процвітати протягом понад 130 років. Наша репутація – наше найдорожче надбання. Ми прагнемо бути моделлю етичного, заснованого на фактах, амбітного репортажі новин.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ця відданість є головною причиною того, що читачі так довіряють нам. Національні опитування неодноразово відносять The Wall Street Journal до числа інформаційних організацій, яким найбільше довіряють у США по обидва боки політичного розколу. Читачі довіряють нам, тому що вважають нас чесними, точними та неупередженими. Є багато журналістських практик, які є основою цієї довіри.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Наші журналісти дотримуються найетичнішої поведінки у своїй роботі та прагнуть підтримувати спадщину доброчесності без докорів, включаючи дотримання Кодексу поведінки Dow Jones.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми прагнемо до чесної та етичної поведінки в усіх ітераціях з колегами, конкурентами, джерелами, суб’єктами та нашими читачами. Ми уникаємо сприйняття упередженості так само суворо, як і будь-якої справжньої упередженості. Ми відмовляємося від фінансових зв’язків з нашими джерелами або суб’єктами нашої роботи або передбачуваних зобов’язань перед ними. Ми уникаємо партійних політичних заяв або діяльності. Ми пропонуємо професійну підтримку для наших колег, щоб порушити етичні проблеми.
-                </div>
-                <div class="horizontal-divider"></div>
-                <div class="team-mobile-news-section__unit team-mobile-news-section__unit--mt-12">
-                    Журналістика без сюрпризів
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми дотримуємося давньої спадщини журналістики «без сюрпризів». Це означає виконання найвищого рівня належної обачності для оцінки достовірності наших джерел і надання можливості для повного та чесного коментаря всім сторонам, залученим до статті, до її публікації. Ми ніколи не переслідуємо нічого іншого, окрім непохитної відданості правді, тому ми прагнемо якомога точніше приписувати всі спірні факти відповідним сторонам і писати в нейтральному декларативному тоні.
-                </div>
-                <div class="horizontal-divider horizontal-divider--mb-18"></div>
-            </div>
-            <div class="topics-gray-rectangle"></div>
-            <div class="team-mobile-news-section__col">
-                <div class="team-mobile-news-section__header team-mobile-news-section__header--py-18-24">
-                    <span class="team-mobile-news-section__title">Поширені запитання</span>
-                    <span class="team-mobile-news-section__title-underline"></span>
-                </div>
-                <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
-                    <div class="team-mobile-news-section__unit">
-                        1. Яка структура власності журналу?
-                    </div>
-                    <div class="team-mobile-news-section__img-container">
-                        <img class="team-mobile-news-section__arrow-icon" src="images/icons/arrow-up-gray.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми є основним джерелом новин та інформації через призму бізнесу, фінансів, економіки та грошей, глобальних сил, які формують світ і є ключовими для його розуміння. Наша аудиторія – це будь-хто, хто хоче або має роботу, кар’єру чи амбіції; хто шукає гроші, заробляє гроші, витрачає гроші та зберігає гроші; хто прагне переваги як інвестор, працівник, керівник або підприємець; або хто просто хоче краще зрозуміти, як влаштований світ.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми надаємо факти, дані та інформацію, а не твердження чи думки. Ми віримо в повне відокремлення новин від думок. Ми працюємо над ексклюзивними історіями з метою оприлюднення всіх важливих фактів у наших основних сферах; глибоке розуміння та аналіз; і дієвий інтелект — бути першим прочитаним і останнім словом. Ми несемо унікальну надійну відповідальність як сторожовий пес і зберігач. У всьому охопленні ми прагнемо справді різноманітного набору голосів і досвіду з кожною історією, яка прагне розповісти якомога ширшій аудиторії.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Як журналісти, ми скромні, цікаві, чуйні, поінформовані та відкриті. Наша робота проста, пряма, лаконічна і доступна, але не спрощена. Довіра до наших новин, інформації та авторитету – це валюта, яку ми прагнемо заробити всім, що виробляємо.
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Ми маємо важливе соціальне призначення. Суспільство виграє від спільного набору фактів, які можна перевірити, і широкого набору голосів, які відображають наш світ, навіть у часи стресу та розколу — справді, особливо в такі часи. Надання цих фактів сприяє обговоренню та сприяє загальному благу.
-                </div>
-                <div class="horizontal-divider horizontal-divider--my-24"></div>
-                <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
-                    <div class="team-mobile-news-section__unit">
-                        2. Як Журнал уникає конфлікту інтересів з рекламодавцями чи спонсорами?
-                    </div>
-                    <div class="team-mobile-news-section__img-container">
-                        <img class="team-mobile-news-section__arrow-icon" src="images/icons/arrow-up-gray.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="team-mobile-news-section__description team-mobile-news-section__description--size-14">
-                    Відділ новин працює незалежно від корпоративних команд, які займаються маркетингом, продажем реклами та загальними бізнес-операціями. Ця незалежність гарантує, що висвітлення журналу залишається вільним від зовнішнього впливу чи комерційних міркувань. Це зобов’язання так само давнє, як і сам Журнал, який зазначено у першому випуску: «Фундаментальні принципи ведення нашого новинного бізнесу такі: отримувати новини, публікувати їх миттєво, будь то оповіщення чи ведмідь. Жоден оператор не контролює і не може контролювати наші новини. Ми пишаємося довірою, виявленою в нашій роботі. Ми хочемо зробити його кращим. І ми хочемо, щоб новини завжди були чесними, розумними та неупередженими».
-                </div>
-                <div class="horizontal-divider horizontal-divider--my-24"></div>
-                <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
-                    <div class="team-mobile-news-section__unit">
-                        3. Наскільки великий штат новин Журналу і де вони розміщені?
-                    </div>
-                    <div class="team-mobile-news-section__img-container">
-                        <img class="team-mobile-news-section__arrow-icon team-mobile-news-section__arrow-icon--rotate-180" src="images/icons/arrow-up-gray.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="horizontal-divider horizontal-divider--my-24"></div>
-                <div class="team-mobile-news-section__row team-mobile-news-section__row--mb-12">
-                    <div class="team-mobile-news-section__unit">
-                        4. Як я можу зв'язатися з редакцією?
-                    </div>
-                    <div class="team-mobile-news-section__img-container">
-                        <img class="team-mobile-news-section__arrow-icon team-mobile-news-section__arrow-icon--rotate-180" src="images/icons/arrow-up-gray.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="horizontal-divider horizontal-divider--my-24-18"></div>
-            </div>
-            <div class="topics-gray-rectangle"></div>
-        </main>
-        
-        <footer class="footer-mobile">
-            <div class="footer-mobile__logo">
-                <div class="footer-mobile__logo-text">ЛБ.</div>
-                <div class="footer-mobile__logo-underline"></div>
-                <div class="footer-mobile__logo-icons" >
-                    <img src="images/icons/fb.svg" alt="social icon">
-                    <img src="images/icons/linkedin.svg" alt="social icon">
-                    <img src="images/icons/x.svg" alt="social icon">
-                </div>
-            </div>
-            <div class="footer-mobile__row">
-                <div class="footer-mobile__col">
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">контакт</div>
-                        <div class="footer-mobile__section-par">Про нас контакт</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                    </div>
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">реклама та підписка</div>
-                        <div class="footer-mobile__section-par">Про нас контакт</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                    </div>
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">статут</div>
-                        <div class="footer-mobile__section-par">Про нас контакт</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                    </div>
-                </div>
-                <div class="footer-mobile__col">
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">партнери</div>
-                        <div class="footer-mobile__section-par">Про нас контакт</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                        <div class="footer-mobile__section-par">Напишіть нам</div>
-                    </div>
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">карта сайту</div>
-                    </div>
-                    <div class="footer-mobile__section">
-                        <div class="footer-mobile__section-title">товарна пропозиція</div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-mobile__block footer-mobile__block--subscribe">
-                <div class="footer-mobile__subscribe-topic footer-mobile__subscribe-title--red">Інформаційний бюлетень</div>
-                <div class="footer-mobile__subscribe-title">Читайте кращий контент</div>
-                <div class="footer-mobile__subscribe-input-container">
-                    <input class="footer-mobile__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
+            <div class="footer__subscribe">
+                <div class="footer__subscribe-topic footer__subscribe-title--red">Інформаційний бюлетень</div>
+                <div class="footer__subscribe-title">Читайте кращий контент</div>
+                <div class="footer__subscribe-input-container">
+                    <input class="footer__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
                 </div>
                 <button class="button button--contained-red button--height-40">Підписатися</button>
             </div>
-    
         </footer>
-    </div>
-</body>
-
+    </body>
 </html>

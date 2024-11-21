@@ -1,1932 +1,1929 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+		</style>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-	</style>
-</head>
+	<body>
+		<header class="header">
+			<div class="header__title">
+					ЛБ.
+			</div>
+			<div class="header__navbar">
+					<div class="header__navbar-icons">
+							<div class="header__navbar-icon-container header__menu">
+									<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
 
-<body>
-	<header class="header">
-		<div class="header__title">
-				ЛБ.
-		</div>
-		<div class="header__navbar">
-				<div class="header__navbar-icons">
-						<div class="header__navbar-icon-container header__menu">
-								<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
-
-								<div class="context-menu">
-										<div class="context-menu__buttons">
-												<button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
-												<button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
-										</div>
-										<div class="context-menu__top">
-												<div class="context-menu__title">ЛБ.</div>
-												<div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
-										</div>
-										<div class="context-menu__search">
-												<div class="context-menu__search-icon icon icon--search"></div>
-												<div class="input input--outlined-white input--height-24 input--radius-24">
-														<input type="text">
-												</div>
-										</div>
-										<div class="context-menu__items">
-												<div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-										</div>
-								</div>
-						</div>
-						<div class="header__divider"></div>
-						<div class="header__navbar-icon-container header__search">
-								<div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
-						</div>
-						<div class="header__divider"></div>
-				</div>
-				<div class="header__navbar-themes">
-						<div class="header__navbar-theme">Політика</div>
-						<div class="header__navbar-theme">Економіка</div>
-						<div class="header__navbar-theme">Суспільство</div>
-						<div class="header__navbar-theme">Право</div>
-						<div class="header__navbar-theme">Культура</div>
-						<div class="header__navbar-theme">Світ</div>
-						<div class="header__navbar-theme">Спорт</div>
-						<div class="header__navbar-theme">Гастрономія</div>
-				</div>
-				<div class="header__navbar-btns">
-						<button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
-						<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
-				</div>
-		</div>
-	</header>
-
-	<div class="tag-desktop">
-		<main>
-			<div class="tag-news-section">
-							<div class="tag-news-section__header">
-									<div class="tag-news-section__title">
-											Журналістика
-									</div>
-									<div class="tag-news-section__title-underline"></div>
-							</div>
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-624">
-						<div class="tag-news-section__main-news">
-							<div class="tag-news-section__main-news-img">
-															<img src="images/images/sky.png" alt="main-news-img">
+									<div class="context-menu">
+											<div class="context-menu__buttons">
+													<button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
+													<button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+											</div>
+											<div class="context-menu__top">
+													<div class="context-menu__title">ЛБ.</div>
+													<div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+											</div>
+											<div class="context-menu__search">
+													<div class="context-menu__search-icon icon icon--search"></div>
+													<div class="input input--outlined-white input--height-24 input--radius-24">
+															<input type="text">
 													</div>
-							<div class="tag-news-section__main-news-topic">
-								Політичні та соціальні думки
+											</div>
+											<div class="context-menu__items">
+													<div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+											</div>
+									</div>
 							</div>
-							<div class="tag-news-section__main-news-title">
-								Єжи Сурдиковський: Кліматичний саміт у Варшаві щось змінить? Дивись на свій номер PESEL і одружуйся!
+							<div class="header__divider"></div>
+							<div class="header__navbar-icon-container header__search">
+									<div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
 							</div>
-							<div class="tag-news-section__main-news-description">
-								Наступний кліматичний саміт TOGETAIR 2024 проходить зараз у Варшаві. Зіткнувшись зі страхом, який викликає майбутнє, ми поводимося, як страус, який засунув голову в пісок – або вигадуємо казки про «відомі сили», або намагаємося. заспокоїти страх за допомогою потоку фраз, які настільки ж правдиві, як і марні, але які, тим не менш, створюють відчуття впевненості.
+							<div class="header__divider"></div>
+					</div>
+					<div class="header__navbar-themes">
+							<div class="header__navbar-theme">Політика</div>
+							<div class="header__navbar-theme">Економіка</div>
+							<div class="header__navbar-theme">Суспільство</div>
+							<div class="header__navbar-theme">Право</div>
+							<div class="header__navbar-theme">Культура</div>
+							<div class="header__navbar-theme">Світ</div>
+							<div class="header__navbar-theme">Спорт</div>
+							<div class="header__navbar-theme">Гастрономія</div>
+					</div>
+					<div class="header__navbar-btns">
+							<button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
+							<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
+					</div>
+			</div>
+		</header>
+
+		<div class="tag-desktop">
+			<main>
+				<div class="tag-news-section">
+								<div class="tag-news-section__header">
+										<div class="tag-news-section__title">
+												Журналістика
+										</div>
+										<div class="tag-news-section__title-underline"></div>
+								</div>
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-624">
+							<div class="tag-news-section__main-news">
+								<div class="tag-news-section__main-news-img">
+																<img src="images/images/sky.png" alt="main-news-img">
+														</div>
+								<div class="tag-news-section__main-news-topic">
+									Політичні та соціальні думки
+								</div>
+								<div class="tag-news-section__main-news-title">
+									Єжи Сурдиковський: Кліматичний саміт у Варшаві щось змінить? Дивись на свій номер PESEL і одружуйся!
+								</div>
+								<div class="tag-news-section__main-news-description">
+									Наступний кліматичний саміт TOGETAIR 2024 проходить зараз у Варшаві. Зіткнувшись зі страхом, який викликає майбутнє, ми поводимося, як страус, який засунув голову в пісок – або вигадуємо казки про «відомі сили», або намагаємося. заспокоїти страх за допомогою потоку фраз, які настільки ж правдиві, як і марні, але які, тим не менш, створюють відчуття впевненості.
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-300">
-						<div class="tag-news-section__small-news">
-							<div class="tag-news-section__small-news-img">
-								<img src="images/images/хз.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__small-news-topic">
-								КОМЕНТАРІ
-							</div>
-							<div class="tag-news-section__small-news-title">
-								Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі
-							</div>
-							<div class="tag-news-section__small-news-description">
-								Жешув, Вроцлав (Яцека Сутрика підтримала PO), Краків, Познань – інші міста, які...
-							</div>
-						</div>
-						<div class="tag-news-section__small-news">
-							<div class="tag-news-section__small-news-topic">
-								ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-							</div>
-							<div class="tag-news-section__small-news-title">
-								Анджей Рогінський: Місцеві вибори були великим тріумфом партійної влади
-							</div>
-						</div>
-						<div class="tag-news-section__small-news tag-news-section__small-news--no-border-bottom">
-							<div class="tag-news-section__small-news-topic">
-								ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-							</div>
-							<div class="tag-news-section__small-news-title">
-								Єжи Гащинський: Америка повертає українцям і східному флангу надію
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-	
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__lg-news">
-							<div class="tag-news-section__lg-news-img">
-								<img src="images//images/вибори.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__lg-news-container">
-								<div class="tag-news-section__lg-news-topic">
+						<div class="tag-news-section__col tag-news-section__col--w-300">
+							<div class="tag-news-section__small-news">
+								<div class="tag-news-section__small-news-img">
+									<img src="images/images/хз.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__small-news-topic">
 									КОМЕНТАРІ
 								</div>
-								<div class="tag-news-section__lg-news-title">
-									Другий тур місцевих виборів. KO перемагає, але є над чим подумати перед виборами							
+								<div class="tag-news-section__small-news-title">
+									Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі
 								</div>
-								<div class="tag-news-section__lg-news-description">
-									У багатьох великих містах перемогли кандидати, яких підтримувала Громадянська платформа Дональда Туска.							
+								<div class="tag-news-section__small-news-description">
+									Жешув, Вроцлав (Яцека Сутрика підтримала PO), Краків, Познань – інші міста, які...
 								</div>
 							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
+							<div class="tag-news-section__small-news">
+								<div class="tag-news-section__small-news-topic">
 									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-			<div class="tag-news-section">
-				<div class="tag-news-section__main">
-					<div class="tag-news-section__col tag-news-section__col--w-191">
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-732">
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-						<div class="tag-news-section__simple-news">
-							<div class="tag-news-section__simple-news-img">
-								<img src="images/images/555.png" alt="news-img">
-							</div>
-							<div class="tag-news-section__simple-news-container">
-								<div class="tag-news-section__simple-news-topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-								</div>
-								<div class="tag-news-section__simple-news-title">
-									Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
-								</div>
-								<div class="tag-news-section__simple-news-description">
-									Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tag-news-section__col tag-news-section__col--w-299">
-					</div>
-				</div>
-					</div>
-			<div class="hr-divider"></div>
-		</main>
-	</div>
-
-	<div class="tag-mobile">
-		<main class="tag-mobile-news-section">
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-news-section__header">
-							<span class="tag-mobile-news-section__title">Журналістика</span>
-							<span class="tag-mobile-news-section__title-underline"></span>
-					</div>
-					<div class="tag-mobile-news-section__img-container tag-mobile-news-section__img-container--my-18">
-							<img class="tag-mobile-news-section__image" src="./images/images/sky.png" alt="main-hero">
-					</div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--mb-18">
-							<div class="tag-mobile-simple-news__topic tag-mobile-simple-news__topic--mb-4">
-									Політичні та соціальні думки
-							</div>
-							<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--mb-8">
-									Єжи Сурдиковський: Кліматичний саміт у Варшаві щось змінить? Дивись на свій номер PESEL і одружуйся!                
-							</div>
-							<div class="tag-mobile-simple-news__description">
-									Наступний кліматичний саміт TOGETAIR 2024 проходить зараз у Варшаві. Зіткнувшись зі страхом, який викликає майбутнє, ми поводимося, як страус, який засунув голову в пісок – або вигадуємо казки про «відомі сили», або намагаємося. заспокоїти страх за допомогою потоку фраз, які настільки ж правдиві, як і марні, але які, тим не менш, створюють відчуття впевненості.
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-18-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__topic">
-									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-							</div>
-							<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-18">
+								<div class="tag-news-section__small-news-title">
 									Анджей Рогінський: Місцеві вибори були великим тріумфом партійної влади
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__topic">
+							<div class="tag-news-section__small-news tag-news-section__small-news--no-border-bottom">
+								<div class="tag-news-section__small-news-topic">
 									ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
-							</div>
-							<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-18">
+								</div>
+								<div class="tag-news-section__small-news-title">
 									Єжи Гащинський: Америка повертає українцям і східному флангу надію
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+		
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-news-section__img-container tag-mobile-news-section__img-container--mb-18">
-							<img class="tag-mobile-news-section__image" src="./images/images/sky.png" alt="main-hero">
-					</div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--mb-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__topic">
-											Коментарі
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__lg-news">
+								<div class="tag-news-section__lg-news-img">
+									<img src="images//images/вибори.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__lg-news-container">
+									<div class="tag-news-section__lg-news-topic">
+										КОМЕНТАРІ
 									</div>
-									<div class="tag-mobile-simple-news__topic tag-mobile-simple-news__topic--background-orange">
-											Гаряче
+									<div class="tag-news-section__lg-news-title">
+										Другий тур місцевих виборів. KO перемагає, але є над чим подумати перед виборами							
 									</div>
+									<div class="tag-news-section__lg-news-description">
+										У багатьох великих містах перемогли кандидати, яких підтримувала Громадянська платформа Дональда Туска.							
+									</div>
+								</div>
 							</div>
-							<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-26">
-									Другий тур місцевих виборів. KO перемагає, але є над чим подумати перед виборами                
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
+									</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
+									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-40">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+						</div>
+				<div class="hr-divider"></div>
+				<div class="tag-news-section">
+					<div class="tag-news-section__main">
+						<div class="tag-news-section__col tag-news-section__col--w-191">
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-732">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-			<div class="topics-gray-rectangle"></div>
-			<div class="tag-mobile-news-section__col">
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+							<div class="tag-news-section__simple-news">
+								<div class="tag-news-section__simple-news-img">
+									<img src="images/images/555.png" alt="news-img">
+								</div>
+								<div class="tag-news-section__simple-news-container">
+									<div class="tag-news-section__simple-news-topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
 									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
+									<div class="tag-news-section__simple-news-title">
+										Міхал Шулджинський: Нам терміново потрібно врегулювати використання ШІ у виборчих матеріалах
 									</div>
+									<div class="tag-news-section__simple-news-description">
+										Якщо ми хочемо, щоб наше майбутнє вирішувалося в демократичному процесі розумом і вільним волевиявленням громадян, а не фейками
+									</div>
+								</div>
 							</div>
+						</div>
+						<div class="tag-news-section__col tag-news-section__col--w-299">
+						</div>
 					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-					<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
-							<div class="tag-mobile-simple-news__row">
-									<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
-											<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
-									</div>
-									<div class="tag-mobile-simple-news__col">
-											<div class="tag-mobile-simple-news__topic">
-													КОМЕНТАРІ 
-											</div>
-											<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
-													Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
-											</div>
-									</div>
-							</div>
-					</div>
-					<div class="horizontal-divider"></div>
-			</div>
-		</main>    
-	</div>
-	
-</body>
+						</div>
+				<div class="hr-divider"></div>
+			</main>
+		</div>
 
+		<div class="tag-mobile">
+			<main class="tag-mobile-news-section">
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-news-section__header">
+								<span class="tag-mobile-news-section__title">Журналістика</span>
+								<span class="tag-mobile-news-section__title-underline"></span>
+						</div>
+						<div class="tag-mobile-news-section__img-container tag-mobile-news-section__img-container--my-18">
+								<img class="tag-mobile-news-section__image" src="./images/images/sky.png" alt="main-hero">
+						</div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--mb-18">
+								<div class="tag-mobile-simple-news__topic tag-mobile-simple-news__topic--mb-4">
+										Політичні та соціальні думки
+								</div>
+								<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--mb-8">
+										Єжи Сурдиковський: Кліматичний саміт у Варшаві щось змінить? Дивись на свій номер PESEL і одружуйся!                
+								</div>
+								<div class="tag-mobile-simple-news__description">
+										Наступний кліматичний саміт TOGETAIR 2024 проходить зараз у Варшаві. Зіткнувшись зі страхом, який викликає майбутнє, ми поводимося, як страус, який засунув голову в пісок – або вигадуємо казки про «відомі сили», або намагаємося. заспокоїти страх за допомогою потоку фраз, які настільки ж правдиві, як і марні, але які, тим не менш, створюють відчуття впевненості.
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-18-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
+								</div>
+								<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-18">
+										Анджей Рогінський: Місцеві вибори були великим тріумфом партійної влади
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__topic">
+										ПОЛІТИЧНІ ТА СОЦІАЛЬНІ ДУМКИ
+								</div>
+								<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-18">
+										Єжи Гащинський: Америка повертає українцям і східному флангу надію
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-news-section__img-container tag-mobile-news-section__img-container--mb-18">
+								<img class="tag-mobile-news-section__image" src="./images/images/sky.png" alt="main-hero">
+						</div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--mb-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__topic">
+												Коментарі
+										</div>
+										<div class="tag-mobile-simple-news__topic tag-mobile-simple-news__topic--background-orange">
+												Гаряче
+										</div>
+								</div>
+								<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-26">
+										Другий тур місцевих виборів. KO перемагає, але є над чим подумати перед виборами                
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-40">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+				<div class="topics-gray-rectangle"></div>
+				<div class="tag-mobile-news-section__col">
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16 tag-mobile-simple-news--mt-0">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+						<div class="tag-mobile-simple-news tag-mobile-simple-news--my-16">
+								<div class="tag-mobile-simple-news__row">
+										<div class="tag-mobile-simple-news__img-container tag-mobile-simple-news__img-container--size-108">
+												<img class="tag-mobile-simple-news__image" src="./images/images/bart.png" alt="china">
+										</div>
+										<div class="tag-mobile-simple-news__col">
+												<div class="tag-mobile-simple-news__topic">
+														КОМЕНТАРІ 
+												</div>
+												<div class="tag-mobile-simple-news__title tag-mobile-simple-news__title--size-16">
+														Артур Барткевич: Після другого туру місцевих виборів. Дві перемоги, дві Польщі               
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="horizontal-divider"></div>
+				</div>
+			</main>    
+		</div>
+	</body>
 </html>

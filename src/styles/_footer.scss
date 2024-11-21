@@ -32,13 +32,9 @@
   }
 
   &__links {
-      display: flex;
-      gap: 24px;
-  }
-
-  &__links-col {
-    min-width: 102px;
-    margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px 24px;
   }
 
   &__links-title {
@@ -67,126 +63,78 @@
     height: 157px;
     border: 1px solid #EFEFEF;
   }
-}
 
-.footer-mobile {
-
-  &__logo {
-      display: flex;
-      justify-content: space-between;
-      position: relative;  
-      padding: 42px 32px 18px;
+  &__subscribe {
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% + 22px);
+    margin: 61px -11px 14px -11px;
   }
 
-  &__logo-text {
-      font-family: "Source Serif 4";
-      font-size: 28px;
-      font-weight: 400;
+  &__subscribe-topic {
+    font-family: Proxima Nova;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #DE0B0B;
+    margin-bottom: 4px;
   }
 
-  &__logo-underline {
-      border-bottom: 1px solid $black-30; 
-      flex-grow: 1;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-bottom: 5px;
+  &__subscribe-title {
+    font-family: "Source Serif 4";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 12px;
   }
 
-  &__logo-icons {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-  }
-
-  &__row {
+  &__subscribe-input-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 32px 40px;
+    width: 100%;
+    margin-bottom: 12px;
   }
 
-    &__col {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-  
-    &__section {
-
-    }
-  
-    &__section-title {
-      font-family: Proxima Nova;
-      font-size: 10px;
-      font-weight: 600;
-      line-height: 12px;
-      letter-spacing: 0.04em;
-      text-align: left;
-      color: #787878;
-
-      margin-bottom: 8px;
-    }
-  
-    &__section-par {
-      font-family: Proxima Nova;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      text-align: left;
-      color: #1e1e1e;
-    }
-
-    &__subscribe-topic {
-      font-family: Proxima Nova;
-        font-size: 10px;
-        font-weight: 600;
-        line-height: 12px;
-        letter-spacing: 0.04em;
-        text-align: left;
-        text-transform: uppercase;
-        color: #DE0B0B;
-        margin-bottom: 4px;
-    }
-
-    &__subscribe-title {
-      font-family: "Source Serif 4";
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 28px;
-      text-align: left;
-      margin-bottom: 12px;
-    }
-  
-    &__subscribe-input-container {
-      display: flex;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-  
-    &__subscribe-input {
-      width: 100%;
-    }
-
-    &__block {
-      display: flex;
-      align-items: center;
-  
-      &--subscribe {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-        padding: 21px 21px 33px;
-      }
-    }
+  &__subscribe-input {
+    width: 100%;
+  }  
 }
 
 @media screen and (max-width: 1304px) {
-  
   .footer {
 
     &__advertising-section {
       width: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .footer {
+    padding: 18px 32px;
+
+    &__links-container {
+      width: 100%;
+    }
+
+    &__links {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__advertising-section {
+      display: none;
+    }
+
+    &__subscribe {
+      display: flex;
     }
   }
 }

@@ -1,793 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+		</style>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-	</style>
-</head>
+	<body>
+		<header class="header">
+			<div class="header__title">
+					ЛБ.
+			</div>
+			<div class="header__navbar">
+					<div class="header__navbar-icons">
+							<div class="header__navbar-icon-container header__menu">
+									<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
 
-<body>
-	<header class="header">
-		<div class="header__title">
-				ЛБ.
+									<div class="context-menu">
+											<div class="context-menu__buttons">
+													<button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
+													<button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+											</div>
+											<div class="context-menu__top">
+													<div class="context-menu__title">ЛБ.</div>
+													<div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+											</div>
+											<div class="context-menu__search">
+													<div class="context-menu__search-icon icon icon--search"></div>
+													<div class="input input--outlined-white input--height-24 input--radius-24">
+															<input type="text">
+													</div>
+											</div>
+											<div class="context-menu__items">
+													<div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+													<div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+											</div>
+									</div>
+							</div>
+							<div class="header__divider"></div>
+							<div class="header__navbar-icon-container header__search">
+									<div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
+							</div>
+							<div class="header__divider"></div>
+					</div>
+					<div class="header__navbar-themes">
+							<div class="header__navbar-theme">Політика</div>
+							<div class="header__navbar-theme">Економіка</div>
+							<div class="header__navbar-theme">Суспільство</div>
+							<div class="header__navbar-theme">Право</div>
+							<div class="header__navbar-theme">Культура</div>
+							<div class="header__navbar-theme">Світ</div>
+							<div class="header__navbar-theme">Спорт</div>
+							<div class="header__navbar-theme">Гастрономія</div>
+					</div>
+					<div class="header__navbar-btns">
+							<button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
+							<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
+					</div>
+			</div>
+		</header>
+
+		<div class="opinion-desktop">
+			<main>
+				<div class="opinion-news-section">
+					<div class="opinion-news-section opinion-news-section--col-news">
+						<div class="opinion-news-section__main-news">
+							<div class="opinion-news-section__topic">
+								<span class="opinion-news-section__topic opinion-news-section__topic--bold">ЛБ.</span> / Події / Світ / <span class="opinion-news-section__topic opinion-news-section__topic--red">Військовий конфлікт</span>
+							</div>
+							<div class="opinion-news-section__title">
+								<span class="opinion-news-section__title opinion-news-section__title--orange-color">Мірослав Жуковський: </span>Олімпіада в Парижі – Росія йде до війни
+							</div>
+							<div class="opinion-news-section__description">
+								Глава Міжнародного олімпійського комітету Томас Бах мав право очікувати подяки від Росії та Володимира Путіна. Не дожив – отримав удар.
+							</div>
+							<div class="opinion-news-section__date-public">
+								<span>Опубліковано: 21.03.2024 13:43</span>
+							</div>
+							<div class="opinion-news-section__image-container">
+								<img class="opinion-news-section__image" src="images/images/article-main.png" alt="news image">
+							</div>
+												<div class="opinion-news-section__description">
+								Ті, хто відчуває на своїй спині подих імперської Росії, могли б впевнено назвати Томаса Баха (на фото) «корисним ідіотом».
+							</div>
+							<div class="opinion-news-section__photographer">
+								Фото: EPA/LAURENT GILLIERON
+							</div>
+						</div>
+						<div class="opinion-simple-news">
+							<div class="opinion-simple-news__small-title">Мирослав Жуковський</div>
+							<div class="opinion-simple-news__description">
+														Протягом багатьох років, після допінгового скандалу під час Ігор у Сочі в 2014 році, 
+														<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
+																Томас Бах дозволяв росіянам брати участь в Олімпіаді . 
+														</span>
+														Хоча не було ні прапора, ні гімну, це не завадило путінській пропаганді вихваляти своїх олімпійців. Війна в Україні також не зробила Росію поза законом. МОК дозволив своїм спортсменам взяти участь у Парижі за умови, що 
+														<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
+																вони не будуть пов'язані з силами і не будуть відкрито демонструвати підтримку війни . 
+														</span>
+														Це з самого початку була подвійна фікція: в Росії такого спортсмена важко знайти, а достовірно його перевірити ще важче. Надання рішення про допуск чи виключення росіян у певних видах спорту до міжнародних федерацій також було ухиленням, адже відомо, що багатьма з них керує Путін, а в деяких з них росіяни досі керують майже напряму.					</div>
+							<div class="opinion-simple-news__video-container"></div>
+						</div>
+						<div class="opinion-small-news">
+							<div class="opinion-small-news__to-open">
+								Читати далі
+							</div>
+							<div class="opinion-small-news__container">
+								<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
+								</div>
+								<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										ОЛІМПІЗМ
+									</div>
+									<div class="opinion-small-news__title">
+										МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
+									</div>
+									<div class="opinion-small-news__description">
+										Міжнародний олімпійський комітет у вівторок опублікував заяву, в якій назвав план Росії...
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="opinion-simple-news opinion-simple-news--margin-bottom">
+							<div class="opinion-simple-news__title">
+								Олімпіада без Росії та без Ізраїлю?
+							</div>
+							<div class="opinion-simple-news__description">
+														Тому ті, хто, як і ми, відчувають на своїй спині подих імперської Росії, могли б 
+														<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
+																впевнено назвати Баха «корисним ідіотом» . 
+														</span>
+														Навіть більше, ставитися до нього як до циніка, який, можливо, як і його співвітчизник і колишній канцлер ФРН Герхард Шредер, розраховує, що після закінчення олімпійської служби він сяде в раду директорів «Газпрому» чи іншої «Роснефти».</div>
+							<div class="opinion-simple-news__description">
+														Сьогодні добре видно, що з цього нічого не вийде, бо Росія з кожним місяцем війни стає все нахабнішою і замість того, щоб із вдячністю їсти з руки Баха, вона боляче її вкусила. Проривом стало рішення Путіна 
+														<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
+																організувати власні ігри у Москві та Єкатеринбурзі у вересні 
+														</span>
+														та запросити не лише союзників, а й увесь спортивний світ, супроводжуючи запевненнями, що це будуть справді універсальні олімпійські змагання.</div>
+						</div>
+										<div class="opinion-small-news">
+							<div class="opinion-small-news__to-open">
+								Читати далі
+							</div>
+							<div class="opinion-small-news__container">
+								<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
+								</div>
+								<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										СПОРТ
+									</div>
+									<div class="opinion-small-news__title">
+										МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
+									</div>
+									<div class="opinion-small-news__description">
+										Томас Бах очолюватиме Міжнародний олімпійський комітет (МОК) до 2025 року, але деякі хочуть, щоб...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="opinion-news-section__divider-1 opinion-news-section__divider-1--vertical"></div>
+					
+					<div class="opinion-news-section opinion-news-section--col-rect">
+						<div class="rectangle-vertical rectangle-vertical--h-930"></div>
+					</div>
+				</div>
+				<div class="big-hr-rect"></div>
+				<div class="opinion-news-section">
+					<div class="opinion-news-section opinion-news-section--col-news">
+						<div class="opinion-simple-news">
+							<div class="opinion-simple-news__description">
+								Це реальна загроза. МОК усвідомлює, що, як і у великій політиці, Росія може розраховувати на підтримку Китаю, Індії, багатьох країн Африки, Азії та Південної Америки, а ізраїльсько-палестинський конфлікт дедалі більше обурює громадську думку, також у західних країнах. готові прийняти точку зору, що якщо Паризькі ігри будуть проводитися без росіян, вони також повинні проводитися без Ізраїлю.
+							</div>
+							<div class="opinion-simple-news__title">
+								Томас Бах став мішенню російської пропаганди
+							</div>
+							<div class="opinion-simple-news__description">
+								Наразі пропозицію стартувати без прапора та гімну росіяни вважають принизливою, але бойкотом не погрожували. Лише рішення не допустити своїх спортсменів до церемонії відкриття змусило їх розгорнути свою пропаганду. Томас Бах пройшов шлях від людини, яка неодноразово пила шампанське з Путіним, до керівника організації, що скочується до расизму та неонацизму – і не з вуст слухняних режиму спортсменів чи пропагандистів, а з вуст представників російської влади. Саме так речниця російського МЗС охарактеризувала його як "главу расистської та неонацистської організації".
+							</div>
+							<div class="opinion-simple-news__quote-container">
+								<div class="opinion-simple-news__quote-text">
+									Можна, звісно, ​​дискутувати, чи не краще направити до цього комітету когось із Польщі, Латвії та Румунії, бо вони краще орієнтуються в реаліях						
+								</div>
+							</div>
+							<div class="opinion-simple-news__description">
+								Бах — німець, тому назвати його неонацистом для нього має бути особливо боляче, і, мабуть, це можна трактувати як оголошення Росією олімпійської війни, в якій не буде місця для переговорів. Тим паче, що МОК нарешті досить серйозно взявся за перевірку спортсменів, які вийдуть на Олімпіаду. Він призначив комісію з трьох осіб (віце-президент МОК, колишня синхроністка Ніколь Ховерцз з Аруби, південнокорейський гравець у настільний теніс Ю Син Мін та зірка іспанського баскетболу Пау Газоль) для перевірки кожного російського спортсмена за критеріями, встановленими МОК.
+							</div>
+							<div class="opinion-simple-news__video-container"></div>
+							<div class="opinion-simple-news__description">
+								Можна, звісно, ​​дискутувати, чи не краще було б відправити до цієї комісії когось із Польщі, Латвії та Румунії, адже вони краще розбираються в реаліях, але це все-таки прогрес у порівнянні з порожніми словами МОК, які були в силі. протягом багатьох років.					
+							</div>
+						</div>
+					</div>
+		
+					<div class="opinion-news-section__divider-2 opinion-news-section__divider-2--vertical"></div>
+					
+					<div class="opinion-news-section opinion-news-section--col-rect">
+						<div class="rectangle-vertical rectangle-vertical--h-930"></div>
+					</div>
+				</div>
+				<div class="big-hr-rect"></div>
+				<div class="opinion-news-section">
+					<div class="opinion-news-section opinion-news-section--col-news">
+						<div class="opinion-small-news">
+							<div class="opinion-small-news__to-open">
+								Читати далі
+							</div>
+							<div class="opinion-small-news__container">
+								<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
+								</div>
+								<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										СПОРТ
+									</div>
+									<div class="opinion-small-news__title">
+										МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
+									</div>
+									<div class="opinion-small-news__description">
+										Томас Бах очолюватиме Міжнародний олімпійський комітет (МОК) до 2025 року, але деякі хочуть, щоб...
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="opinion-simple-news">
+							<div class="opinion-simple-news__description">
+								Олімпійський рух пережив той конфлікт, і ніякі Ігри дружби (що проходили в 1984 році в Москві для тих, кого СРСР змусив бойкотувати Лос-Анджелес) не підірвали престиж справжніх ігор, але порятунок прийшов не в олімпійській сім’ї, а у великій політиці. Михайло Горбачов почав правити Росією, і тому бойкотів більше не було.					
+							</div>
+							<div class="opinion-simple-news__description">
+								Якби ця історія повторилася, довелося б чекати падіння Путіна, яке сьогодні важко уявити. Більш ймовірна пропагандистська війна, в якій на кону буде поставлена ​​доля Олімпіади.
+							</div>
+						</div>
+						<div class="opinion-news-section__tags-container">
+							<div class="opinion-news-section__tag-btn">Cлужби уніформи</div>
+							<div class="opinion-news-section__tag-btn">Армія</div>
+							<div class="opinion-news-section__tag-btn">Військовий конфлікт</div>
+							<div class="opinion-news-section__tag-btn">Регіони</div>
+							<div class="opinion-news-section__tag-btn">Війна Росії з Україною</div>
+							<div class="opinion-news-section__tag-btn">Європа</div>
+							<div class="opinion-news-section__tag-btn">Росія</div>
+							<div class="opinion-news-section__tag-btn">Україна</div>
+							<div class="opinion-news-section__tag-btn">НАТО</div>
+						</div>
+						<div class="opinion-news-section-footer">
+							<div class="opinion-news-section-footer__copyright">
+								<div class="opinion-news-section-footer__copyright-row">
+									<div class="opinion-news-section-footer__copyright-licence">
+										© Ліцензія на публікацію
+									</div>
+									<div class="opinion-news-section-footer__social-icons">
+										<img src="images/icons/fb.svg" alt="social icon">
+										<img src="images/icons/linkedin.svg" alt="social icon">
+										<img src="images/icons/x.svg" alt="social icon">
+										<img src="images/icons/mail.svg" alt="social icon">
+										<img src="images/icons/like.svg" alt="social icon">
+									</div>
+								</div>
+								<div class="opinion-news-section-footer__copyright-protect">
+									© ℗ Усі права захищено
+								</div>
+								<div class="opinion-news-section-footer__copyright-source">
+									Джерело: lb.ua
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="opinion-news-section opinion-news-section--col-rect">
+						<div class="rectangle-vertical rectangle-vertical--h-700"></div>
+					</div>
+				</div>
+		
+				
+				<div class="opinion-news-section opinion-news-section--col-news">
+					<div class="opinion-news-section__news-tabs">
+						<div class="opinion-news-section__news-tab opinion-news-section__news-tab--without-border-left">Пов'язано</div>
+						<div class="opinion-news-section__news-tab">Рекомендований</div>
+						<div class="opinion-news-section__news-tab">Останній</div>
+					</div>
+					<div class="opinion-news-section__news_wrapper">
+						<div class="opinion-news-section__news_wrapper-col">
+							<div class="opinion-small-news opinion-small-news--full-width">
+								<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
+									<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
+									</div>
+									<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										Армія
+									</div>
+									<div class="opinion-small-news__title">
+										Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
+									</div>
+									<div class="opinion-small-news__description">
+										У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
+									</div>
+								</div>
+							</div>
+							<div class="opinion-small-news opinion-small-news--full-width">
+								<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
+									<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
+									</div>
+									<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										Армія
+									</div>
+									<div class="opinion-small-news__title">
+										Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
+									</div>
+									<div class="opinion-small-news__description">
+										У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
+									</div>
+								</div>
+							</div>
+							<div class="opinion-small-news opinion-small-news--full-width">
+								<div class="opinion-small-news__container opinion-small-news__container--without-border-top opinion-small-news__container--without-border-bottom">
+									<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
+									</div>
+									<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										Армія
+									</div>
+									<div class="opinion-small-news__title">
+										Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
+									</div>
+									<div class="opinion-small-news__description">
+										У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="opinion-news-section__news_wrapper-col opinion-news-section__news_wrapper-col--without-border-padding" >
+							<div class="opinion-small-news opinion-small-news--full-width">
+								<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
+									<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
+									</div>
+									<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										Армія
+									</div>
+									<div class="opinion-small-news__title">
+										Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
+									</div>
+									<div class="opinion-small-news__description">
+										У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
+									</div>
+								</div>
+							</div>
+							<div class="opinion-small-news opinion-small-news--full-width">
+								<div class="opinion-small-news__container opinion-small-news__container--without-border-top opinion-small-news__container--without-border-bottom">
+									<div class="opinion-small-news__image-container">
+									<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
+									</div>
+									<div class="opinion-small-news__news-container">
+									<div class="opinion-small-news__topic">
+										Армія
+									</div>
+									<div class="opinion-small-news__title">
+										Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
+									</div>
+									<div class="opinion-small-news__description">
+										У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
-		<div class="header__navbar">
-				<div class="header__navbar-icons">
-						<div class="header__navbar-icon-container header__menu">
-								<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
-
-								<div class="context-menu">
-										<div class="context-menu__buttons">
-												<button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
-												<button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+		
+		<div class="opinion-mobile">
+			<main class="opinion-mobile-news-section">
+				<div class="opinion-mobile-news-section__col">
+								<div class="opinion-mobile-news-section__topic">
+										Військовий конфлікт
+								</div>
+								<div class="opinion-mobile-news-section__title">
+										Військові НАТО вже в Україні. Іспанська газета підтверджує слова Сікорського
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-16">
+										Іспанська газета "El País" повідомила, що присутність військових з країн НАТО в Україні не є чимось новим. Раніше глава Міністерства закордонних справ Радослав Сікорський (PO) заявив, що в Україні перебувають солдати НАТО. Видання заявило, що солдати НАТО не брали і не беруть участі в бойових діях.
+								</div>
+								<div class="opinion-mobile-news-section__main-image-block">
+										<div class="opinion-mobile-news-section__photo-info">
+												Опубліковано: 18.03.2024 13:12
 										</div>
-										<div class="context-menu__top">
-												<div class="context-menu__title">ЛБ.</div>
-												<div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+										<div class="opinion-mobile-news-section__img-container">
+												<img class="opinion-mobile-news-section__image" src="./images/images/article-main.png" alt="main-hero">
 										</div>
-										<div class="context-menu__search">
-												<div class="context-menu__search-icon icon icon--search"></div>
-												<div class="input input--outlined-white input--height-24 input--radius-24">
-														<input type="text">
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-16">
+										Хто відчуває на своїй спині подих імперської Росії,
+												вони легко могли б назвати себе Томасом Бахом (на фото) «корисний ідіот».
+								</div>
+								<div class="opinion-mobile-news-section__main-image-block">
+										<div class="opinion-mobile-news-section__photo-info">
+												Фото: EPA/LAURENT GILLIERON
+										</div>
+								</div>
+								<div class="opinion-mobile-news-section__unit">
+										<div class="opinion-mobile-news-section__unit-text">
+												Мирослав Жуковський
+										</div>
+										<div class="horizontal-divider"></div>
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Протягом багатьох років, після допінгового скандалу під час Ігор у Сочі в 2014 році, <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">Томас Бах дозволяв росіянам брати участь в Олімпіаді</span> . Хоча не було ні прапора, ні гімну, це не завадило путінській пропаганді вихваляти своїх олімпійців. Війна в Україні також не зробила Росію поза законом. МОК дозволив своїм спортсменам взяти участь у Парижі за умови, що  <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">вони не будуть пов'язані з силами і не будуть відкрито демонструвати підтримку війни </span>. Це з самого початку була подвійна фікція: в Росії такого спортсмена важко знайти, а достовірно його перевірити ще важче. Надання рішення про допуск чи виключення росіян у певних видах спорту до міжнародних федерацій також було ухиленням, адже відомо, що багатьма з них керує Путін, а в деяких з них росіяни досі керують майже напряму.
+								</div>
+								<div class="opinion-mobile-news-section__unit">
+										<div class="opinion-mobile-news-section__unit-text">
+												Читати далі
+										</div>
+										<div class="horizontal-divider"></div>
+								</div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
 												</div>
 										</div>
-										<div class="context-menu__items">
-												<div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-												<div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-news-section__header">Ігри без Росії теж однакові без них Ізраїль?</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Тому ті, хто, як і ми, відчувають на своїй спині подих імперської Росії, могли б <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">впевнено назвати Баха «корисним ідіотом»</span>. Навіть більше, ставитися до нього як до циніка, який, можливо, як і його співвітчизник і колишній канцлер ФРН Герхард Шредер, розраховує, що після закінчення олімпійської служби він сяде в раду директорів «Газпрому» чи іншої «Роснефти».
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Сьогодні добре видно, що з цього нічого не вийде, бо Росія з кожним місяцем війни стає все нахабнішою і замість того, щоб із вдячністю їсти з руки Баха, вона боляче її вкусила. Проривом стало рішення Путіна організувати <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">власні ігри у Москві та Єкатеринбурзі у вересні</span> та запросити не лише союзників, а й увесь спортивний світ, супроводжуючи запевненнями, що це будуть справді універсальні олімпійські змагання.
+								</div>
+								<div class="opinion-mobile-news-section__unit">
+										<div class="opinion-mobile-news-section__unit-text">
+												Читати далі
+										</div>
+										<div class="horizontal-divider"></div>
+								</div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Спорт 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Владар кілець. Хто такий Томас Бах, найвпливовіша людина у світі спорту              
+														</div>
+												</div>
 										</div>
 								</div>
+								<div class="horizontal-divider"></div>
 						</div>
-						<div class="header__divider"></div>
-						<div class="header__navbar-icon-container header__search">
-								<div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
+						<div class="gray-rectangle"></div>
+						<div class="opinion-mobile-news-section__col">
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Це реальна загроза. МОК усвідомлює, що, як і у великій політиці, Росія може розраховувати на підтримку Китаю, Індії, багатьох країн Африки, Азії та Південної Америки, а ізраїльсько-палестинський конфлікт дедалі більше обурює громадську думку, також у західних країнах. готові прийняти точку зору, що якщо Паризькі ігри будуть проводитися без росіян, вони також повинні проводитися без Ізраїлю.
+								</div>
+								<div class="opinion-mobile-news-section__header">Томас Бах став мішенню російської пропаганди</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Наразі пропозицію стартувати без прапора та гімну росіяни вважали принизливою, але бойкотом не погрожували. Лише рішення не допустити своїх спортсменів до церемонії відкриття змусило їх розгорнути свою пропаганду. Томас Бах пройшов шлях від людини, яка неодноразово пила шампанське з Путіним, до керівника організації, що скочується до расизму та неонацизму – і не з вуст слухняних режиму спортсменів чи пропагандистів, а з вуст представників російської влади. Саме так речниця російського МЗС охарактеризувала його як "главу расистської та неонацистської організації".            
+								</div>
+								<div class="opinion-mobile-news-section__quote-container">
+										<div class="vertical-divider"></div>
+										<div class="opinion-mobile-news-section__quote">
+												<div class="opinion-mobile-news-section__quote-text">Можна, звісно, ​​дискутувати, чи не краще направити до цього комітету когось із Польщі, Латвії та Румунії, бо вони краще орієнтуються в реаліях</div>
+										</div>
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Бах — німець, тому назвати його неонацистом для нього має бути особливо боляче, і, ймовірно, це можна трактувати як оголошення Росією олімпійської війни, в якій не буде місця для переговорів. Тим паче, що МОК нарешті досить серйозно взявся за перевірку спортсменів, які вийдуть на Олімпіаду. Він призначив комісію з трьох осіб (віце-президент МОК, колишня синхроністка Ніколь Ховертс з Аруби, південнокорейський пінгпонгіст Ю Син Мін і зірка іспанського баскетболу Пау Газоль) для перевірки кожного російського спортсмена за критеріями, встановленими МОК.
+								</div>
 						</div>
-						<div class="header__divider"></div>
-				</div>
-				<div class="header__navbar-themes">
-						<div class="header__navbar-theme">Політика</div>
-						<div class="header__navbar-theme">Економіка</div>
-						<div class="header__navbar-theme">Суспільство</div>
-						<div class="header__navbar-theme">Право</div>
-						<div class="header__navbar-theme">Культура</div>
-						<div class="header__navbar-theme">Світ</div>
-						<div class="header__navbar-theme">Спорт</div>
-						<div class="header__navbar-theme">Гастрономія</div>
-				</div>
-				<div class="header__navbar-btns">
-						<button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
-						<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
-				</div>
+						<div class="gray-rectangle"></div>
+						<div class="opinion-mobile-news-section__col">
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Можна, звісно, ​​дискутувати, чи не краще було б відправити до цієї комісії когось із Польщі, Латвії та Румунії, адже вони краще розбираються в реаліях, але це все-таки прогрес у порівнянні з порожніми словами МОК, які були в силі. протягом багатьох років.
+								</div>
+								<div class="opinion-mobile-news-section__header">Яке майбутнє чекає на Олімпійські ігри?</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Чи змушує це повернутися до часів олімпійської холодної війни, схожої на 1980-ті, коли Захід у відповідь на агресію СРСР проти Афганістану бойкотував Ігри в Москві, а через чотири роки «країни мир і соціалізм» відповів бойкотом їм? Анджелес? Про це багато свідчить, хоча, як і тоді, спортсмена будь-якої країни буде важко переконати, що медалі Єкатеринбурга такі ж цінні, як паризькі. І навіть оголошені росіянами фінансові винагороди нічого не змінять.
+								</div>
+						</div>
+						<div class="gray-rectangle"></div>
+						<div class="opinion-mobile-news-section__col">
+								<div class="opinion-mobile-news-section__unit">
+										<div class="opinion-mobile-news-section__unit-text">
+												Читати далі
+										</div>
+										<div class="horizontal-divider"></div>
+								</div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Спорт 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Вітольд Банька: Олімпійські ігри? У Парижі росіян не буде багато              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Олімпійський рух пережив той конфлікт, і ніякі Ігри дружби (що проходили в 1984 році в Москві для тих, кого СРСР змусив бойкотувати Лос-Анджелес) не підірвали престиж справжніх ігор, але порятунок прийшов не в олімпійській родині, а у великій політиці. Михайло Горбачов почав правити Росією, і тому бойкотів більше не було.
+								</div>
+								<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
+										Якби ця історія повторилася, довелося б чекати падіння Путіна, яке сьогодні важко уявити. Більш вірогідною є пропагандистська війна з долею Ігор.
+								</div>
+								<div class="opinion-mobile-news-section-footer">
+										<div class="horizontal-divider"></div>
+										<div class="opinion-mobile-news-section-footer__licence">
+												© Ліцензія на публікацію
+										</div>
+										<div class="opinion-mobile-news-section-footer__protect">
+												© ℗ Усі права захищено
+										</div>
+										<div class="opinion-mobile-news-section-footer__source">
+												Джерело: lb.ua
+										</div>
+										<div class="opinion-mobile-news-section-footer__social-icons">
+												<img src="images/icons/fb.svg" alt="social icon">
+												<img src="images/icons/linkedin.svg" alt="social icon">
+												<img src="images/icons/x.svg" alt="social icon">
+												<img src="images/icons/mail.svg" alt="social icon">
+												<img src="images/icons/like.svg" alt="social icon">
+										</div>
+										<div class="horizontal-divider"></div>
+								</div>
+								<div class="opinion-mobile-news-section__tags-container">
+										<div class="opinion-mobile-news-section__tag-btn">Олімпійські ігри</div>
+										<div class="opinion-mobile-news-section__tag-btn">Військовий конфлікт</div>
+										<div class="opinion-mobile-news-section__tag-btn">Війна Росії з Україною</div>
+										<div class="opinion-mobile-news-section__tag-btn">Армія</div>
+										<div class="opinion-mobile-news-section__tag-btn">Європа</div>
+										<div class="opinion-mobile-news-section__tag-btn">Росія</div>
+										<div class="opinion-mobile-news-section__tag-btn">Україна</div>
+								</div>
+								<div class="opinion-mobile-news-section__news-tabs">
+						<div class="opinion-mobile-news-section__news-tab opinion-mobile-news-section__news-tab--without-border-left">Пов'язано</div>
+						<div class="opinion-mobile-news-section__news-tab">Рекомендований</div>
+						<div class="opinion-mobile-news-section__news-tab">Останній</div>
+					</div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+								<div class="opinion-mobile-simple-news">
+										<div class="opinion-mobile-simple-news__row">
+												<div class="opinion-mobile-simple-news__img-container">
+														<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
+												</div>
+												<div class="opinion-mobile-simple-news__col">
+														<div class="opinion-mobile-simple-news__topic">
+																Політика 
+														</div>
+														<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
+																Макрон: у війні в Європі винна Росія              
+														</div>
+												</div>
+										</div>
+								</div>
+								<div class="horizontal-divider"></div>
+						</div>
+						<div class="gray-rectangle"></div>
+			</main>
 		</div>
-	</header>
-
-	<div class="opinion-desktop">
-		<main>
-			<div class="opinion-news-section">
-				<div class="opinion-news-section opinion-news-section--col-news">
-					<div class="opinion-news-section__main-news">
-						<div class="opinion-news-section__topic">
-							<span class="opinion-news-section__topic opinion-news-section__topic--bold">ЛБ.</span> / Події / Світ / <span class="opinion-news-section__topic opinion-news-section__topic--red">Військовий конфлікт</span>
-						</div>
-						<div class="opinion-news-section__title">
-							<span class="opinion-news-section__title opinion-news-section__title--orange-color">Мірослав Жуковський: </span>Олімпіада в Парижі – Росія йде до війни
-						</div>
-						<div class="opinion-news-section__description">
-							Глава Міжнародного олімпійського комітету Томас Бах мав право очікувати подяки від Росії та Володимира Путіна. Не дожив – отримав удар.
-						</div>
-						<div class="opinion-news-section__date-public">
-							<span>Опубліковано: 21.03.2024 13:43</span>
-						</div>
-						<div class="opinion-news-section__image-container">
-							<img class="opinion-news-section__image" src="images/images/article-main.png" alt="news image">
-						</div>
-											<div class="opinion-news-section__description">
-							Ті, хто відчуває на своїй спині подих імперської Росії, могли б впевнено назвати Томаса Баха (на фото) «корисним ідіотом».
-						</div>
-						<div class="opinion-news-section__photographer">
-							Фото: EPA/LAURENT GILLIERON
-						</div>
-					</div>
-					<div class="opinion-simple-news">
-						<div class="opinion-simple-news__small-title">Мирослав Жуковський</div>
-						<div class="opinion-simple-news__description">
-													Протягом багатьох років, після допінгового скандалу під час Ігор у Сочі в 2014 році, 
-													<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
-															Томас Бах дозволяв росіянам брати участь в Олімпіаді . 
-													</span>
-													Хоча не було ні прапора, ні гімну, це не завадило путінській пропаганді вихваляти своїх олімпійців. Війна в Україні також не зробила Росію поза законом. МОК дозволив своїм спортсменам взяти участь у Парижі за умови, що 
-													<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
-															вони не будуть пов'язані з силами і не будуть відкрито демонструвати підтримку війни . 
-													</span>
-													Це з самого початку була подвійна фікція: в Росії такого спортсмена важко знайти, а достовірно його перевірити ще важче. Надання рішення про допуск чи виключення росіян у певних видах спорту до міжнародних федерацій також було ухиленням, адже відомо, що багатьма з них керує Путін, а в деяких з них росіяни досі керують майже напряму.					</div>
-						<div class="opinion-simple-news__video-container"></div>
-					</div>
-					<div class="opinion-small-news">
-						<div class="opinion-small-news__to-open">
-							Читати далі
-						</div>
-						<div class="opinion-small-news__container">
-							<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
-							</div>
-							<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									ОЛІМПІЗМ
-								</div>
-								<div class="opinion-small-news__title">
-									МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
-								</div>
-								<div class="opinion-small-news__description">
-									Міжнародний олімпійський комітет у вівторок опублікував заяву, в якій назвав план Росії...
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="opinion-simple-news opinion-simple-news--margin-bottom">
-						<div class="opinion-simple-news__title">
-							Олімпіада без Росії та без Ізраїлю?
-						</div>
-						<div class="opinion-simple-news__description">
-													Тому ті, хто, як і ми, відчувають на своїй спині подих імперської Росії, могли б 
-													<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
-															впевнено назвати Баха «корисним ідіотом» . 
-													</span>
-													Навіть більше, ставитися до нього як до циніка, який, можливо, як і його співвітчизник і колишній канцлер ФРН Герхард Шредер, розраховує, що після закінчення олімпійської служби він сяде в раду директорів «Газпрому» чи іншої «Роснефти».</div>
-						<div class="opinion-simple-news__description">
-													Сьогодні добре видно, що з цього нічого не вийде, бо Росія з кожним місяцем війни стає все нахабнішою і замість того, щоб із вдячністю їсти з руки Баха, вона боляче її вкусила. Проривом стало рішення Путіна 
-													<span class="opinion-simple-news__description opinion-simple-news__description--text-orange">
-															організувати власні ігри у Москві та Єкатеринбурзі у вересні 
-													</span>
-													та запросити не лише союзників, а й увесь спортивний світ, супроводжуючи запевненнями, що це будуть справді універсальні олімпійські змагання.</div>
-					</div>
-									<div class="opinion-small-news">
-						<div class="opinion-small-news__to-open">
-							Читати далі
-						</div>
-						<div class="opinion-small-news__container">
-							<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
-							</div>
-							<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									СПОРТ
-								</div>
-								<div class="opinion-small-news__title">
-									МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
-								</div>
-								<div class="opinion-small-news__description">
-									Томас Бах очолюватиме Міжнародний олімпійський комітет (МОК) до 2025 року, але деякі хочуть, щоб...
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="opinion-news-section__divider-1 opinion-news-section__divider-1--vertical"></div>
-				
-				<div class="opinion-news-section opinion-news-section--col-rect">
-					<div class="rectangle-vertical rectangle-vertical--h-930"></div>
-				</div>
-			</div>
-			<div class="big-hr-rect"></div>
-			<div class="opinion-news-section">
-				<div class="opinion-news-section opinion-news-section--col-news">
-					<div class="opinion-simple-news">
-						<div class="opinion-simple-news__description">
-							Це реальна загроза. МОК усвідомлює, що, як і у великій політиці, Росія може розраховувати на підтримку Китаю, Індії, багатьох країн Африки, Азії та Південної Америки, а ізраїльсько-палестинський конфлікт дедалі більше обурює громадську думку, також у західних країнах. готові прийняти точку зору, що якщо Паризькі ігри будуть проводитися без росіян, вони також повинні проводитися без Ізраїлю.
-						</div>
-						<div class="opinion-simple-news__title">
-							Томас Бах став мішенню російської пропаганди
-						</div>
-						<div class="opinion-simple-news__description">
-							Наразі пропозицію стартувати без прапора та гімну росіяни вважають принизливою, але бойкотом не погрожували. Лише рішення не допустити своїх спортсменів до церемонії відкриття змусило їх розгорнути свою пропаганду. Томас Бах пройшов шлях від людини, яка неодноразово пила шампанське з Путіним, до керівника організації, що скочується до расизму та неонацизму – і не з вуст слухняних режиму спортсменів чи пропагандистів, а з вуст представників російської влади. Саме так речниця російського МЗС охарактеризувала його як "главу расистської та неонацистської організації".
-						</div>
-						<div class="opinion-simple-news__quote-container">
-							<div class="opinion-simple-news__quote-text">
-								Можна, звісно, ​​дискутувати, чи не краще направити до цього комітету когось із Польщі, Латвії та Румунії, бо вони краще орієнтуються в реаліях						
-							</div>
-						</div>
-						<div class="opinion-simple-news__description">
-							Бах — німець, тому назвати його неонацистом для нього має бути особливо боляче, і, мабуть, це можна трактувати як оголошення Росією олімпійської війни, в якій не буде місця для переговорів. Тим паче, що МОК нарешті досить серйозно взявся за перевірку спортсменів, які вийдуть на Олімпіаду. Він призначив комісію з трьох осіб (віце-президент МОК, колишня синхроністка Ніколь Ховерцз з Аруби, південнокорейський гравець у настільний теніс Ю Син Мін та зірка іспанського баскетболу Пау Газоль) для перевірки кожного російського спортсмена за критеріями, встановленими МОК.
-						</div>
-						<div class="opinion-simple-news__video-container"></div>
-						<div class="opinion-simple-news__description">
-							Можна, звісно, ​​дискутувати, чи не краще було б відправити до цієї комісії когось із Польщі, Латвії та Румунії, адже вони краще розбираються в реаліях, але це все-таки прогрес у порівнянні з порожніми словами МОК, які були в силі. протягом багатьох років.					
-						</div>
-					</div>
-				</div>
-	
-				<div class="opinion-news-section__divider-2 opinion-news-section__divider-2--vertical"></div>
-				
-				<div class="opinion-news-section opinion-news-section--col-rect">
-					<div class="rectangle-vertical rectangle-vertical--h-930"></div>
-				</div>
-			</div>
-			<div class="big-hr-rect"></div>
-			<div class="opinion-news-section">
-				<div class="opinion-news-section opinion-news-section--col-news">
-					<div class="opinion-small-news">
-						<div class="opinion-small-news__to-open">
-							Читати далі
-						</div>
-						<div class="opinion-small-news__container">
-							<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/makron.png" alt="mews image">
-							</div>
-							<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									СПОРТ
-								</div>
-								<div class="opinion-small-news__title">
-									МОК зробив заяву. Російські Дружби є «ворожими та цинічними»
-								</div>
-								<div class="opinion-small-news__description">
-									Томас Бах очолюватиме Міжнародний олімпійський комітет (МОК) до 2025 року, але деякі хочуть, щоб...
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="opinion-simple-news">
-						<div class="opinion-simple-news__description">
-							Олімпійський рух пережив той конфлікт, і ніякі Ігри дружби (що проходили в 1984 році в Москві для тих, кого СРСР змусив бойкотувати Лос-Анджелес) не підірвали престиж справжніх ігор, але порятунок прийшов не в олімпійській сім’ї, а у великій політиці. Михайло Горбачов почав правити Росією, і тому бойкотів більше не було.					
-						</div>
-						<div class="opinion-simple-news__description">
-							Якби ця історія повторилася, довелося б чекати падіння Путіна, яке сьогодні важко уявити. Більш ймовірна пропагандистська війна, в якій на кону буде поставлена ​​доля Олімпіади.
-						</div>
-					</div>
-					<div class="opinion-news-section__tags-container">
-						<div class="opinion-news-section__tag-btn">Cлужби уніформи</div>
-						<div class="opinion-news-section__tag-btn">Армія</div>
-						<div class="opinion-news-section__tag-btn">Військовий конфлікт</div>
-						<div class="opinion-news-section__tag-btn">Регіони</div>
-						<div class="opinion-news-section__tag-btn">Війна Росії з Україною</div>
-						<div class="opinion-news-section__tag-btn">Європа</div>
-						<div class="opinion-news-section__tag-btn">Росія</div>
-						<div class="opinion-news-section__tag-btn">Україна</div>
-						<div class="opinion-news-section__tag-btn">НАТО</div>
-					</div>
-					<div class="opinion-news-section-footer">
-						<div class="opinion-news-section-footer__copyright">
-							<div class="opinion-news-section-footer__copyright-row">
-								<div class="opinion-news-section-footer__copyright-licence">
-									© Ліцензія на публікацію
-								</div>
-								<div class="opinion-news-section-footer__social-icons">
-									<img src="images/icons/fb.svg" alt="social icon">
-									<img src="images/icons/linkedin.svg" alt="social icon">
-									<img src="images/icons/x.svg" alt="social icon">
-									<img src="images/icons/mail.svg" alt="social icon">
-									<img src="images/icons/like.svg" alt="social icon">
-								</div>
-							</div>
-							<div class="opinion-news-section-footer__copyright-protect">
-								© ℗ Усі права захищено
-							</div>
-							<div class="opinion-news-section-footer__copyright-source">
-								Джерело: lb.ua
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="opinion-news-section opinion-news-section--col-rect">
-					<div class="rectangle-vertical rectangle-vertical--h-700"></div>
-				</div>
-			</div>
-	
-			
-			<div class="opinion-news-section opinion-news-section--col-news">
-				<div class="opinion-news-section__news-tabs">
-					<div class="opinion-news-section__news-tab opinion-news-section__news-tab--without-border-left">Пов'язано</div>
-					<div class="opinion-news-section__news-tab">Рекомендований</div>
-					<div class="opinion-news-section__news-tab">Останній</div>
-				</div>
-				<div class="opinion-news-section__news_wrapper">
-					<div class="opinion-news-section__news_wrapper-col">
-						<div class="opinion-small-news opinion-small-news--full-width">
-							<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
-								<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
-								</div>
-								<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									Армія
-								</div>
-								<div class="opinion-small-news__title">
-									Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
-								</div>
-								<div class="opinion-small-news__description">
-									У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
-								</div>
-							</div>
-						</div>
-						<div class="opinion-small-news opinion-small-news--full-width">
-							<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
-								<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
-								</div>
-								<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									Армія
-								</div>
-								<div class="opinion-small-news__title">
-									Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
-								</div>
-								<div class="opinion-small-news__description">
-									У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
-								</div>
-							</div>
-						</div>
-						<div class="opinion-small-news opinion-small-news--full-width">
-							<div class="opinion-small-news__container opinion-small-news__container--without-border-top opinion-small-news__container--without-border-bottom">
-								<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
-								</div>
-								<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									Армія
-								</div>
-								<div class="opinion-small-news__title">
-									Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
-								</div>
-								<div class="opinion-small-news__description">
-									У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="opinion-news-section__news_wrapper-col opinion-news-section__news_wrapper-col--without-border-padding" >
-						<div class="opinion-small-news opinion-small-news--full-width">
-							<div class="opinion-small-news__container opinion-small-news__container--without-border-top">
-								<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
-								</div>
-								<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									Армія
-								</div>
-								<div class="opinion-small-news__title">
-									Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
-								</div>
-								<div class="opinion-small-news__description">
-									У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
-								</div>
-							</div>
-						</div>
-						<div class="opinion-small-news opinion-small-news--full-width">
-							<div class="opinion-small-news__container opinion-small-news__container--without-border-top opinion-small-news__container--without-border-bottom">
-								<div class="opinion-small-news__image-container">
-								<img class="opinion-small-news__image" src="images/images/shkipchak.png" alt="mews image">
-								</div>
-								<div class="opinion-small-news__news-container">
-								<div class="opinion-small-news__topic">
-									Армія
-								</div>
-								<div class="opinion-small-news__title">
-									Війна через три роки? Ген. Скшипчак: Нам погрожують найгіршими...
-								</div>
-								<div class="opinion-small-news__description">
-									У разі війни цивільна оборона є дуже важливою, це питання підготовки нації до виживання, – сказав...            </div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
 		<footer class="footer">
 			<div class="footer__logo">
-				<div class="footer__logo-text">ЛБ.</div>
-				<div class="footer__logo-underline"></div>
-				<div class="footer__logo-icons" >
-					<img src="images/icons/fb.svg" alt="social icon">
-					<img src="images/icons/linkedin.svg" alt="social icon">
-					<img src="images/icons/x.svg" alt="social icon">
-				</div>
+					<div class="footer__logo-text">ЛБ.</div>
+					<div class="footer__logo-underline"></div>
+					<div class="footer__logo-icons" >
+							<img src="images/icons/fb.svg" alt="social icon">
+							<img src="images/icons/linkedin.svg" alt="social icon">
+							<img src="images/icons/x.svg" alt="social icon">
+					</div>
 			</div>
 			<div class="footer__section">
-				<div class="footer__links-container">
-					<div class="footer__links">
-						<div class="footer__links-col">
-							<div class="footer__links-title">контакт</div>
-							<div class="footer__links-text">Про нас контакт</div>
-							<div class="footer__links-text">Напишіть нам</div>
-						</div>
-						<div class="footer__links-col">
-							<div class="footer__links-title">статут</div>
-							<div class="footer__links-text">Політика конфіденційності</div>
-							<div class="footer__links-text">Зміна налаштувань згоди</div>
-							<div class="footer__links-text">Правила веб-сайту</div>
-							<div class="footer__links-text">Інформація про відправника</div>
-						</div>
-						<div class="footer__links-col">
-							<div class="footer__links-title">реклама та підписка</div>
-							<div class="footer__links-text">Реклама</div>
-							<div class="footer__links-text">Оголошення</div>
-							<div class="footer__links-text">Підписка</div>
-							<div class="footer__links-text">Архіви</div>
-						</div>
-						<div class="footer__links-col">
-							<div class="footer__links-title">партнери</div>
-							<div class="footer__links-text">E-kiosk.pl E-gazety.pl</div>
-							<div class="footer__links-text">Nexto.pl</div>
-							<div class="footer__links-text">Kancelarierp.pl</div>
-						</div>
+					<div class="footer__links-container">
+							<div class="footer__links">
+									<div class="footer__links-col">
+											<div class="footer__links-title">контакт</div>
+											<div class="footer__links-text">Про нас контакт</div>
+											<div class="footer__links-text">Напишіть нам</div>
+									</div>
+									<div class="footer__links-col">
+											<div class="footer__links-title">статут</div>
+											<div class="footer__links-text">Політика конфіденційності</div>
+											<div class="footer__links-text">Зміна налаштувань згоди</div>
+											<div class="footer__links-text">Правила веб-сайту</div>
+											<div class="footer__links-text">Інформація про відправника</div>
+									</div>
+									<div class="footer__links-col">
+											<div class="footer__links-title">реклама та підписка</div>
+											<div class="footer__links-text">Реклама</div>
+											<div class="footer__links-text">Оголошення</div>
+											<div class="footer__links-text">Підписка</div>
+											<div class="footer__links-text">Архіви</div>
+									</div>
+									<div class="footer__links-col">
+											<div class="footer__links-title">партнери</div>
+											<div class="footer__links-text">E-kiosk.pl E-gazety.pl</div>
+											<div class="footer__links-text">Nexto.pl</div>
+											<div class="footer__links-text">Kancelarierp.pl</div>
+									</div>
+									<div class="footer__links-col">
+											<div class="footer__links-title">карта сайту</div>
+									</div>
+									<div class="footer__links-col">
+											<div class="footer__links-title">товарна пропозиція</div>
+									</div>
+							</div>
 					</div>
-					<div class="footer__links">
-						<div class="footer__links-col">
-							<div class="footer__links-title">карта сайту</div>
-						</div>
-						<div class="footer__links-col">
-							<div class="footer__links-title">товарна пропозиція</div>
-						</div>
+					<div class="footer__advertising-section"></div>
+			</div>
+			<div class="footer__subscribe">
+					<div class="footer__subscribe-topic footer__subscribe-title--red">Інформаційний бюлетень</div>
+					<div class="footer__subscribe-title">Читайте кращий контент</div>
+					<div class="footer__subscribe-input-container">
+							<input class="footer__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
 					</div>
-				</div>
-				<div class="footer__advertising-section"></div>
+					<button class="button button--contained-red button--height-40">Підписатися</button>
 			</div>
 		</footer>
-	</div>
-	
-	<div class="opinion-mobile">
-		<main class="opinion-mobile-news-section">
-			<div class="opinion-mobile-news-section__col">
-							<div class="opinion-mobile-news-section__topic">
-									Військовий конфлікт
-							</div>
-							<div class="opinion-mobile-news-section__title">
-									Військові НАТО вже в Україні. Іспанська газета підтверджує слова Сікорського
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-16">
-									Іспанська газета "El País" повідомила, що присутність військових з країн НАТО в Україні не є чимось новим. Раніше глава Міністерства закордонних справ Радослав Сікорський (PO) заявив, що в Україні перебувають солдати НАТО. Видання заявило, що солдати НАТО не брали і не беруть участі в бойових діях.
-							</div>
-							<div class="opinion-mobile-news-section__main-image-block">
-									<div class="opinion-mobile-news-section__photo-info">
-											Опубліковано: 18.03.2024 13:12
-									</div>
-									<div class="opinion-mobile-news-section__img-container">
-											<img class="opinion-mobile-news-section__image" src="./images/images/article-main.png" alt="main-hero">
-									</div>
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-16">
-									Хто відчуває на своїй спині подих імперської Росії,
-											вони легко могли б назвати себе Томасом Бахом (на фото) «корисний ідіот».
-							</div>
-							<div class="opinion-mobile-news-section__main-image-block">
-									<div class="opinion-mobile-news-section__photo-info">
-											Фото: EPA/LAURENT GILLIERON
-									</div>
-							</div>
-							<div class="opinion-mobile-news-section__unit">
-									<div class="opinion-mobile-news-section__unit-text">
-											Мирослав Жуковський
-									</div>
-									<div class="horizontal-divider"></div>
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Протягом багатьох років, після допінгового скандалу під час Ігор у Сочі в 2014 році, <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">Томас Бах дозволяв росіянам брати участь в Олімпіаді</span> . Хоча не було ні прапора, ні гімну, це не завадило путінській пропаганді вихваляти своїх олімпійців. Війна в Україні також не зробила Росію поза законом. МОК дозволив своїм спортсменам взяти участь у Парижі за умови, що  <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">вони не будуть пов'язані з силами і не будуть відкрито демонструвати підтримку війни </span>. Це з самого початку була подвійна фікція: в Росії такого спортсмена важко знайти, а достовірно його перевірити ще важче. Надання рішення про допуск чи виключення росіян у певних видах спорту до міжнародних федерацій також було ухиленням, адже відомо, що багатьма з них керує Путін, а в деяких з них росіяни досі керують майже напряму.
-							</div>
-							<div class="opinion-mobile-news-section__unit">
-									<div class="opinion-mobile-news-section__unit-text">
-											Читати далі
-									</div>
-									<div class="horizontal-divider"></div>
-							</div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-news-section__header">Ігри без Росії теж однакові без них Ізраїль?</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Тому ті, хто, як і ми, відчувають на своїй спині подих імперської Росії, могли б <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">впевнено назвати Баха «корисним ідіотом»</span>. Навіть більше, ставитися до нього як до циніка, який, можливо, як і його співвітчизник і колишній канцлер ФРН Герхард Шредер, розраховує, що після закінчення олімпійської служби він сяде в раду директорів «Газпрому» чи іншої «Роснефти».
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Сьогодні добре видно, що з цього нічого не вийде, бо Росія з кожним місяцем війни стає все нахабнішою і замість того, щоб із вдячністю їсти з руки Баха, вона боляче її вкусила. Проривом стало рішення Путіна організувати <span class="opinion-mobile-news-section__description opinion-mobile-news-section__description--text-red">власні ігри у Москві та Єкатеринбурзі у вересні</span> та запросити не лише союзників, а й увесь спортивний світ, супроводжуючи запевненнями, що це будуть справді універсальні олімпійські змагання.
-							</div>
-							<div class="opinion-mobile-news-section__unit">
-									<div class="opinion-mobile-news-section__unit-text">
-											Читати далі
-									</div>
-									<div class="horizontal-divider"></div>
-							</div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Спорт 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Владар кілець. Хто такий Томас Бах, найвпливовіша людина у світі спорту              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-					</div>
-					<div class="gray-rectangle"></div>
-					<div class="opinion-mobile-news-section__col">
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Це реальна загроза. МОК усвідомлює, що, як і у великій політиці, Росія може розраховувати на підтримку Китаю, Індії, багатьох країн Африки, Азії та Південної Америки, а ізраїльсько-палестинський конфлікт дедалі більше обурює громадську думку, також у західних країнах. готові прийняти точку зору, що якщо Паризькі ігри будуть проводитися без росіян, вони також повинні проводитися без Ізраїлю.
-							</div>
-							<div class="opinion-mobile-news-section__header">Томас Бах став мішенню російської пропаганди</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Наразі пропозицію стартувати без прапора та гімну росіяни вважали принизливою, але бойкотом не погрожували. Лише рішення не допустити своїх спортсменів до церемонії відкриття змусило їх розгорнути свою пропаганду. Томас Бах пройшов шлях від людини, яка неодноразово пила шампанське з Путіним, до керівника організації, що скочується до расизму та неонацизму – і не з вуст слухняних режиму спортсменів чи пропагандистів, а з вуст представників російської влади. Саме так речниця російського МЗС охарактеризувала його як "главу расистської та неонацистської організації".            
-							</div>
-							<div class="opinion-mobile-news-section__quote-container">
-									<div class="vertical-divider"></div>
-									<div class="opinion-mobile-news-section__quote">
-											<div class="opinion-mobile-news-section__quote-text">Можна, звісно, ​​дискутувати, чи не краще направити до цього комітету когось із Польщі, Латвії та Румунії, бо вони краще орієнтуються в реаліях</div>
-									</div>
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Бах — німець, тому назвати його неонацистом для нього має бути особливо боляче, і, ймовірно, це можна трактувати як оголошення Росією олімпійської війни, в якій не буде місця для переговорів. Тим паче, що МОК нарешті досить серйозно взявся за перевірку спортсменів, які вийдуть на Олімпіаду. Він призначив комісію з трьох осіб (віце-президент МОК, колишня синхроністка Ніколь Ховертс з Аруби, південнокорейський пінгпонгіст Ю Син Мін і зірка іспанського баскетболу Пау Газоль) для перевірки кожного російського спортсмена за критеріями, встановленими МОК.
-							</div>
-					</div>
-					<div class="gray-rectangle"></div>
-					<div class="opinion-mobile-news-section__col">
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Можна, звісно, ​​дискутувати, чи не краще було б відправити до цієї комісії когось із Польщі, Латвії та Румунії, адже вони краще розбираються в реаліях, але це все-таки прогрес у порівнянні з порожніми словами МОК, які були в силі. протягом багатьох років.
-							</div>
-							<div class="opinion-mobile-news-section__header">Яке майбутнє чекає на Олімпійські ігри?</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Чи змушує це повернутися до часів олімпійської холодної війни, схожої на 1980-ті, коли Захід у відповідь на агресію СРСР проти Афганістану бойкотував Ігри в Москві, а через чотири роки «країни мир і соціалізм» відповів бойкотом їм? Анджелес? Про це багато свідчить, хоча, як і тоді, спортсмена будь-якої країни буде важко переконати, що медалі Єкатеринбурга такі ж цінні, як паризькі. І навіть оголошені росіянами фінансові винагороди нічого не змінять.
-							</div>
-					</div>
-					<div class="gray-rectangle"></div>
-					<div class="opinion-mobile-news-section__col">
-							<div class="opinion-mobile-news-section__unit">
-									<div class="opinion-mobile-news-section__unit-text">
-											Читати далі
-									</div>
-									<div class="horizontal-divider"></div>
-							</div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Спорт 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Вітольд Банька: Олімпійські ігри? У Парижі росіян не буде багато              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Олімпійський рух пережив той конфлікт, і ніякі Ігри дружби (що проходили в 1984 році в Москві для тих, кого СРСР змусив бойкотувати Лос-Анджелес) не підірвали престиж справжніх ігор, але порятунок прийшов не в олімпійській родині, а у великій політиці. Михайло Горбачов почав правити Росією, і тому бойкотів більше не було.
-							</div>
-							<div class="opinion-mobile-news-section__description opinion-mobile-news-section__description--size-18">
-									Якби ця історія повторилася, довелося б чекати падіння Путіна, яке сьогодні важко уявити. Більш вірогідною є пропагандистська війна з долею Ігор.
-							</div>
-							<div class="opinion-mobile-news-section-footer">
-									<div class="horizontal-divider"></div>
-									<div class="opinion-mobile-news-section-footer__licence">
-											© Ліцензія на публікацію
-									</div>
-									<div class="opinion-mobile-news-section-footer__protect">
-											© ℗ Усі права захищено
-									</div>
-									<div class="opinion-mobile-news-section-footer__source">
-											Джерело: lb.ua
-									</div>
-									<div class="opinion-mobile-news-section-footer__social-icons">
-											<img src="images/icons/fb.svg" alt="social icon">
-											<img src="images/icons/linkedin.svg" alt="social icon">
-											<img src="images/icons/x.svg" alt="social icon">
-											<img src="images/icons/mail.svg" alt="social icon">
-											<img src="images/icons/like.svg" alt="social icon">
-									</div>
-									<div class="horizontal-divider"></div>
-							</div>
-							<div class="opinion-mobile-news-section__tags-container">
-									<div class="opinion-mobile-news-section__tag-btn">Олімпійські ігри</div>
-									<div class="opinion-mobile-news-section__tag-btn">Військовий конфлікт</div>
-									<div class="opinion-mobile-news-section__tag-btn">Війна Росії з Україною</div>
-									<div class="opinion-mobile-news-section__tag-btn">Армія</div>
-									<div class="opinion-mobile-news-section__tag-btn">Європа</div>
-									<div class="opinion-mobile-news-section__tag-btn">Росія</div>
-									<div class="opinion-mobile-news-section__tag-btn">Україна</div>
-							</div>
-							<div class="opinion-mobile-news-section__news-tabs">
-					<div class="opinion-mobile-news-section__news-tab opinion-mobile-news-section__news-tab--without-border-left">Пов'язано</div>
-					<div class="opinion-mobile-news-section__news-tab">Рекомендований</div>
-					<div class="opinion-mobile-news-section__news-tab">Останній</div>
-				</div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-							<div class="opinion-mobile-simple-news">
-									<div class="opinion-mobile-simple-news__row">
-											<div class="opinion-mobile-simple-news__img-container">
-													<img class="opinion-mobile-simple-news__image opinion-mobile-simple-news__image--size-108" src="./images/images/makron-sm.png" alt="makron">
-											</div>
-											<div class="opinion-mobile-simple-news__col">
-													<div class="opinion-mobile-simple-news__topic">
-															Політика 
-													</div>
-													<div class="opinion-mobile-simple-news__title opinion-mobile-simple-news__title--size-16">
-															Макрон: у війні в Європі винна Росія              
-													</div>
-											</div>
-									</div>
-							</div>
-							<div class="horizontal-divider"></div>
-					</div>
-					<div class="gray-rectangle"></div>
-		</main>
-			
-		<footer class="footer-mobile">
-			<div class="footer-mobile__logo">
-				<div class="footer-mobile__logo-text">ЛБ.</div>
-				<div class="footer-mobile__logo-underline"></div>
-				<div class="footer-mobile__logo-icons" >
-					<img src="images/icons/fb.svg" alt="social icon">
-					<img src="images/icons/linkedin.svg" alt="social icon">
-					<img src="images/icons/x.svg" alt="social icon">
-				</div>
-			</div>
-					<div class="footer-mobile__row">
-							<div class="footer-mobile__col">
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">контакт</div>
-											<div class="footer-mobile__section-par">Про нас контакт</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-									</div>
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">реклама та підписка</div>
-											<div class="footer-mobile__section-par">Про нас контакт</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-									</div>
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">статут</div>
-											<div class="footer-mobile__section-par">Про нас контакт</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-									</div>
-							</div>
-							<div class="footer-mobile__col">
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">партнери</div>
-											<div class="footer-mobile__section-par">Про нас контакт</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-											<div class="footer-mobile__section-par">Напишіть нам</div>
-									</div>
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">карта сайту</div>
-									</div>
-									<div class="footer-mobile__section">
-											<div class="footer-mobile__section-title">товарна пропозиція</div>
-									</div>
-							</div>
-					</div>
-					<div class="footer-mobile__block footer-mobile__block--subscribe">
-							<div class="footer-mobile__subscribe-topic footer-mobile__subscribe-title--red">Інформаційний бюлетень</div>
-							<div class="footer-mobile__subscribe-title">Читайте кращий контент</div>
-							<div class="footer-mobile__subscribe-input-container">
-									<input class="footer-mobile__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
-							</div>
-							<button class="button button--contained-red button--height-40">Підписатися</button>
-					</div>
-		</footer>
-	</div>
-</body>
-
+	</body>
 </html>

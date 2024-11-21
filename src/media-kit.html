@@ -1,987 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+        </style>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-    <style>
-		@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-	</style>
-</head>
+    <body>
+        <header class="header">
+            <div class="header__title">
+                ЛБ.
+            </div>
+            <div class="header__navbar">
+                <div class="header__navbar-icons">
+                    <div class="header__navbar-icon-container header__menu">
+                        <div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
 
-<body>
-	<header class="header">
-		<div class="header__title">
-			ЛБ.
-		</div>
-		<div class="header__navbar">
-			<div class="header__navbar-icons">
-				<div class="header__navbar-icon-container header__menu">
-					<div class="header__navbar-menu-icon icon icon--burger icon--20px pointer"></div>
+                        <div class="context-menu">
+                            <div class="context-menu__buttons">
+                                <button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
+                                <button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
+                            </div>
+                            <div class="context-menu__top">
+                                <div class="context-menu__title">ЛБ.</div>
+                                <div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
+                            </div>
+                            <div class="context-menu__search">
+                                <div class="context-menu__search-icon icon icon--search"></div>
+                                <div class="input input--outlined-white input--height-24 input--radius-24">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="context-menu__items">
+                                <div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                                <div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__divider"></div>
+                    <div class="header__navbar-icon-container header__search">
+                        <div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
+                    </div>
+                    <div class="header__divider"></div>
+                </div>
+                <div class="header__navbar-btns pl--0">
+                    <button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
+                    <button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
+                </div>
+                <div class="header__navbar-social">
+                    <img src="images/icons/fb.svg" alt="fb">
+                    <img src="images/icons/linkedin.svg" alt="linkedin">
+                    <img src="images/icons/x.svg" alt="tw">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="media-kit-main">
 
-                    <div class="context-menu">
-                        <div class="context-menu__buttons">
-                            <button class="context-menu__auth-button button button--background-red button--uppercase">Увійти</button>
-                            <button class="context-menu__support-button button button--white-red button--uppercase">Підтримай нас</button>
-                        </div>
-                        <div class="context-menu__top">
-                            <div class="context-menu__title">ЛБ.</div>
-                            <div class="context-menu__close icon icon--close-white icon--18px pointer"></div>
-                        </div>
-                        <div class="context-menu__search">
-                            <div class="context-menu__search-icon icon icon--search"></div>
-                            <div class="input input--outlined-white input--height-24 input--radius-24">
-                                <input type="text">
+                <div class="media-kit-main__hero">
+                    <div class="media-kit-main__hero-block media-kit-main__hero-block--info">
+                        <div class="media-kit-main__hero-block-content">
+                            <div class="media-kit-main__hero-block-title">
+                                LB media: новини України
                             </div>
-                        </div>
-                        <div class="context-menu__items">
-                            <div class="context-menu__item">Події<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Економіка<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Закон<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Спорт<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Регіони<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Журналістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Особисті фінанси<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Бізнес<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Автомобільний<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Цифровий<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Туризм<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Історія<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Здоров'я<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Спосіб життя<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Нерухомість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Енергетика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Логістика<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Збройна промисловість<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Клімат<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">ЛБ аналізує<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
-                            <div class="context-menu__item">Рейтинги<div class="context-menu__item-icon"><i class="icon icon--arrow-right-gray"></i></div></div>
+                            <div class="media-kit-main__hero-block-title media-kit-main__hero-block-title--size-36">
+                                Дорослий погляд на світ
+                            </div>
+                            <button class="media-kit-main__hero-block-btn">
+                                Замовити проєкт 
+                            </button>
                         </div>
                     </div>
-				</div>
-                <div class="media-kit-vertical-divider"></div>
-				<div class="header__divider"></div>
-				<div class="header__navbar-icon-container">
-					<div class="header__navbar-search-icon icon icon--search icon--20px pointer"></div>
-				</div>
-				<div class="header__divider"></div>
-			</div>
-			<div class="header__navbar-btns pl--0">
-                <button class="header__support-button button button--outlined-black button--uppercase">Підтримай нас</button>
-				<button class="header__auth-button button button--background-red button--uppercase">Авторизуватися</button>
-			</div>
-            <div class="header__navbar-social">
-                <img src="images/icons/fb.svg" alt="fb">
-                <img src="images/icons/linkedin.svg" alt="linkedin">
-                <img src="images/icons/x.svg" alt="tw">
-            </div>
-		</div>
-	</header>
-	<main>
-        <div class="media-kit-main">
+                    <div class="media-kit-main__hero-block media-kit-main__hero-block--image">
+                        <img class="media-kit-main__hero-block-img" src="images/media-kit/tower-kyiv.png" alt="tower">
+                    </div>
+                </div>
 
-            <div class="media-kit-main__hero">
-                <div class="media-kit-main__hero-block media-kit-main__hero-block--info">
-                    <div class="media-kit-main__hero-block-content">
-                        <div class="media-kit-main__hero-block-title">
-                            LB media: новини України
-                        </div>
-                        <div class="media-kit-main__hero-block-title media-kit-main__hero-block-title--size-36">
-                            Дорослий погляд на світ
-                        </div>
-                        <button class="media-kit-main__hero-block-btn">
-                            Замовити проєкт 
-                        </button>
+                <div class="media-kit-main__audience">
+                    <div class="media-kit-main__audience-title">
+                        Наша аудиторія
                     </div>
-                </div>
-                <div class="media-kit-main__hero-block media-kit-main__hero-block--image">
-                    <img class="media-kit-main__hero-block-img" src="images/media-kit/tower-kyiv.png" alt="tower">
-                </div>
-            </div>
-
-            <div class="media-kit-main__audience">
-                <div class="media-kit-main__audience-title">
-                    Наша аудиторія
-                </div>
-                <div class="media-kit-main__audience-row">
-                    <div class="media-kit-main__audience-col">
-                        <div class="media-kit-main__audience-icon">
-                            <img src="images/media-kit/info1.svg.svg" alt="info1">
-                        </div>
-                        <div class="media-kit-main__audience-amount">~ 1 млн</div>
-                        <div class="media-kit-main__audience-text">користувачів</div>
-                    </div>
-                    <div class="media-kit-main__audience-col">
-                        <div class="media-kit-main__audience-icon">
-                            <img src="images/media-kit/info2.svg.svg" alt="info2">
-                        </div>
-                        <div class="media-kit-main__audience-amount">100 тис.</div>
-                        <div class="media-kit-main__audience-text">підписників Facebook</div>
-                        <div class="media-kit-main__audience-amount media-kit-main__audience-amount--size-28">500 тис.</div>
-                        <div class="media-kit-main__audience-text media-kit-main__audience-text--mb-0">охоплення сторінки за місяць</div>
-                    </div>
-                    <div class="media-kit-main__audience-col">
-                        <div class="media-kit-main__audience-icon">
-                            <img src="images/media-kit/info3.svg.svg" alt="info3">
-                        </div>
-                        <div class="media-kit-main__audience-amount">12 тис.</div>
-                        <div class="media-kit-main__audience-text">підписників Telegram</div>
-                        <div class="media-kit-main__audience-amount media-kit-main__audience-amount--size-28">120 тис.</div>
-                        <div class="media-kit-main__audience-text media-kit-main__audience-text--mb-0">охоплення сторінки за місяць</div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__group">
-                <div class="media-kit-main__group-title">
-                    В нашій спільноті
-                </div>
-                <div class="media-kit-main__group-card-container">
-                    <div class="media-kit-main__group-card">
-                        <div class="media-kit-main__group-card-title">Підприємці</div>
-                        <div class="media-kit-main__group-card-description">Ми розповідаємо їхні історії, передаємо досвід і надихаємо інших наслідувати їхній приклад.</div>
-                    </div>
-                    <div class="media-kit-main__group-card">
-                        <div class="media-kit-main__group-card-title">Топ-менеджери</div>
-                        <div class="media-kit-main__group-card-description">Гуру своєї справи, вони діляться досвідом на наших сторінках, ведуть блоги, дають інтерв'ю та дізнаються, чим займаються їхні колеги.</div>
-                    </div>
-                    <div class="media-kit-main__group-card">
-                        <div class="media-kit-main__group-card-title">IT-спеціалісти</div>
-                        <div class="media-kit-main__group-card-description">Вони на гребені інновацій, роблять круті речі і рухають світ уперед. Їхні історії ми з задоволенням розповідаємо.</div>
-                    </div>
-                    <div class="media-kit-main__group-card">
-                        <div class="media-kit-main__group-card-title">Креативний клас</div>
-                        <div class="media-kit-main__group-card-description">Маркетологи, PR-менеджери, HR-спеціалісти, дизайнери, продакт-менеджери та всі ті люди, чия робота — створювати.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__persons">
-                <div class="media-kit-main__persons-title">
-                    Герої наших статей
-                </div>
-                <div class="media-kit-main__persons-container">
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                    <div class="media-kit-main__person-card">
-                        <div class="media-kit-main__person-card-img">
-                            <img src="images/media-kit/klichko.png" alt="klichko">
-                        </div>
-                        <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
-                        <div class="media-kit-main__person-card-position">Копірайтер</div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__themes">
-                <div class="media-kit-main__themes-title">Про що ми пишемо</div>
-                <div class="media-kit-main__themes-container">
-                    <div class="media-kit-main__theme">
-                        <div class="media-kit-main__theme-icon">
-                            <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
-                        </div>
-                        <div class="media-kit-main__theme-text">Ми пишемо про головні тренди в
-                            бізнесі та суспільстві — в Україні
-                            та світі.</div>
-                    </div>
-                    <div class="media-kit-main__theme">
-                        <div class="media-kit-main__theme-icon">
-                            <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
-                        </div>
-                        <div class="media-kit-main__theme-text">Розповідаємо про досягнення
-                            українських підприємців та
-                            виклики, які перед ними стоять.</div>
-                    </div>
-                    <div class="media-kit-main__theme">
-                        <div class="media-kit-main__theme-icon">
-                            <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
-                        </div>
-                        <div class="media-kit-main__theme-text">Пишемо про те, як українці
-                            наближають перемогу: як попри
-                            війну відкривають нові напрямки
-                            в бізнесі та як займаються
-                            професійним саморозвитком.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__mission">
-                <div class="media-kit-main__mission-content">
-                    <div class="media-kit-main__mission-title">Наша місія</div>
-                    <div class="media-kit-main__mission-head">Навіщо ми робимо LB.media</div>
-                    <div class="media-kit-main__mission-description">Нам хочеться жити в країні, де люди захоплені своєю справою, ставлять цілі та досягають їх, мислять творчо і бачать склянку, яканаполовину повна.</div>
-                    <div class="media-kit-main__mission-description">Вони не проживають життя дарма. Донатять, допомагають країні, вірять у власну мрію і перетворюють її на реальність.</div>
-                    <div class="media-kit-main__mission-description">Ми підтримуємо їх на цьому шляху: надихаємо прикладами, застерігаємо від помилок, показуємо нові шляхи та допомагаємо брати наступну сходинку.</div>
-                </div>
-                <div class="media-kit-main__mission-img-container">
-                    <img class="media-kit-main__mission-img" src="images/media-kit/about.jpg.png" alt="about">
-                </div>
-            </div>
-            <div class="media-kit-main__format">
-                <div class="media-kit-main__format-title">
-                    Наші формати
-                </div>
-                <div class="media-kit-main__format-cards-container">
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                    <div class="media-kit-main__format-card">
-                        <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
-                        <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Розміщення:</div>
-                            <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
-                        </div>
-                        <div class="media-kit-main__format-card-point">
-                            <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
-                            <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__projects">
-                <div class="media-kit-main__projects-title">
-                    Про що ми пишемо
-                </div>
-                <div class="media-kit-main__projects-nav">
-                    <div class="media-kit-main__projects-nav-text">
-                        У нас в портфоліо 1500+ кейсів для 500+ клієнтів
-                    </div>
-                    <div class="media-kit-main__projects-nav-arrows">
-                        <img class="media-kit-main__projects-nav-arrow" src="images/media-kit/arrow-left.svg" alt="arrow">
-                        <img class="media-kit-main__projects-nav-arrow media-kit-main__projects-nav-arrow--right" src="images/media-kit/arrow-left.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="media-kit-main__projects-card-container">
-                    <div class="media-kit-main__projects-card">
-                        <div class="media-kit-main__projects-card-img-container">
-                            <img class="media-kit-main__projects-card-img" src="images/media-kit/sense-bank.png" alt="sense">
-                        </div>
-                        <div class="media-kit-main__projects-card-title">Sense Bank</div>
-                        <div class="media-kit-main__projects-card-description">Ідея проєкту: 
-                            <span class="media-kit-main__projects-card-description--non-bold">створили інтерактивний проєкт про зарплатні картки від Sense Bank. Розповіли усе про умови, зручні сервіси і послуги, показали, чому клієнтам буде зручно використовувати ці картки.</span> 
-                        </div>
-                        <div class="media-kit-main__projects-card-statistic-container">
-                            <div class="media-kit-main__projects-card-statistic">
-                                <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
-                                <div class="media-kit-main__projects-card-statistic-amount">5 156</div>
+                    <div class="media-kit-main__audience-row">
+                        <div class="media-kit-main__audience-col">
+                            <div class="media-kit-main__audience-icon">
+                                <img src="images/media-kit/info1.svg.svg" alt="info1">
                             </div>
-                            <div class="media-kit-main__projects-card-statistic">
-                                <div class="media-kit-main__projects-card-statistic-title">Загальне охоплення:</div>
-                                <div class="media-kit-main__projects-card-statistic-amount">162 580</div>
+                            <div class="media-kit-main__audience-amount">~ 1 млн</div>
+                            <div class="media-kit-main__audience-text">користувачів</div>
+                        </div>
+                        <div class="media-kit-main__audience-col">
+                            <div class="media-kit-main__audience-icon">
+                                <img src="images/media-kit/info2.svg.svg" alt="info2">
+                            </div>
+                            <div class="media-kit-main__audience-amount">100 тис.</div>
+                            <div class="media-kit-main__audience-text">підписників Facebook</div>
+                            <div class="media-kit-main__audience-amount media-kit-main__audience-amount--size-28">500 тис.</div>
+                            <div class="media-kit-main__audience-text media-kit-main__audience-text--mb-0">охоплення сторінки за місяць</div>
+                        </div>
+                        <div class="media-kit-main__audience-col">
+                            <div class="media-kit-main__audience-icon">
+                                <img src="images/media-kit/info3.svg.svg" alt="info3">
+                            </div>
+                            <div class="media-kit-main__audience-amount">12 тис.</div>
+                            <div class="media-kit-main__audience-text">підписників Telegram</div>
+                            <div class="media-kit-main__audience-amount media-kit-main__audience-amount--size-28">120 тис.</div>
+                            <div class="media-kit-main__audience-text media-kit-main__audience-text--mb-0">охоплення сторінки за місяць</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__group">
+                    <div class="media-kit-main__group-title">
+                        В нашій спільноті
+                    </div>
+                    <div class="media-kit-main__group-card-container">
+                        <div class="media-kit-main__group-card">
+                            <div class="media-kit-main__group-card-title">Підприємці</div>
+                            <div class="media-kit-main__group-card-description">Ми розповідаємо їхні історії, передаємо досвід і надихаємо інших наслідувати їхній приклад.</div>
+                        </div>
+                        <div class="media-kit-main__group-card">
+                            <div class="media-kit-main__group-card-title">Топ-менеджери</div>
+                            <div class="media-kit-main__group-card-description">Гуру своєї справи, вони діляться досвідом на наших сторінках, ведуть блоги, дають інтерв'ю та дізнаються, чим займаються їхні колеги.</div>
+                        </div>
+                        <div class="media-kit-main__group-card">
+                            <div class="media-kit-main__group-card-title">IT-спеціалісти</div>
+                            <div class="media-kit-main__group-card-description">Вони на гребені інновацій, роблять круті речі і рухають світ уперед. Їхні історії ми з задоволенням розповідаємо.</div>
+                        </div>
+                        <div class="media-kit-main__group-card">
+                            <div class="media-kit-main__group-card-title">Креативний клас</div>
+                            <div class="media-kit-main__group-card-description">Маркетологи, PR-менеджери, HR-спеціалісти, дизайнери, продакт-менеджери та всі ті люди, чия робота — створювати.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__persons">
+                    <div class="media-kit-main__persons-title">
+                        Герої наших статей
+                    </div>
+                    <div class="media-kit-main__persons-container">
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                        <div class="media-kit-main__person-card">
+                            <div class="media-kit-main__person-card-img">
+                                <img src="images/media-kit/klichko.png" alt="klichko">
+                            </div>
+                            <div class="media-kit-main__person-card-name">Віталій Мостицький</div>
+                            <div class="media-kit-main__person-card-position">Копірайтер</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__themes">
+                    <div class="media-kit-main__themes-title">Про що ми пишемо</div>
+                    <div class="media-kit-main__themes-container">
+                        <div class="media-kit-main__theme">
+                            <div class="media-kit-main__theme-icon">
+                                <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
+                            </div>
+                            <div class="media-kit-main__theme-text">Ми пишемо про головні тренди в
+                                бізнесі та суспільстві — в Україні
+                                та світі.</div>
+                        </div>
+                        <div class="media-kit-main__theme">
+                            <div class="media-kit-main__theme-icon">
+                                <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
+                            </div>
+                            <div class="media-kit-main__theme-text">Розповідаємо про досягнення
+                                українських підприємців та
+                                виклики, які перед ними стоять.</div>
+                        </div>
+                        <div class="media-kit-main__theme">
+                            <div class="media-kit-main__theme-icon">
+                                <img src="images/media-kit/arrow-right.svg.svg" alt="arrow">
+                            </div>
+                            <div class="media-kit-main__theme-text">Пишемо про те, як українці
+                                наближають перемогу: як попри
+                                війну відкривають нові напрямки
+                                в бізнесі та як займаються
+                                професійним саморозвитком.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__mission">
+                    <div class="media-kit-main__mission-content">
+                        <div class="media-kit-main__mission-title">Наша місія</div>
+                        <div class="media-kit-main__mission-head">Навіщо ми робимо LB.media</div>
+                        <div class="media-kit-main__mission-description">Нам хочеться жити в країні, де люди захоплені своєю справою, ставлять цілі та досягають їх, мислять творчо і бачать склянку, яканаполовину повна.</div>
+                        <div class="media-kit-main__mission-description">Вони не проживають життя дарма. Донатять, допомагають країні, вірять у власну мрію і перетворюють її на реальність.</div>
+                        <div class="media-kit-main__mission-description">Ми підтримуємо їх на цьому шляху: надихаємо прикладами, застерігаємо від помилок, показуємо нові шляхи та допомагаємо брати наступну сходинку.</div>
+                    </div>
+                    <div class="media-kit-main__mission-img-container">
+                        <img class="media-kit-main__mission-img" src="images/media-kit/about.jpg.png" alt="about">
+                    </div>
+                </div>
+                <div class="media-kit-main__format">
+                    <div class="media-kit-main__format-title">
+                        Наші формати
+                    </div>
+                    <div class="media-kit-main__format-cards-container">
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <button class="media-kit-main__projects-card-button">Читати матеріал</button>
-                    </div>
-                    <div class="media-kit-main__projects-card media-kit-main__projects-card--bio">
-                        <div class="media-kit-main__projects-card-img-container">
-                            <img class="media-kit-main__projects-card-img" src="images/media-kit//biosphera.png" alt="biosphere">
-                        </div>
-                        <div class="media-kit-main__projects-card-title">Біосфера</div>
-                        <div class="media-kit-main__projects-card-description">Ідея проєкту: у партнерському проєкті з “Біосфера” до дня народження компанії редакція розповіла історію та масштаби корпорації, основні події, якими пишається компанія, та про всі бренди, які вона створила.</div>
-                        <div class="media-kit-main__projects-card-statistic-container">
-                            <div class="media-kit-main__projects-card-statistic">
-                                <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
-                                <div class="media-kit-main__projects-card-statistic-amount">7 577</div>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
                             </div>
-                            <div class="media-kit-main__projects-card-statistic">
-                                <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
-                                <div class="media-kit-main__projects-card-statistic-amount">44 151</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <button class="media-kit-main__projects-card-button">Читати матеріал</button>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__clients">
-                <div class="media-kit-main__clients-title">Наші клієнти</div>
-                <div class="media-kit-main__clients-icons-container">
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c1.png.png" alt="c1">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c2.png.png" alt="c2">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c3.png.png" alt="c3">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c4.png.png" alt="c4">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c5.png.png" alt="c5">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c6.png.png" alt="c6">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c7.png.png" alt="c7">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c8.png.png" alt="c8">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c9.png.png" alt="c9">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c10.png.png" alt="c10">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c11.png.png" alt="c11">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c12.png.png" alt="c12">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c13.png.png" alt="c13">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c14.png.png" alt="c14">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c15.png.png" alt="c15">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c16.png.png" alt="c16">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c17.png.png" alt="c17">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c18.png.png" alt="c18">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c19.png.png" alt="c19">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c20.png.png" alt="c20">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c21.png.png" alt="c21">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c22.png.png" alt="c22">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c23.png.png" alt="c23">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c24.png.png" alt="c24">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c25.png.png" alt="c25">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c26.png.png" alt="c26">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c27.png.png" alt="c27">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c28.png.png" alt="c28">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c29.png.png" alt="c29">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c30.png.png" alt="c30">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c31.png.png" alt="c31">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c32.png.png" alt="c32">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c33.png.png" alt="c33">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c34.png.png" alt="c34">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c35.png.png" alt="c35">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c36.png.png" alt="c36">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c37.png.png" alt="c37">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c38.png.png" alt="c38">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c39.png.png" alt="c39">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c40.png.png" alt="c40">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c41.png.png" alt="c41">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c42.png.png" alt="c42">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c43.png.png" alt="c43">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c44.png.png" alt="c44">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c45.png.png" alt="c45">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c46.png.png" alt="c46">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c47.png.png" alt="c47">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c48.png.png" alt="c48">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c49.png.png" alt="c49">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c50.png.png" alt="c50">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c51.png.png" alt="c51">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c52.png.png" alt="c52">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c53.png.png" alt="c53">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c54.png.png" alt="c54">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c55.png.png" alt="c55">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c56.png.png" alt="c56">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c57.png.png" alt="c57">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c58.png.png" alt="c58">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c59.png.png" alt="c59">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c60.png.png" alt="c60">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c61.png.png" alt="c61">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c62.png.png" alt="c62">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c63.png.png" alt="c63">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c64.png.png" alt="c64">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c65.png.png" alt="c65">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c66.png.png" alt="c66">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c67.png.png" alt="c67">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c68.png.png" alt="c68">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c69.png.png" alt="c69">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c70.png.png" alt="c70">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c71.png.png" alt="c71">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c72.png.png" alt="c72">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c73.png.png" alt="c73">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c74.png.png" alt="c74">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c75.png.png" alt="c75">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c76.png.png" alt="c76">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c77.png.png" alt="c77">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c78.png.png" alt="c78">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c79.png.png" alt="c79">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c80.png.png" alt="c80">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c81.png.png" alt="c81">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c82.png.png" alt="c82">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c83.png.png" alt="c83">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c84.png.png" alt="c84">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c85.png.png" alt="c85">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c86.png.png" alt="c86">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c87.png.png" alt="c87">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c88.png.png" alt="c88">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c89.png.png" alt="c89">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c90.png.png" alt="c90">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c91.png.png" alt="c91">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c92.png.png" alt="c92">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c93.png.png" alt="c93">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c94.png.png" alt="c94">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c95.png.png" alt="c95">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c96.png.png" alt="c96">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c97.png.png" alt="c97">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c98.png.png" alt="c98">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c99.png.png" alt="c99">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c100.png.png" alt="c100">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c101.png.png" alt="c101">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c102.png.png" alt="c102">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c103.png.png" alt="c103">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c104.png.png" alt="c104">
-                    </div>
-                    <div class="media-kit-main__clients-icon">
-                        <img src="images/media-kit/ЛБ медіа _ Dev/c105.png.png" alt="c105">
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__values">
-                <div class="media-kit-main__values-title">Наші цінності</div>
-                <div class="media-kit-main__values-container">
-                    <div class="media-kit-main__values-block">
-                        <div class="media-kit-main__values-block-title">Допомога суспільству</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Наш принцип — "комунікації заради</div>
-                        <div class="media-kit-main__values-block-description">добра". Ми бачимо себе як платформу для вирішення соціальних проблем через активну взаємодію та обмін інформацією між людьми.</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Один із ключових наших напрямків —</div>
-                        <div class="media-kit-main__values-block-description">регулярні благодійні збори на ЗСУ та інші ініціативи. Також ми підтримуємо бізнес, який робить благодійні проєкти.</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми сприяємо поширенню позитивних</div>
-                        <div class="media-kit-main__values-block-description">ідей, надихаємо людей на добрі справи.</div>
-                    </div>
-                    <div class="media-kit-main__values-block">
-                        <div class="media-kit-main__values-block-title">Журналістська етика</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми незалежні журналісти і сповідуємо</div>
-                        <div class="media-kit-main__values-block-description">принципи журналістської етики.</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Як у незалежного медіа, у власниках в нас</div>
-                        <div class="media-kit-main__values-block-description">немає олігархів чи великого бізнесу. Ми працюємо на принципах самоокупності, голове для нас — читачі, наша спільнота.</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Як професійні журналісти ми не</div>
-                        <div class="media-kit-main__values-block-description">розповсюджуємо неперевірені дані, обстоюємо інтереси читачів і публікуємо інформацію, якщо вона має цінність для нашої аудиторії.</div>
-                    </div>
-                    <div class="media-kit-main__values-block">
-                        <div class="media-kit-main__values-block-title">Постійний розвиток</div>
-                        <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми віримо в постійний розвиток і рух</div>
-                        <div class="media-kit-main__values-block-description">уперед. Якщо ми стоятимемо на місці, то дуже швидко зникнемо з лиця землі. Потрібно бігти ще швидше, пробувати нове, робити цікаве, щоб стати кращими і не гаяти часу.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-kit-main__form">
-                <div class="media-kit-main__form-title">Обговорити проєкт</div>
-                <div class="media-kit-main__form-wrapper">
-                    <div class="media-kit-main__form-about-team">
-                        <div class="media-kit-main__form-about-team-name">Команда LB.media</div>
-                        <div class="media-kit-main__form-about-email">specials@lb.ua</div>
-                    </div>
-                    <div class="media-kit-main__form-container">
-                        <div class="media-kit-main__form-container-title">Заповніть форму нижче для запиту про співпрацю</div>
-                        <div class="media-kit-main__form-block">
-                            <div class="media-kit-main__form-label">Ім’я, прізвище</div>
-                            <div class="media-kit-main__subscribe-input-container">
-                                <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваше ім'я*">
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <div class="media-kit-main__form-block">
-                            <div class="media-kit-main__form-label">Email</div>
-                            <div class="media-kit-main__subscribe-input-container">
-                                <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш email*">
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <div class="media-kit-main__form-block">
-                            <div class="media-kit-main__form-label">Telegram</div>
-                            <div class="media-kit-main__subscribe-input-container">
-                                <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш Telegram">
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <div class="media-kit-main__form-block">
-                            <div class="media-kit-main__form-label">Телефон</div>
-                            <div class="media-kit-main__subscribe-input-container">
-                                <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш телефон">
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <div class="media-kit-main__form-block">
-                            <div class="media-kit-main__form-label">Опис задачі</div>
-                            <div class="media-kit-main__subscribe-input-container media-kit-main__subscribe-input-container--mb-20">
-                                <textarea class="media-kit-main__subscribe-input input input--media-kit input--media-kit--textarea" type="text"></textarea>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
                             </div>
                         </div>
-                        <button class="media-kit-main__form-btn">
-                            Надіслати
-                        </button>
-                        <div class="media-kit-main__form-confirmation">Натискаючи кнопку, ви даєте згоду на обробку персональних даних і погоджуєтесь з політикою конфіденційності.</div>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
+                            </div>
+                        </div>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
+                            </div>
+                        </div>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
+                            </div>
+                        </div>
+                        <div class="media-kit-main__format-card">
+                            <div class="media-kit-main__format-card-header">01. PR стаття (анонс)</div>
+                            <div class="media-kit-main__format-card-description">Швидкий та бюджетний формат, в якому ми беремо ваш текст та доопрацьовуємо його так, аби читач почув потрібний нам меседж — анонс події, реліз нового продукту, тощо.</div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Розміщення:</div>
+                                <div class="media-kit-main__format-card-point-description">головна видання, Facebook-сторінка.</div>
+                            </div>
+                            <div class="media-kit-main__format-card-point">
+                                <div class="media-kit-main__format-card-point-title">Гарантовано:</div>
+                                <div class="media-kit-main__format-card-point-description">від 1 000 прочитань / від 50 000 охоплень соцмереж</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__projects">
+                    <div class="media-kit-main__projects-title">
+                        Про що ми пишемо
+                    </div>
+                    <div class="media-kit-main__projects-nav">
+                        <div class="media-kit-main__projects-nav-text">
+                            У нас в портфоліо 1500+ кейсів для 500+ клієнтів
+                        </div>
+                        <div class="media-kit-main__projects-nav-arrows">
+                            <img class="media-kit-main__projects-nav-arrow" src="images/media-kit/arrow-left.svg" alt="arrow">
+                            <img class="media-kit-main__projects-nav-arrow media-kit-main__projects-nav-arrow--right" src="images/media-kit/arrow-left.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="media-kit-main__projects-card-container">
+                        <div class="media-kit-main__projects-card">
+                            <div class="media-kit-main__projects-card-img-container">
+                                <img class="media-kit-main__projects-card-img" src="images/media-kit/sense-bank.png" alt="sense">
+                            </div>
+                            <div class="media-kit-main__projects-card-title">Sense Bank</div>
+                            <div class="media-kit-main__projects-card-description">Ідея проєкту: 
+                                <span class="media-kit-main__projects-card-description--non-bold">створили інтерактивний проєкт про зарплатні картки від Sense Bank. Розповіли усе про умови, зручні сервіси і послуги, показали, чому клієнтам буде зручно використовувати ці картки.</span> 
+                            </div>
+                            <div class="media-kit-main__projects-card-statistic-container">
+                                <div class="media-kit-main__projects-card-statistic">
+                                    <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
+                                    <div class="media-kit-main__projects-card-statistic-amount">5 156</div>
+                                </div>
+                                <div class="media-kit-main__projects-card-statistic">
+                                    <div class="media-kit-main__projects-card-statistic-title">Загальне охоплення:</div>
+                                    <div class="media-kit-main__projects-card-statistic-amount">162 580</div>
+                                </div>
+                            </div>
+                            <button class="media-kit-main__projects-card-button">Читати матеріал</button>
+                        </div>
+                        <div class="media-kit-main__projects-card media-kit-main__projects-card--bio">
+                            <div class="media-kit-main__projects-card-img-container">
+                                <img class="media-kit-main__projects-card-img" src="images/media-kit//biosphera.png" alt="biosphere">
+                            </div>
+                            <div class="media-kit-main__projects-card-title">Біосфера</div>
+                            <div class="media-kit-main__projects-card-description">Ідея проєкту: у партнерському проєкті з “Біосфера” до дня народження компанії редакція розповіла історію та масштаби корпорації, основні події, якими пишається компанія, та про всі бренди, які вона створила.</div>
+                            <div class="media-kit-main__projects-card-statistic-container">
+                                <div class="media-kit-main__projects-card-statistic">
+                                    <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
+                                    <div class="media-kit-main__projects-card-statistic-amount">7 577</div>
+                                </div>
+                                <div class="media-kit-main__projects-card-statistic">
+                                    <div class="media-kit-main__projects-card-statistic-title">Перегляди:</div>
+                                    <div class="media-kit-main__projects-card-statistic-amount">44 151</div>
+                                </div>
+                            </div>
+                            <button class="media-kit-main__projects-card-button">Читати матеріал</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__clients">
+                    <div class="media-kit-main__clients-title">Наші клієнти</div>
+                    <div class="media-kit-main__clients-icons-container">
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c1.png.png" alt="c1">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c2.png.png" alt="c2">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c3.png.png" alt="c3">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c4.png.png" alt="c4">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c5.png.png" alt="c5">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c6.png.png" alt="c6">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c7.png.png" alt="c7">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c8.png.png" alt="c8">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c9.png.png" alt="c9">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c10.png.png" alt="c10">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c11.png.png" alt="c11">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c12.png.png" alt="c12">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c13.png.png" alt="c13">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c14.png.png" alt="c14">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c15.png.png" alt="c15">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c16.png.png" alt="c16">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c17.png.png" alt="c17">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c18.png.png" alt="c18">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c19.png.png" alt="c19">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c20.png.png" alt="c20">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c21.png.png" alt="c21">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c22.png.png" alt="c22">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c23.png.png" alt="c23">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c24.png.png" alt="c24">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c25.png.png" alt="c25">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c26.png.png" alt="c26">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c27.png.png" alt="c27">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c28.png.png" alt="c28">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c29.png.png" alt="c29">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c30.png.png" alt="c30">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c31.png.png" alt="c31">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c32.png.png" alt="c32">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c33.png.png" alt="c33">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c34.png.png" alt="c34">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c35.png.png" alt="c35">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c36.png.png" alt="c36">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c37.png.png" alt="c37">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c38.png.png" alt="c38">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c39.png.png" alt="c39">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c40.png.png" alt="c40">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c41.png.png" alt="c41">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c42.png.png" alt="c42">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c43.png.png" alt="c43">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c44.png.png" alt="c44">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c45.png.png" alt="c45">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c46.png.png" alt="c46">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c47.png.png" alt="c47">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c48.png.png" alt="c48">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c49.png.png" alt="c49">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c50.png.png" alt="c50">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c51.png.png" alt="c51">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c52.png.png" alt="c52">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c53.png.png" alt="c53">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c54.png.png" alt="c54">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c55.png.png" alt="c55">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c56.png.png" alt="c56">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c57.png.png" alt="c57">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c58.png.png" alt="c58">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c59.png.png" alt="c59">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c60.png.png" alt="c60">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c61.png.png" alt="c61">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c62.png.png" alt="c62">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c63.png.png" alt="c63">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c64.png.png" alt="c64">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c65.png.png" alt="c65">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c66.png.png" alt="c66">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c67.png.png" alt="c67">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c68.png.png" alt="c68">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c69.png.png" alt="c69">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c70.png.png" alt="c70">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c71.png.png" alt="c71">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c72.png.png" alt="c72">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c73.png.png" alt="c73">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c74.png.png" alt="c74">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c75.png.png" alt="c75">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c76.png.png" alt="c76">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c77.png.png" alt="c77">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c78.png.png" alt="c78">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c79.png.png" alt="c79">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c80.png.png" alt="c80">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c81.png.png" alt="c81">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c82.png.png" alt="c82">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c83.png.png" alt="c83">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c84.png.png" alt="c84">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c85.png.png" alt="c85">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c86.png.png" alt="c86">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c87.png.png" alt="c87">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c88.png.png" alt="c88">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c89.png.png" alt="c89">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c90.png.png" alt="c90">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c91.png.png" alt="c91">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c92.png.png" alt="c92">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c93.png.png" alt="c93">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c94.png.png" alt="c94">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c95.png.png" alt="c95">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c96.png.png" alt="c96">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c97.png.png" alt="c97">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c98.png.png" alt="c98">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c99.png.png" alt="c99">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c100.png.png" alt="c100">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c101.png.png" alt="c101">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c102.png.png" alt="c102">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c103.png.png" alt="c103">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c104.png.png" alt="c104">
+                        </div>
+                        <div class="media-kit-main__clients-icon">
+                            <img src="images/media-kit/ЛБ медіа _ Dev/c105.png.png" alt="c105">
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__values">
+                    <div class="media-kit-main__values-title">Наші цінності</div>
+                    <div class="media-kit-main__values-container">
+                        <div class="media-kit-main__values-block">
+                            <div class="media-kit-main__values-block-title">Допомога суспільству</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Наш принцип — "комунікації заради</div>
+                            <div class="media-kit-main__values-block-description">добра". Ми бачимо себе як платформу для вирішення соціальних проблем через активну взаємодію та обмін інформацією між людьми.</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Один із ключових наших напрямків —</div>
+                            <div class="media-kit-main__values-block-description">регулярні благодійні збори на ЗСУ та інші ініціативи. Також ми підтримуємо бізнес, який робить благодійні проєкти.</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми сприяємо поширенню позитивних</div>
+                            <div class="media-kit-main__values-block-description">ідей, надихаємо людей на добрі справи.</div>
+                        </div>
+                        <div class="media-kit-main__values-block">
+                            <div class="media-kit-main__values-block-title">Журналістська етика</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми незалежні журналісти і сповідуємо</div>
+                            <div class="media-kit-main__values-block-description">принципи журналістської етики.</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Як у незалежного медіа, у власниках в нас</div>
+                            <div class="media-kit-main__values-block-description">немає олігархів чи великого бізнесу. Ми працюємо на принципах самоокупності, голове для нас — читачі, наша спільнота.</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Як професійні журналісти ми не</div>
+                            <div class="media-kit-main__values-block-description">розповсюджуємо неперевірені дані, обстоюємо інтереси читачів і публікуємо інформацію, якщо вона має цінність для нашої аудиторії.</div>
+                        </div>
+                        <div class="media-kit-main__values-block">
+                            <div class="media-kit-main__values-block-title">Постійний розвиток</div>
+                            <div class="media-kit-main__values-block-title media-kit-main__values-block-title--no-bold">Ми віримо в постійний розвиток і рух</div>
+                            <div class="media-kit-main__values-block-description">уперед. Якщо ми стоятимемо на місці, то дуже швидко зникнемо з лиця землі. Потрібно бігти ще швидше, пробувати нове, робити цікаве, щоб стати кращими і не гаяти часу.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-kit-main__form">
+                    <div class="media-kit-main__form-title">Обговорити проєкт</div>
+                    <div class="media-kit-main__form-wrapper">
+                        <div class="media-kit-main__form-about-team">
+                            <div class="media-kit-main__form-about-team-name">Команда LB.media</div>
+                            <div class="media-kit-main__form-about-email">specials@lb.ua</div>
+                        </div>
+                        <div class="media-kit-main__form-container">
+                            <div class="media-kit-main__form-container-title">Заповніть форму нижче для запиту про співпрацю</div>
+                            <div class="media-kit-main__form-block">
+                                <div class="media-kit-main__form-label">Ім’я, прізвище</div>
+                                <div class="media-kit-main__subscribe-input-container">
+                                    <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваше ім'я*">
+                                </div>
+                            </div>
+                            <div class="media-kit-main__form-block">
+                                <div class="media-kit-main__form-label">Email</div>
+                                <div class="media-kit-main__subscribe-input-container">
+                                    <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш email*">
+                                </div>
+                            </div>
+                            <div class="media-kit-main__form-block">
+                                <div class="media-kit-main__form-label">Telegram</div>
+                                <div class="media-kit-main__subscribe-input-container">
+                                    <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш Telegram">
+                                </div>
+                            </div>
+                            <div class="media-kit-main__form-block">
+                                <div class="media-kit-main__form-label">Телефон</div>
+                                <div class="media-kit-main__subscribe-input-container">
+                                    <input class="media-kit-main__subscribe-input input input--media-kit" type="text" placeholder="Ваш телефон">
+                                </div>
+                            </div>
+                            <div class="media-kit-main__form-block">
+                                <div class="media-kit-main__form-label">Опис задачі</div>
+                                <div class="media-kit-main__subscribe-input-container media-kit-main__subscribe-input-container--mb-20">
+                                    <textarea class="media-kit-main__subscribe-input input input--media-kit input--media-kit--textarea" type="text"></textarea>
+                                </div>
+                            </div>
+                            <button class="media-kit-main__form-btn">
+                                Надіслати
+                            </button>
+                            <div class="media-kit-main__form-confirmation">Натискаючи кнопку, ви даєте згоду на обробку персональних даних і погоджуєтесь з політикою конфіденційності.</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-	</main>
-    <footer class="media-kit-footer">
-        <div class="media-kit-footer__logo">
-            <div class="media-kit-footer__logo-text">ЛБ.</div>
-            <div class="media-kit-footer__logo-underline"></div>
-            <div class="media-kit-footer__logo-icons" >
-                <img src="images/icons/fb.svg" alt="social icon">
-                <img src="images/icons/linkedin.svg" alt="social icon">
-                <img src="images/icons/x.svg" alt="social icon">
-            </div>
-        </div>
-        <div class="media-kit-footer__links-container">
-            <div class="media-kit-footer__links">
-                <div class="media-kit-footer__link1">
-                    <div class="media-kit-footer__title">контакт</div>
-                    <div class="media-kit-footer__link">Про нас контакт</div>
-                    <div class="media-kit-footer__link">Напишіть нам</div>
-                </div>
-                <div class="media-kit-footer__link2">
-                    <div class="media-kit-footer__title">статут</div>
-                    <div class="media-kit-footer__link">Політика конфіденційності</div>
-                    <div class="media-kit-footer__link">Зміна налаштувань згоди</div>
-                    <div class="media-kit-footer__link">Правила веб-сайту</div>
-                    <div class="media-kit-footer__link">Інформація про відправника</div>            
-                </div>
-                <div class="media-kit-footer__link3">
-                    <div class="media-kit-footer__title">реклама та підписка</div>
-                    <div class="media-kit-footer__link">Реклама</div>
-                    <div class="media-kit-footer__link">Оголошення</div>
-                    <div class="media-kit-footer__link">Підписка</div>
-                    <div class="media-kit-footer__link">Архіви</div>            
-                </div>
-                <div class="media-kit-footer__link4">
-                    <div class="media-kit-footer__title">партнери</div>
-                    <div class="media-kit-footer__link">E-kiosk.pl E-gazety.pl</div>
-                    <div class="media-kit-footer__link">Nexto.pl</div>
-                    <div class="media-kit-footer__link">Kancelarierp.pl</div>            
-                </div>
-                <div class="media-kit-footer__link5">
-                    <div class="media-kit-footer__title">карта сайту</div>
-                </div>
-                <div class="media-kit-footer__link6">
-                    <div class="media-kit-footer__title">товарна пропозиція</div>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <div class="footer__logo-text">ЛБ.</div>
+                <div class="footer__logo-underline"></div>
+                <div class="footer__logo-icons" >
+                    <img src="images/icons/fb.svg" alt="social icon">
+                    <img src="images/icons/linkedin.svg" alt="social icon">
+                    <img src="images/icons/x.svg" alt="social icon">
                 </div>
             </div>
-            <div class="media-kit-footer__rectangle"></div>
-        </div>
-    </footer>
-    <footer class="footer-mobile">
-        <div class="footer-mobile__logo">
-            <div class="footer-mobile__logo-text">ЛБ.</div>
-            <div class="footer-mobile__logo-underline"></div>
-            <div class="footer-mobile__logo-icons" >
-                <img src="images/icons/fb.svg" alt="social icon">
-                <img src="images/icons/linkedin.svg" alt="social icon">
-                <img src="images/icons/x.svg" alt="social icon">
+            <div class="footer__section">
+                <div class="footer__links-container">
+                    <div class="footer__links">
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">контакт</div>
+                            <div class="footer__links-text">Про нас контакт</div>
+                            <div class="footer__links-text">Напишіть нам</div>
+                        </div>
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">статут</div>
+                            <div class="footer__links-text">Політика конфіденційності</div>
+                            <div class="footer__links-text">Зміна налаштувань згоди</div>
+                            <div class="footer__links-text">Правила веб-сайту</div>
+                            <div class="footer__links-text">Інформація про відправника</div>
+                        </div>
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">реклама та підписка</div>
+                            <div class="footer__links-text">Реклама</div>
+                            <div class="footer__links-text">Оголошення</div>
+                            <div class="footer__links-text">Підписка</div>
+                            <div class="footer__links-text">Архіви</div>
+                        </div>
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">партнери</div>
+                            <div class="footer__links-text">E-kiosk.pl E-gazety.pl</div>
+                            <div class="footer__links-text">Nexto.pl</div>
+                            <div class="footer__links-text">Kancelarierp.pl</div>
+                        </div>
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">карта сайту</div>
+                        </div>
+                        <div class="footer__links-col">
+                            <div class="footer__links-title">товарна пропозиція</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__advertising-section"></div>
             </div>
-        </div>
-        <div class="footer-mobile__row">
-            <div class="footer-mobile__col">
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">контакт</div>
-                    <div class="footer-mobile__section-par">Про нас контакт</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
+            <div class="footer__subscribe">
+                <div class="footer__subscribe-topic footer__subscribe-title--red">Інформаційний бюлетень</div>
+                <div class="footer__subscribe-title">Читайте кращий контент</div>
+                <div class="footer__subscribe-input-container">
+                    <input class="footer__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
                 </div>
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">реклама та підписка</div>
-                    <div class="footer-mobile__section-par">Про нас контакт</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                </div>
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">статут</div>
-                    <div class="footer-mobile__section-par">Про нас контакт</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                </div>
+                <button class="button button--contained-red button--height-40">Підписатися</button>
             </div>
-            <div class="footer-mobile__col">
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">партнери</div>
-                    <div class="footer-mobile__section-par">Про нас контакт</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                    <div class="footer-mobile__section-par">Напишіть нам</div>
-                </div>
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">карта сайту</div>
-                </div>
-                <div class="footer-mobile__section">
-                    <div class="footer-mobile__section-title">товарна пропозиція</div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-mobile__block footer-mobile__block--subscribe">
-            <div class="footer-mobile__subscribe-topic footer-mobile__subscribe-title--red">Інформаційний бюлетень</div>
-            <div class="footer-mobile__subscribe-title">Читайте кращий контент</div>
-            <div class="footer-mobile__subscribe-input-container">
-                <input class="footer-mobile__subscribe-input input input--outlined-black mr--12" type="text" placeholder="Адреса електронної пошти">
-            </div>
-            <button class="button button--contained-red button--height-40">Підписатися</button>
-        </div>
-
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
