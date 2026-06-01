@@ -1,0 +1,16 @@
+$space: (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 48, 50, 52, 54, 56, 60, 64, 72, 86, 96, 100, 124, 128, 130, 136, 160, 190, 200, 250);
+$pos: (top, bottom, left, right);
+
+@each $s in $space {
+  .m#{$s} { margin: #{$s}px; }
+  .p#{$s} { margin: #{$s}px; }
+  @each $p in $pos {
+    .m#{str-slice($p, 0, 1)}--#{$s} { margin-#{$p}: #{$s}px !important;}
+    .p#{str-slice($p, 0, 1)}--#{$s} { padding-#{$p}: #{$s}px  !important;}
+  }
+}
+
+.ml--auto { margin-left: auto !important; }
+.mr--auto { margin-right: auto !important; }
+.mt--auto { margin-top: auto !important; }
+.mb--auto { margin-bottom: auto !important; }
