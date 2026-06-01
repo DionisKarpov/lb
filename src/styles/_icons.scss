@@ -1,69 +1,69 @@
 .icon {
-  position: relative;
-  width: 16px;
-  height: 16px;
+	position: relative;
+	width: 16px;
+	height: 16px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 16px;
+		height: 16px;
+	}
 
-  &--search {
+	&--search {
 
-    &:before {
-      background-image: url('../images/icons/search.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
+		&:before {
+			background-image: url('../images/icons/search.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
 
-  &--arrow-right-gray {
+	&--arrow-right-gray {
 
-    &:before {
-      background: url('../images/icons/arrow-right.svg') center no-repeat;
-      background-size: contain;
-    }
-  }
+		&:before {
+			background: url('../images/icons/arrow-right.svg') center no-repeat;
+			background-size: contain;
+		}
+	}
 
-  &--burger {
+	&--burger {
 
-    &:before {
-      background-image: url('../images/icons/burger.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
+		&:before {
+			background-image: url('../images/icons/burger.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
 
-  &--18px {
-    width: 18px;
-    height: 18px;
+	&--18px {
+		width: 18px;
+		height: 18px;
 
-    &::before {
-      width: 18px;
-      height: 18px;
-    }
-  }
+		&::before {
+			width: 18px;
+			height: 18px;
+		}
+	}
 
-  &--20px {
-    width: 20px;
-    height: 20px;
+	&--20px {
+		width: 20px;
+		height: 20px;
 
-    &::before {
-      width: 20px;
-      height: 20px;
-    }
-  }
+		&::before {
+			width: 20px;
+			height: 20px;
+		}
+	}
 
-  &--close-white {
-      
-      &:before {
-        background-image: url('../images/icons/close-white.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-  }
+	&--close-white {
+
+		&:before {
+			background-image: url('../images/icons/close-white.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
 }

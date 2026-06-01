@@ -1,8 +1,8 @@
 html {
-	background: #EFEFEF;
+	background: $gray-1;
 
 	@media screen and (max-width: 1304px) {
-		background: $white;	
+		background: $white;
 	}
 }
 
@@ -11,16 +11,14 @@ body {
 	max-width: 1304px;
 	padding: 0 32px !important;
 	margin: 0 auto;
-	background: white;
+	background: $white;
 
 	* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Proxima Nova', sans-serif;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: 'Proxima Nova', sans-serif;
 	}
-
-	
 
 	@media screen and (max-width: 768px) {
 		padding: 0 !important;
@@ -75,7 +73,7 @@ body {
 	&__list {
 		display: flex;
 		align-items: center;
-		
+
 		&--column {
 			flex-direction: column;
 		}
@@ -84,7 +82,6 @@ body {
 
 .videos-list {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	overflow-x: auto;
@@ -128,27 +125,27 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-	
+
 	body {
 		padding: 0 24px;
-		width: auto;	
+		width: auto;
 	}
 }
 
 .rectangle-vertical {
 	width: 331px;
-	background-color: #EFEFEF;
+	background-color: $gray-1;
 
 	&--h-930 {
-			height: 930px;
+		height: 930px;
 	}
 
 	&--h-701 {
-			height: 701px;
+		height: 701px;
 	}
 
 	&--margin-bottom {
-			margin-bottom: 36px;
+		margin-bottom: 36px;
 	}
 
 	@media screen and (max-width: 1304px) {
@@ -164,7 +161,7 @@ body {
 	margin: 24px auto;
 	width: 564px;
 	height: 144px;
-	background-color: #EFEFEF;
+	background-color: $gray-1;
 
 	@media screen and (max-width: 1000px) {
 		width: 400px;

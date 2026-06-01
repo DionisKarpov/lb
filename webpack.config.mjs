@@ -11,7 +11,8 @@ export default {
 	output: {
 		filename: 'main.js',
 		path: path.resolve(path.dirname('./'), 'build'),
-		assetModuleFilename: 'images/[hash][ext][query]'
+		assetModuleFilename: 'images/[hash][ext][query]',
+		publicPath: mode === 'production' ? '/lb/' : 'auto'
 	},
 	module: {
 		rules: [
